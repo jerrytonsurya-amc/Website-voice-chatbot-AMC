@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
-import { getNavCache } from "../src/lib/navDataLoader";
+import { getApiHealth } from "../src/lib/apiServices";
 
 /** Health check — live config is embedded in /api/live-token ephemeral constraints. */
 export default async function handler(req: VercelRequest, res: VercelResponse) {
@@ -8,10 +8,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   try {
-    const cache = getNavCache();
+    const health = getApiHealth();
     return res.status(200).json({
-      ok: true,
-      navRecords: cache.length,
+      ...health,
       message: "Use POST /api/live-token to start a voice session.",
     });
   } catch (error) {

@@ -19,7 +19,6 @@ class PCMProcessor extends AudioWorkletProcessor {
 registerProcessor('pcm-processor', PCMProcessor);
 `;
 
-const LIVE_MODEL = 'gemini-3.1-flash-live-preview';
 
 async function fetchLiveToken(context: ReturnType<typeof collectSessionContext>) {
   let response: Response;
@@ -154,7 +153,7 @@ export function useLiveSession() {
       const context = collectSessionContext();
       void logVoiceChatSession({ context, status: 'initiated' });
 
-      const { token } = await fetchLiveToken(context);
+      const { token, model } = await fetchLiveToken(context);
 
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
       streamRef.current = stream;
@@ -172,7 +171,7 @@ export function useLiveSession() {
       });
 
       const session = await ai.live.connect({
-        model: LIVE_MODEL,
+        model,
         config: {
           responseModalities: [Modality.AUDIO],
         },
