@@ -9,3 +9,5 @@ coverage/
 .vercel
 api/*.js
 api/*.js.map
+api/*.cjs
+api/*.cjs.map

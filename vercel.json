@@ -3,7 +3,7 @@
   "outputDirectory": "dist",
   "framework": null,
   "functions": {
-    "api/**/*.js": {
+    "api/**/*.cjs": {
       "maxDuration": 60,
       "includeFiles": "data/nav-records.json,data/fund-performance-summary.json,data/fund-catalog.json"
     }

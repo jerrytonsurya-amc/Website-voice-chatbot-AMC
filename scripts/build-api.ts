@@ -36,13 +36,13 @@ async function main() {
     format: "cjs",
     target: "node20",
     outdir: apiDir,
-    outExtension: { ".js": ".js" },
+    outExtension: { ".js": ".cjs" },
     packages: "external",
     sourcemap: true,
     logLevel: "info",
   });
 
-  console.log("API routes built to api/*.js for Vercel");
+  console.log("API routes built to api/*.cjs for Vercel");
 }
 
 main().catch((error) => {
