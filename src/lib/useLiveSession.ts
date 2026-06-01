@@ -1,6 +1,7 @@
 
 import { useEffect, useRef, useState, useCallback } from 'react';
 import { arrayBufferToBase64, base64ToFloat32Array, float32ToInt16, calculateRMS } from './audio';
+import { collectSessionContext, initParentContextListener } from './sessionContext';
 
 const WORKLET_CODE = `
 class PCMProcessor extends AudioWorkletProcessor {
@@ -111,7 +112,10 @@ export function useLiveSession() {
       wsRef.current = ws;
 
       ws.onopen = () => {
-        // Source connection happens onGeminiOpen in the bridge
+        ws.send(JSON.stringify({
+          type: 'sessionContext',
+          context: collectSessionContext(),
+        }));
       };
 
       ws.onmessage = async (e) => {
@@ -190,6 +194,7 @@ export function useLiveSession() {
   }, [stop, playNextChunk]);
 
   useEffect(() => {
+    initParentContextListener();
     return () => stop();
   }, [stop]);
 

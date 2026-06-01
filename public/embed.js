@@ -68,6 +68,21 @@
 
   container.appendChild(iframe);
 
+  function sendPageContext() {
+    if (!iframe.contentWindow) return;
+    iframe.contentWindow.postMessage({
+      type: 'shriram-amc-context',
+      context: {
+        parentUrl: window.location.href,
+        parentTitle: document.title,
+        parentDescription: document.querySelector('meta[name="description"]')?.getAttribute('content') || '',
+        parentPath: window.location.pathname,
+      },
+    }, '*');
+  }
+
+  iframe.addEventListener('load', sendPageContext);
+
   // 3. Logic
   let isOpen = false;
   btn.onclick = () => {
@@ -78,6 +93,7 @@
         container.style.opacity = '1';
         container.style.transform = 'translateY(0)';
         btn.style.transform = 'rotate(90deg)';
+        sendPageContext();
       }, 10);
     } else {
       container.style.opacity = '0';
