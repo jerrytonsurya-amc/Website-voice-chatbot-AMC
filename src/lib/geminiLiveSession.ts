@@ -1,5 +1,4 @@
 import { GoogleGenAI, Modality, type LiveServerMessage, type Session } from "@google/genai";
-import { buildVoiceBotSystemInstruction } from "./voiceBotPrompt";
 import { LIVE_API_TOOLS } from "./liveTools";
 import type { SessionContext } from "./sessionContext";
 
@@ -67,6 +66,16 @@ export async function connectGeminiLive(
     throw new Error("Voice token missing. Check GEMINI_API_KEY on Vercel.");
   }
 
+  const configRes = await fetch("/api/live-config", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ context: sessionContext }),
+  });
+  if (!configRes.ok) {
+    throw new Error("Failed to load voice assistant configuration.");
+  }
+  const { systemInstruction } = (await configRes.json()) as { systemInstruction: string };
+
   const ai = new GoogleGenAI({
     apiKey: token,
     httpOptions: { apiVersion: "v1alpha" },
@@ -94,7 +103,7 @@ export async function connectGeminiLive(
         voiceConfig: { prebuiltVoiceConfig: { voiceName: "Aoede" } },
       },
       tools: LIVE_API_TOOLS,
-      systemInstruction: buildVoiceBotSystemInstruction(sessionContext),
+      systemInstruction,
     },
   });
 

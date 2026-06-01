@@ -1,5 +1,5 @@
-import XLSX from 'xlsx';
-import path from 'path';
+import * as XLSX from "xlsx";
+import path from "path";
 
 export const parseNavFile = () => {
     const filePath = path.join(process.cwd(), 'Month_End_NAV.xlsx');

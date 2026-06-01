@@ -5,6 +5,7 @@
 import "dotenv/config";
 import express from "express";
 import { getNavCache } from "../src/lib/navCache";
+import { buildVoiceBotSystemInstruction } from "../src/lib/voiceBotPrompt";
 import { searchNavData } from "../src/lib/navSearch";
 import { searchFundPerformance } from "../src/lib/navPerformance";
 import { searchMarketKnowledge } from "../src/lib/knowledgeSearch";
@@ -40,6 +41,12 @@ app.get("/api/config", (_req, res) => {
     mode: "vercel-direct",
     configured: Boolean(process.env.GEMINI_API_KEY),
   });
+});
+
+app.post("/api/live-config", (req, res) => {
+  getNavCache();
+  const context = req.body?.context || {};
+  res.json({ systemInstruction: buildVoiceBotSystemInstruction(context) });
 });
 
 app.post("/api/nav", (req, res) => {
