@@ -1,8 +1,9 @@
 
 import { useEffect, useRef, useState, useCallback } from 'react';
+import type { LiveServerMessage, Session } from '@google/genai';
 import { arrayBufferToBase64, base64ToFloat32Array, float32ToInt16, calculateRMS } from './audio';
 import { collectSessionContext, initParentContextListener } from './sessionContext';
-import { resolveLiveWebSocketUrl } from './liveApiUrl';
+import { connectGeminiLive } from './geminiLiveSession';
 
 const WORKLET_CODE = `
 class PCMProcessor extends AudioWorkletProcessor {
@@ -10,7 +11,6 @@ class PCMProcessor extends AudioWorkletProcessor {
     const input = inputs[0];
     if (input.length > 0) {
       const channelData = input[0];
-      // Post a copy to avoid neutering issues if possible, though mostly for stability
       this.port.postMessage(channelData);
     }
     return true;
@@ -24,8 +24,8 @@ export function useLiveSession() {
   const [rms, setRms] = useState({ user: 0, model: 0 });
   const [connectionStatus, setConnectionStatus] = useState<'idle' | 'connecting' | 'connected' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
-  
-  const wsRef = useRef<WebSocket | null>(null);
+
+  const sessionRef = useRef<Session | null>(null);
   const audioContextRef = useRef<AudioContext | null>(null);
   const streamRef = useRef<MediaStream | null>(null);
   const workletNodeRef = useRef<AudioWorkletNode | null>(null);
@@ -35,14 +35,14 @@ export function useLiveSession() {
   const stop = useCallback(() => {
     setIsActive(false);
     setConnectionStatus('idle');
-    wsRef.current?.close();
-    wsRef.current = null;
-    
+    sessionRef.current?.close();
+    sessionRef.current = null;
+
     if (workletNodeRef.current) {
       workletNodeRef.current.disconnect();
       workletNodeRef.current = null;
     }
-    
+
     if (streamRef.current) {
       streamRef.current.getTracks().forEach(track => track.stop());
       streamRef.current = null;
@@ -52,7 +52,7 @@ export function useLiveSession() {
       audioContextRef.current.close();
       audioContextRef.current = null;
     }
-    
+
     audioQueueRef.current = [];
     isPlayingRef.current = false;
     setRms({ user: 0, model: 0 });
@@ -60,7 +60,7 @@ export function useLiveSession() {
 
   const playNextChunk = useCallback(() => {
     if (audioQueueRef.current.length === 0 || isPlayingRef.current) return;
-    
+
     isPlayingRef.current = true;
     const chunk = audioQueueRef.current.shift()!;
     const ctx = audioContextRef.current;
@@ -68,14 +68,14 @@ export function useLiveSession() {
 
     const buffer = ctx.createBuffer(1, chunk.length, 24000);
     buffer.getChannelData(0).set(chunk);
-    
+
     const source = ctx.createBufferSource();
     source.buffer = buffer;
     source.connect(ctx.destination);
-    
+
     const analyser = ctx.createAnalyser();
     source.connect(analyser);
-    
+
     source.onended = () => {
       isPlayingRef.current = false;
       playNextChunk();
@@ -95,111 +95,82 @@ export function useLiveSession() {
     updateModelRms();
   }, []);
 
+  const handleModelMessage = useCallback((message: LiveServerMessage) => {
+    const base64Audio = message.serverContent?.modelTurn?.parts?.[0]?.inlineData?.data;
+    if (base64Audio) {
+      const float32Data = base64ToFloat32Array(base64Audio);
+      audioQueueRef.current.push(float32Data);
+      playNextChunk();
+    }
+
+    if (message.serverContent?.interrupted) {
+      audioQueueRef.current = [];
+      isPlayingRef.current = false;
+    }
+  }, [playNextChunk]);
+
   const start = useCallback(async () => {
     try {
       setConnectionStatus('connecting');
       setErrorMessage(null);
 
-      const wsUrl = await resolveLiveWebSocketUrl();
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
       streamRef.current = stream;
 
       const ctx = new AudioContext({ sampleRate: 16000 });
       audioContextRef.current = ctx;
 
-      // Initialize Worklet
       const blob = new Blob([WORKLET_CODE], { type: 'application/javascript' });
-      const url = URL.createObjectURL(blob);
-      await ctx.audioWorklet.addModule(url);
-      
-      const ws = new WebSocket(wsUrl);
-      wsRef.current = ws;
+      const workletUrl = URL.createObjectURL(blob);
+      await ctx.audioWorklet.addModule(workletUrl);
 
-      ws.onopen = () => {
-        ws.send(JSON.stringify({
-          type: 'sessionContext',
-          context: collectSessionContext(),
-        }));
-      };
+      const sessionContext = collectSessionContext();
 
-      ws.onmessage = async (e) => {
-        const data = JSON.parse(e.data);
-        
-        if (data.type === 'open') {
+      const session = await connectGeminiLive(sessionContext, {
+        onopen: () => {
           setIsActive(true);
           setConnectionStatus('connected');
-          
+
           const source = ctx.createMediaStreamSource(stream);
           const workletNode = new AudioWorkletNode(ctx, 'pcm-processor');
-          
+
           workletNode.port.onmessage = (e) => {
-            const inputData = e.data;
+            const inputData = e.data as Float32Array;
             setRms(prev => ({ ...prev, user: calculateRMS(inputData) }));
 
             const pcmData = float32ToInt16(inputData);
             const base64Data = arrayBufferToBase64(pcmData);
-            
-            if (ws.readyState === WebSocket.OPEN) {
-              ws.send(JSON.stringify({
-                realtimeInput: {
-                  audio: { data: base64Data, mimeType: 'audio/pcm;rate=16000' }
-                }
-              }));
-            }
+
+            session.sendRealtimeInput({
+              audio: { data: base64Data, mimeType: 'audio/pcm;rate=16000' },
+            });
           };
 
           source.connect(workletNode);
           workletNode.connect(ctx.destination);
           workletNodeRef.current = workletNode;
-        }
-
-        if (data.type === 'message') {
-          const message = data.message;
-          const base64Audio = message.serverContent?.modelTurn?.parts?.[0]?.inlineData?.data;
-          if (base64Audio) {
-            const float32Data = base64ToFloat32Array(base64Audio);
-            audioQueueRef.current.push(float32Data);
-            playNextChunk();
-          }
-
-          if (message.serverContent?.interrupted) {
-            audioQueueRef.current = [];
-            isPlayingRef.current = false;
-          }
-        }
-
-        if (data.type === 'error') {
-          console.error("Bridge Error:", data.error);
+        },
+        onmessage: handleModelMessage,
+        onerror: (err) => {
+          console.error('Gemini Live Error:', err);
+          setErrorMessage(err.message || 'Voice connection failed.');
           setConnectionStatus('error');
           stop();
-        }
-
-        if (data.type === 'close') {
+        },
+        onclose: () => {
           setIsActive(false);
           setConnectionStatus('idle');
-        }
-      };
+        },
+      });
 
-      ws.onerror = () => {
-        console.error("WebSocket Error");
-        setErrorMessage(
-          "Could not connect to the voice server. Ensure WS_URL points to your Render backend (wss://.../api/live)."
-        );
-        setConnectionStatus('error');
-        stop();
-      };
-
-      ws.onclose = () => {
-        setIsActive(false);
-        setConnectionStatus('idle');
-      };
-
+      sessionRef.current = session;
     } catch (err) {
-      console.error("Failed to start session:", err);
-      setErrorMessage(err instanceof Error ? err.message : "Failed to start voice session.");
+      console.error('Failed to start session:', err);
+      setErrorMessage(err instanceof Error ? err.message : 'Failed to start voice session.');
       setConnectionStatus('error');
+      stop();
     }
-  }, [stop, playNextChunk]);
+  }, [stop, handleModelMessage]);
 
   useEffect(() => {
     initParentContextListener();
