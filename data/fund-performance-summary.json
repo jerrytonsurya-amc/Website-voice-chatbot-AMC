@@ -1,0 +1,1641 @@
+[
+  {
+    "schemeName": "Shriram Aggressive Hybrid Fund- Direct Growth",
+    "scheme": "Shriram Aggressive Hybrid Fund",
+    "type": "Direct",
+    "recordCount": 37,
+    "firstDate": "31-01-2022",
+    "lastDate": "30-04-2026",
+    "firstNav": 24.5461,
+    "lastNav": 36.226,
+    "totalReturnPercent": 47.58352650726592,
+    "cagrPercent": 9.605654395610008,
+    "bestMonth": {
+      "date": "30-09-2024",
+      "nav": 37.891
+    },
+    "worstMonth": {
+      "date": "30-06-2022",
+      "nav": 23.1823
+    },
+    "yearlyReturns": [
+      {
+        "year": "2022",
+        "startNav": 24.5461,
+        "endNav": 26.2011,
+        "returnPercent": 6.742415292042326
+      },
+      {
+        "year": "2023",
+        "startNav": 25.1479,
+        "endNav": 29.5113,
+        "returnPercent": 17.350951769332625
+      },
+      {
+        "year": "2024",
+        "startNav": 32.1869,
+        "endNav": 36.0466,
+        "returnPercent": 11.991524502204303
+      },
+      {
+        "year": "2025",
+        "startNav": 33.7685,
+        "endNav": 37.497,
+        "returnPercent": 11.041355109051326
+      },
+      {
+        "year": "2026",
+        "startNav": 33.8761,
+        "endNav": 36.226,
+        "returnPercent": 6.936748917378323
+      }
+    ]
+  },
+  {
+    "schemeName": "Shriram Aggressive Hybrid Fund- Direct- IDCW",
+    "scheme": "Shriram Aggressive Hybrid Fund",
+    "type": "Direct",
+    "recordCount": 37,
+    "firstDate": "31-01-2022",
+    "lastDate": "30-04-2026",
+    "firstNav": 19.4688,
+    "lastNav": 28.5465,
+    "totalReturnPercent": 46.6269107495069,
+    "cagrPercent": 9.437824333618593,
+    "bestMonth": {
+      "date": "30-09-2024",
+      "nav": 29.9533
+    },
+    "worstMonth": {
+      "date": "30-06-2022",
+      "nav": 18.3843
+    },
+    "yearlyReturns": [
+      {
+        "year": "2022",
+        "startNav": 19.4688,
+        "endNav": 20.7744,
+        "returnPercent": 6.706114398422082
+      },
+      {
+        "year": "2023",
+        "startNav": 19.9376,
+        "endNav": 23.3659,
+        "returnPercent": 17.195148864457106
+      },
+      {
+        "year": "2024",
+        "startNav": 25.4772,
+        "endNav": 28.4824,
+        "returnPercent": 11.795644733330187
+      },
+      {
+        "year": "2025",
+        "startNav": 26.6783,
+        "endNav": 29.578,
+        "returnPercent": 10.869133340580168
+      },
+      {
+        "year": "2026",
+        "startNav": 26.6982,
+        "endNav": 28.5465,
+        "returnPercent": 6.9229386250758544
+      }
+    ]
+  },
+  {
+    "schemeName": "Shriram Aggressive Hybrid Fund- Regular Growth",
+    "scheme": "Shriram Aggressive Hybrid Fund",
+    "type": "Regular",
+    "recordCount": 37,
+    "firstDate": "31-01-2022",
+    "lastDate": "30-04-2026",
+    "firstNav": 22.6709,
+    "lastNav": 31.2414,
+    "totalReturnPercent": 37.80396896461984,
+    "cagrPercent": 7.849056948763344,
+    "bestMonth": {
+      "date": "30-09-2024",
+      "nav": 33.5667
+    },
+    "worstMonth": {
+      "date": "30-06-2022",
+      "nav": 21.2793
+    },
+    "yearlyReturns": [
+      {
+        "year": "2022",
+        "startNav": 22.6709,
+        "endNav": 23.8973,
+        "returnPercent": 5.409577917065497
+      },
+      {
+        "year": "2023",
+        "startNav": 22.8775,
+        "endNav": 26.4899,
+        "returnPercent": 15.790186864823506
+      },
+      {
+        "year": "2024",
+        "startNav": 28.8129,
+        "endNav": 31.7939,
+        "returnPercent": 10.346060271614457
+      },
+      {
+        "year": "2025",
+        "startNav": 29.7409,
+        "endNav": 32.521,
+        "returnPercent": 9.347733256222915
+      },
+      {
+        "year": "2026",
+        "startNav": 29.2568,
+        "endNav": 31.2414,
+        "returnPercent": 6.783380273987587
+      }
+    ]
+  },
+  {
+    "schemeName": "Shriram Aggressive Hybrid Fund- Regular-IDCW",
+    "scheme": "Shriram Aggressive Hybrid Fund",
+    "type": "Regular",
+    "recordCount": 37,
+    "firstDate": "31-01-2022",
+    "lastDate": "30-04-2026",
+    "firstNav": 18.1231,
+    "lastNav": 24.9797,
+    "totalReturnPercent": 37.83348323410454,
+    "cagrPercent": 7.854499589216091,
+    "bestMonth": {
+      "date": "30-09-2024",
+      "nav": 26.8385
+    },
+    "worstMonth": {
+      "date": "30-06-2022",
+      "nav": 17.0106
+    },
+    "yearlyReturns": [
+      {
+        "year": "2022",
+        "startNav": 18.1231,
+        "endNav": 19.1035,
+        "returnPercent": 5.409670530979796
+      },
+      {
+        "year": "2023",
+        "startNav": 18.2882,
+        "endNav": 21.1759,
+        "returnPercent": 15.789962926914617
+      },
+      {
+        "year": "2024",
+        "startNav": 23.033,
+        "endNav": 25.4207,
+        "returnPercent": 10.366430773238392
+      },
+      {
+        "year": "2025",
+        "startNav": 23.7793,
+        "endNav": 26.0027,
+        "returnPercent": 9.350149079241197
+      },
+      {
+        "year": "2026",
+        "startNav": 23.3928,
+        "endNav": 24.9797,
+        "returnPercent": 6.7837112273862035
+      }
+    ]
+  },
+  {
+    "schemeName": "Shriram Balanced Advantage Fund - Direct Growth",
+    "scheme": "Shriram Balanced Advantage Fund",
+    "type": "Direct",
+    "recordCount": 37,
+    "firstDate": "31-01-2022",
+    "lastDate": "30-04-2026",
+    "firstNav": 13.6685,
+    "lastNav": 18.6465,
+    "totalReturnPercent": 36.419504700588945,
+    "cagrPercent": 7.592744850260402,
+    "bestMonth": {
+      "date": "30-09-2024",
+      "nav": 19.9742
+    },
+    "worstMonth": {
+      "date": "30-06-2022",
+      "nav": 13.2644
+    },
+    "yearlyReturns": [
+      {
+        "year": "2022",
+        "startNav": 13.6685,
+        "endNav": 14.6317,
+        "returnPercent": 7.0468595676189825
+      },
+      {
+        "year": "2023",
+        "startNav": 14.1043,
+        "endNav": 16.1749,
+        "returnPercent": 14.680629311628374
+      },
+      {
+        "year": "2024",
+        "startNav": 17.8432,
+        "endNav": 19.2512,
+        "returnPercent": 7.89096126255381
+      },
+      {
+        "year": "2025",
+        "startNav": 17.9339,
+        "endNav": 19.4878,
+        "returnPercent": 8.664596100123223
+      },
+      {
+        "year": "2026",
+        "startNav": 17.6437,
+        "endNav": 18.6465,
+        "returnPercent": 5.68361511474351
+      }
+    ]
+  },
+  {
+    "schemeName": "Shriram Balanced Advantage Fund - Direct- IDCW",
+    "scheme": "Shriram Balanced Advantage Fund",
+    "type": "Direct",
+    "recordCount": 37,
+    "firstDate": "31-01-2022",
+    "lastDate": "30-04-2026",
+    "firstNav": 13.6314,
+    "lastNav": 18.4914,
+    "totalReturnPercent": 35.65297768387693,
+    "cagrPercent": 7.449978055436968,
+    "bestMonth": {
+      "date": "30-09-2024",
+      "nav": 19.8592
+    },
+    "worstMonth": {
+      "date": "30-06-2022",
+      "nav": 13.224
+    },
+    "yearlyReturns": [
+      {
+        "year": "2022",
+        "startNav": 13.6314,
+        "endNav": 14.5818,
+        "returnPercent": 6.972137858180378
+      },
+      {
+        "year": "2023",
+        "startNav": 14.0535,
+        "endNav": 16.1012,
+        "returnPercent": 14.570747500622613
+      },
+      {
+        "year": "2024",
+        "startNav": 17.7541,
+        "endNav": 19.136,
+        "returnPercent": 7.783554221278455
+      },
+      {
+        "year": "2025",
+        "startNav": 17.8244,
+        "endNav": 19.3356,
+        "returnPercent": 8.478265748075664
+      },
+      {
+        "year": "2026",
+        "startNav": 17.4988,
+        "endNav": 18.4914,
+        "returnPercent": 5.672388963814659
+      }
+    ]
+  },
+  {
+    "schemeName": "Shriram Balanced Advantage Fund - Regular Growth",
+    "scheme": "Shriram Balanced Advantage Fund",
+    "type": "Regular",
+    "recordCount": 37,
+    "firstDate": "31-01-2022",
+    "lastDate": "30-04-2026",
+    "firstNav": 13.0006,
+    "lastNav": 16.4245,
+    "totalReturnPercent": 26.336476777994843,
+    "cagrPercent": 5.6634438372771045,
+    "bestMonth": {
+      "date": "30-09-2024",
+      "nav": 18.0986
+    },
+    "worstMonth": {
+      "date": "30-06-2022",
+      "nav": 12.5225
+    },
+    "yearlyReturns": [
+      {
+        "year": "2022",
+        "startNav": 13.0006,
+        "endNav": 13.7078,
+        "returnPercent": 5.439748934664556
+      },
+      {
+        "year": "2023",
+        "startNav": 13.1727,
+        "endNav": 14.8799,
+        "returnPercent": 12.960137253562278
+      },
+      {
+        "year": "2024",
+        "startNav": 16.3643,
+        "endNav": 17.3627,
+        "returnPercent": 6.101085900405151
+      },
+      {
+        "year": "2025",
+        "startNav": 16.1496,
+        "endNav": 17.271,
+        "returnPercent": 6.943825234061533
+      },
+      {
+        "year": "2026",
+        "startNav": 15.5658,
+        "endNav": 16.4245,
+        "returnPercent": 5.516581222937458
+      }
+    ]
+  },
+  {
+    "schemeName": "Shriram Balanced Advantage Fund - Regular-IDCW",
+    "scheme": "Shriram Balanced Advantage Fund",
+    "type": "Regular",
+    "recordCount": 37,
+    "firstDate": "31-01-2022",
+    "lastDate": "30-04-2026",
+    "firstNav": 13.0013,
+    "lastNav": 16.4471,
+    "totalReturnPercent": 26.503503495804253,
+    "cagrPercent": 5.696345750550291,
+    "bestMonth": {
+      "date": "30-09-2024",
+      "nav": 18.1232
+    },
+    "worstMonth": {
+      "date": "30-06-2022",
+      "nav": 12.5232
+    },
+    "yearlyReturns": [
+      {
+        "year": "2022",
+        "startNav": 13.0013,
+        "endNav": 13.7088,
+        "returnPercent": 5.441763515956093
+      },
+      {
+        "year": "2023",
+        "startNav": 13.1736,
+        "endNav": 14.8813,
+        "returnPercent": 12.963047306734673
+      },
+      {
+        "year": "2024",
+        "startNav": 16.3868,
+        "endNav": 17.3852,
+        "returnPercent": 6.092708765591818
+      },
+      {
+        "year": "2025",
+        "startNav": 16.1705,
+        "endNav": 17.2936,
+        "returnPercent": 6.945363470517305
+      },
+      {
+        "year": "2026",
+        "startNav": 15.5872,
+        "endNav": 16.4471,
+        "returnPercent": 5.51670601519195
+      }
+    ]
+  },
+  {
+    "schemeName": "Shriram ELSS Tax Saver Fund - Direct Growth",
+    "scheme": "Shriram ELSS Tax Saver Fund",
+    "type": "Direct",
+    "recordCount": 37,
+    "firstDate": "31-01-2022",
+    "lastDate": "30-04-2026",
+    "firstNav": 16.374,
+    "lastNav": 22.8646,
+    "totalReturnPercent": 39.639672651765004,
+    "cagrPercent": 8.185891264117352,
+    "bestMonth": {
+      "date": "30-09-2024",
+      "nav": 26.7315
+    },
+    "worstMonth": {
+      "date": "30-06-2022",
+      "nav": 14.8314
+    },
+    "yearlyReturns": [
+      {
+        "year": "2022",
+        "startNav": 16.374,
+        "endNav": 17.4518,
+        "returnPercent": 6.582386710638817
+      },
+      {
+        "year": "2023",
+        "startNav": 16.2957,
+        "endNav": 20.0948,
+        "returnPercent": 23.313512153512885
+      },
+      {
+        "year": "2024",
+        "startNav": 22.6398,
+        "endNav": 25.4244,
+        "returnPercent": 12.299578618185661
+      },
+      {
+        "year": "2025",
+        "startNav": 22.3018,
+        "endNav": 24.3609,
+        "returnPercent": 9.23288703154006
+      },
+      {
+        "year": "2026",
+        "startNav": 21.0566,
+        "endNav": 22.8646,
+        "returnPercent": 8.586381467093453
+      }
+    ]
+  },
+  {
+    "schemeName": "Shriram ELSS Tax Saver Fund - Direct- IDCW",
+    "scheme": "Shriram ELSS Tax Saver Fund",
+    "type": "Direct",
+    "recordCount": 37,
+    "firstDate": "31-01-2022",
+    "lastDate": "30-04-2026",
+    "firstNav": 16.3181,
+    "lastNav": 22.6839,
+    "totalReturnPercent": 39.01066913427421,
+    "cagrPercent": 8.070858279467409,
+    "bestMonth": {
+      "date": "30-09-2024",
+      "nav": 26.5565
+    },
+    "worstMonth": {
+      "date": "30-06-2022",
+      "nav": 14.776
+    },
+    "yearlyReturns": [
+      {
+        "year": "2022",
+        "startNav": 16.3181,
+        "endNav": 17.3799,
+        "returnPercent": 6.5068849927381125
+      },
+      {
+        "year": "2023",
+        "startNav": 16.2255,
+        "endNav": 19.9859,
+        "returnPercent": 23.175865150534655
+      },
+      {
+        "year": "2024",
+        "startNav": 22.5112,
+        "endNav": 25.2515,
+        "returnPercent": 12.173051636518718
+      },
+      {
+        "year": "2025",
+        "startNav": 22.1479,
+        "endNav": 24.1744,
+        "returnPercent": 9.149851678940209
+      },
+      {
+        "year": "2026",
+        "startNav": 20.8915,
+        "endNav": 22.6839,
+        "returnPercent": 8.579565852140826
+      }
+    ]
+  },
+  {
+    "schemeName": "Shriram ELSS Tax Saver Fund - Regular Growth",
+    "scheme": "Shriram ELSS Tax Saver Fund",
+    "type": "Regular",
+    "recordCount": 37,
+    "firstDate": "31-01-2022",
+    "lastDate": "30-04-2026",
+    "firstNav": 15.4627,
+    "lastNav": 20.1053,
+    "totalReturnPercent": 30.02451059646763,
+    "cagrPercent": 6.382328807161053,
+    "bestMonth": {
+      "date": "31-07-2024",
+      "nav": 24.1359
+    },
+    "worstMonth": {
+      "date": "30-06-2022",
+      "nav": 13.9022
+    },
+    "yearlyReturns": [
+      {
+        "year": "2022",
+        "startNav": 15.4627,
+        "endNav": 16.237,
+        "returnPercent": 5.00753425986405
+      },
+      {
+        "year": "2023",
+        "startNav": 15.1147,
+        "endNav": 18.3751,
+        "returnPercent": 21.571053345418704
+      },
+      {
+        "year": "2024",
+        "startNav": 20.6456,
+        "endNav": 22.839,
+        "returnPercent": 10.624055488820847
+      },
+      {
+        "year": "2025",
+        "startNav": 20.0063,
+        "endNav": 21.5372,
+        "returnPercent": 7.652089591778585
+      },
+      {
+        "year": "2026",
+        "startNav": 18.5412,
+        "endNav": 20.1053,
+        "returnPercent": 8.435807822578905
+      }
+    ]
+  },
+  {
+    "schemeName": "Shriram ELSS Tax Saver Fund - Regular-IDCW",
+    "scheme": "Shriram ELSS Tax Saver Fund",
+    "type": "Regular",
+    "recordCount": 37,
+    "firstDate": "31-01-2022",
+    "lastDate": "30-04-2026",
+    "firstNav": 15.4536,
+    "lastNav": 20.1082,
+    "totalReturnPercent": 30.119842625666514,
+    "cagrPercent": 6.400703495109217,
+    "bestMonth": {
+      "date": "31-07-2024",
+      "nav": 24.1437
+    },
+    "worstMonth": {
+      "date": "30-06-2022",
+      "nav": 13.894
+    },
+    "yearlyReturns": [
+      {
+        "year": "2022",
+        "startNav": 15.4536,
+        "endNav": 16.2274,
+        "returnPercent": 5.007247502200133
+      },
+      {
+        "year": "2023",
+        "startNav": 15.1058,
+        "endNav": 18.3643,
+        "returnPercent": 21.57118457810907
+      },
+      {
+        "year": "2024",
+        "startNav": 20.6321,
+        "endNav": 22.8466,
+        "returnPercent": 10.733274848415805
+      },
+      {
+        "year": "2025",
+        "startNav": 20.013,
+        "endNav": 21.54,
+        "returnPercent": 7.6300404736920875
+      },
+      {
+        "year": "2026",
+        "startNav": 18.5438,
+        "endNav": 20.1082,
+        "returnPercent": 8.436242841273089
+      }
+    ]
+  },
+  {
+    "schemeName": "Shriram Flexi Cap Fund - Direct Growth",
+    "scheme": "Shriram Flexi Cap Fund",
+    "type": "Direct",
+    "recordCount": 37,
+    "firstDate": "31-01-2022",
+    "lastDate": "30-04-2026",
+    "firstNav": 15.654,
+    "lastNav": 21.9246,
+    "totalReturnPercent": 40.05749329244922,
+    "cagrPercent": 8.26208410806295,
+    "bestMonth": {
+      "date": "31-07-2024",
+      "nav": 25.8198
+    },
+    "worstMonth": {
+      "date": "30-06-2022",
+      "nav": 14.0357
+    },
+    "yearlyReturns": [
+      {
+        "year": "2022",
+        "startNav": 15.654,
+        "endNav": 16.7225,
+        "returnPercent": 6.825731442442827
+      },
+      {
+        "year": "2023",
+        "startNav": 15.7827,
+        "endNav": 19.3657,
+        "returnPercent": 22.702072522445462
+      },
+      {
+        "year": "2024",
+        "startNav": 22.0972,
+        "endNav": 24.6575,
+        "returnPercent": 11.586535850696006
+      },
+      {
+        "year": "2025",
+        "startNav": 21.5441,
+        "endNav": 23.4123,
+        "returnPercent": 8.67151563537116
+      },
+      {
+        "year": "2026",
+        "startNav": 20.2247,
+        "endNav": 21.9246,
+        "returnPercent": 8.405069049231896
+      }
+    ]
+  },
+  {
+    "schemeName": "Shriram Flexi Cap Fund - Direct-IDCW",
+    "scheme": "Shriram Flexi Cap Fund",
+    "type": "Direct",
+    "recordCount": 37,
+    "firstDate": "31-01-2022",
+    "lastDate": "30-04-2026",
+    "firstNav": 15.5846,
+    "lastNav": 21.7061,
+    "totalReturnPercent": 39.27916019660434,
+    "cagrPercent": 8.120008842364657,
+    "bestMonth": {
+      "date": "31-07-2024",
+      "nav": 25.5937
+    },
+    "worstMonth": {
+      "date": "30-06-2022",
+      "nav": 13.9671
+    },
+    "yearlyReturns": [
+      {
+        "year": "2022",
+        "startNav": 15.5846,
+        "endNav": 16.6322,
+        "returnPercent": 6.7220204560912755
+      },
+      {
+        "year": "2023",
+        "startNav": 15.6936,
+        "endNav": 19.2285,
+        "returnPercent": 22.52446857317633
+      },
+      {
+        "year": "2024",
+        "startNav": 21.9364,
+        "endNav": 24.4336,
+        "returnPercent": 11.383818675808243
+      },
+      {
+        "year": "2025",
+        "startNav": 21.3474,
+        "endNav": 23.1812,
+        "returnPercent": 8.590273288550362
+      },
+      {
+        "year": "2026",
+        "startNav": 20.0236,
+        "endNav": 21.7061,
+        "returnPercent": 8.402584949759289
+      }
+    ]
+  },
+  {
+    "schemeName": "Shriram Flexi Cap Fund - Regular Growth",
+    "scheme": "Shriram Flexi Cap Fund",
+    "type": "Regular",
+    "recordCount": 37,
+    "firstDate": "31-01-2022",
+    "lastDate": "30-04-2026",
+    "firstNav": 14.7318,
+    "lastNav": 19.1784,
+    "totalReturnPercent": 30.183684274834032,
+    "cagrPercent": 6.413002845520577,
+    "bestMonth": {
+      "date": "31-07-2024",
+      "nav": 23.2441
+    },
+    "worstMonth": {
+      "date": "30-06-2022",
+      "nav": 13.1107
+    },
+    "yearlyReturns": [
+      {
+        "year": "2022",
+        "startNav": 14.7318,
+        "endNav": 15.5003,
+        "returnPercent": 5.216606253139464
+      },
+      {
+        "year": "2023",
+        "startNav": 14.5832,
+        "endNav": 17.6372,
+        "returnPercent": 20.9419057545669
+      },
+      {
+        "year": "2024",
+        "startNav": 20.0716,
+        "endNav": 22.0438,
+        "returnPercent": 9.825823551684971
+      },
+      {
+        "year": "2025",
+        "startNav": 19.2333,
+        "endNav": 20.5953,
+        "returnPercent": 7.08146807880084
+      },
+      {
+        "year": "2026",
+        "startNav": 17.716,
+        "endNav": 19.1784,
+        "returnPercent": 8.254685030480914
+      }
+    ]
+  },
+  {
+    "schemeName": "Shriram Flexi Cap Fund - Regular-IDCW",
+    "scheme": "Shriram Flexi Cap Fund",
+    "type": "Regular",
+    "recordCount": 37,
+    "firstDate": "31-01-2022",
+    "lastDate": "30-04-2026",
+    "firstNav": 14.7274,
+    "lastNav": 19.1716,
+    "totalReturnPercent": 30.17640588291214,
+    "cagrPercent": 6.411600866921852,
+    "bestMonth": {
+      "date": "31-07-2024",
+      "nav": 23.2387
+    },
+    "worstMonth": {
+      "date": "30-06-2022",
+      "nav": 13.1066
+    },
+    "yearlyReturns": [
+      {
+        "year": "2022",
+        "startNav": 14.7274,
+        "endNav": 15.4955,
+        "returnPercent": 5.2154487553811295
+      },
+      {
+        "year": "2023",
+        "startNav": 14.5788,
+        "endNav": 17.6291,
+        "returnPercent": 20.922846873542415
+      },
+      {
+        "year": "2024",
+        "startNav": 20.0625,
+        "endNav": 22.039,
+        "returnPercent": 9.851713395638637
+      },
+      {
+        "year": "2025",
+        "startNav": 19.2291,
+        "endNav": 20.5909,
+        "returnPercent": 7.081974715405309
+      },
+      {
+        "year": "2026",
+        "startNav": 17.7097,
+        "endNav": 19.1716,
+        "returnPercent": 8.254798217925769
+      }
+    ]
+  },
+  {
+    "schemeName": "Shriram Liquid Fund - Direct Plan Growth Option",
+    "scheme": "Shriram Liquid Fund",
+    "type": "Direct",
+    "recordCount": 18,
+    "firstDate": "30-11-2024",
+    "lastDate": "30-04-2026",
+    "firstNav": 1003.9455,
+    "lastNav": 1095.3679,
+    "totalReturnPercent": 9.106311049753192,
+    "cagrPercent": 6.363345282674593,
+    "bestMonth": {
+      "date": "30-04-2026",
+      "nav": 1095.3679
+    },
+    "worstMonth": null,
+    "yearlyReturns": [
+      {
+        "year": "2024",
+        "startNav": 1003.9455,
+        "endNav": 1009.8105,
+        "returnPercent": 0.5841950583970952
+      },
+      {
+        "year": "2025",
+        "startNav": 1015.6749,
+        "endNav": 1072.9896,
+        "returnPercent": 5.643016284049171
+      },
+      {
+        "year": "2026",
+        "startNav": 1077.7816,
+        "endNav": 1095.3679,
+        "returnPercent": 1.631712770008315
+      }
+    ]
+  },
+  {
+    "schemeName": "Shriram Liquid Fund - Regular Plan Growth Option",
+    "scheme": "Shriram Liquid Fund",
+    "type": "Regular",
+    "recordCount": 18,
+    "firstDate": "30-11-2024",
+    "lastDate": "30-04-2026",
+    "firstNav": 1003.8799,
+    "lastNav": 1093.1538,
+    "totalReturnPercent": 8.892886489708582,
+    "cagrPercent": 6.216028842381283,
+    "bestMonth": {
+      "date": "30-04-2026",
+      "nav": 1093.1538
+    },
+    "worstMonth": null,
+    "yearlyReturns": [
+      {
+        "year": "2024",
+        "startNav": 1003.8799,
+        "endNav": 1009.624,
+        "returnPercent": 0.572189960173523
+      },
+      {
+        "year": "2025",
+        "startNav": 1015.3661,
+        "endNav": 1071.2425,
+        "returnPercent": 5.503079135693038
+      },
+      {
+        "year": "2026",
+        "startNav": 1075.9151,
+        "endNav": 1093.1538,
+        "returnPercent": 1.6022360872154418
+      }
+    ]
+  },
+  {
+    "schemeName": "Shriram Money Market Fund - Direct Plan Growth Option",
+    "scheme": "Shriram Money Market Fund",
+    "type": "Direct",
+    "recordCount": 2,
+    "firstDate": "31-03-2026",
+    "lastDate": "30-04-2026",
+    "firstNav": 1010.4385,
+    "lastNav": 1016.6463,
+    "totalReturnPercent": 0.6143669307929202,
+    "cagrPercent": 7.742112655641065,
+    "bestMonth": {
+      "date": "30-04-2026",
+      "nav": 1016.6463
+    },
+    "worstMonth": null,
+    "yearlyReturns": [
+      {
+        "year": "2026",
+        "startNav": 1010.4385,
+        "endNav": 1016.6463,
+        "returnPercent": 0.6143669307929202
+      }
+    ]
+  },
+  {
+    "schemeName": "Shriram Money Market Fund - Regular Plan Growth Option",
+    "scheme": "Shriram Money Market Fund",
+    "type": "Regular",
+    "recordCount": 2,
+    "firstDate": "31-03-2026",
+    "lastDate": "30-04-2026",
+    "firstNav": 1010.0321,
+    "lastNav": 1016.0721,
+    "totalReturnPercent": 0.5980007962123147,
+    "cagrPercent": 7.528932931619736,
+    "bestMonth": {
+      "date": "30-04-2026",
+      "nav": 1016.0721
+    },
+    "worstMonth": null,
+    "yearlyReturns": [
+      {
+        "year": "2026",
+        "startNav": 1010.0321,
+        "endNav": 1016.0721,
+        "returnPercent": 0.5980007962123147
+      }
+    ]
+  },
+  {
+    "schemeName": "Shriram Multi Asset Allocation Fund - Direct Growth",
+    "scheme": "Shriram Multi Asset Allocation Fund",
+    "type": "Direct",
+    "recordCount": 22,
+    "firstDate": "31-10-2023",
+    "lastDate": "30-04-2026",
+    "firstNav": 9.9622,
+    "lastNav": 13.6272,
+    "totalReturnPercent": 36.78906265684288,
+    "cagrPercent": 13.367267789967485,
+    "bestMonth": {
+      "date": "31-12-2025",
+      "nav": 13.8254
+    },
+    "worstMonth": {
+      "date": "28-02-2025",
+      "nav": 11.3048
+    },
+    "yearlyReturns": [
+      {
+        "year": "2023",
+        "startNav": 9.9622,
+        "endNav": 10.6145,
+        "returnPercent": 6.547750496878203
+      },
+      {
+        "year": "2024",
+        "startNav": 11.6183,
+        "endNav": 12.5546,
+        "returnPercent": 8.05883821213087
+      },
+      {
+        "year": "2025",
+        "startNav": 11.8393,
+        "endNav": 13.8254,
+        "returnPercent": 16.77548503712213
+      },
+      {
+        "year": "2026",
+        "startNav": 12.8477,
+        "endNav": 13.6272,
+        "returnPercent": 6.06723382395293
+      }
+    ]
+  },
+  {
+    "schemeName": "Shriram Multi Asset Allocation Fund - Regular Growth",
+    "scheme": "Shriram Multi Asset Allocation Fund",
+    "type": "Regular",
+    "recordCount": 22,
+    "firstDate": "31-10-2023",
+    "lastDate": "30-04-2026",
+    "firstNav": 9.9331,
+    "lastNav": 12.9886,
+    "totalReturnPercent": 30.760789682979134,
+    "cagrPercent": 11.339299951009396,
+    "bestMonth": {
+      "date": "31-12-2025",
+      "nav": 13.2454
+    },
+    "worstMonth": {
+      "date": "28-02-2025",
+      "nav": 10.9924
+    },
+    "yearlyReturns": [
+      {
+        "year": "2023",
+        "startNav": 9.9331,
+        "endNav": 10.5669,
+        "returnPercent": 6.380686794656258
+      },
+      {
+        "year": "2024",
+        "startNav": 11.5277,
+        "endNav": 12.2437,
+        "returnPercent": 6.211126243743341
+      },
+      {
+        "year": "2025",
+        "startNav": 11.5282,
+        "endNav": 13.2454,
+        "returnPercent": 14.895647195572598
+      },
+      {
+        "year": "2026",
+        "startNav": 12.2603,
+        "endNav": 12.9886,
+        "returnPercent": 5.940311411629398
+      }
+    ]
+  },
+  {
+    "schemeName": "Shriram Multi Sector Rotation Fund - Direct Plan Growth Option",
+    "scheme": "Shriram Multi Sector Rotation Fund",
+    "type": "Direct",
+    "recordCount": 12,
+    "firstDate": "31-12-2024",
+    "lastDate": "30-04-2026",
+    "firstNav": 10.0649,
+    "lastNav": 7.7947,
+    "totalReturnPercent": -22.55561406471997,
+    "cagrPercent": -17.510413740547282,
+    "bestMonth": {
+      "date": "31-12-2025",
+      "nav": 8.2539
+    },
+    "worstMonth": {
+      "date": "31-03-2026",
+      "nav": 7.0891
+    },
+    "yearlyReturns": [
+      {
+        "year": "2024",
+        "startNav": 10.0649,
+        "endNav": 10.0649,
+        "returnPercent": 0
+      },
+      {
+        "year": "2025",
+        "startNav": 8.3994,
+        "endNav": 8.2539,
+        "returnPercent": -1.7322665904707502
+      },
+      {
+        "year": "2026",
+        "startNav": 7.0891,
+        "endNav": 7.7947,
+        "returnPercent": 9.953308600527563
+      }
+    ]
+  },
+  {
+    "schemeName": "Shriram Multi Sector Rotation Fund - Regular Plan Growth Option",
+    "scheme": "Shriram Multi Sector Rotation Fund",
+    "type": "Regular",
+    "recordCount": 12,
+    "firstDate": "31-12-2024",
+    "lastDate": "30-04-2026",
+    "firstNav": 10.0554,
+    "lastNav": 7.6126,
+    "totalReturnPercent": -24.293414483759978,
+    "cagrPercent": -18.908295144837805,
+    "bestMonth": {
+      "date": "30-06-2025",
+      "nav": 8.1689
+    },
+    "worstMonth": {
+      "date": "31-03-2026",
+      "nav": 6.9335
+    },
+    "yearlyReturns": [
+      {
+        "year": "2024",
+        "startNav": 10.0554,
+        "endNav": 10.0554,
+        "returnPercent": 0
+      },
+      {
+        "year": "2025",
+        "startNav": 8.3797,
+        "endNav": 8.1045,
+        "returnPercent": -3.2841271167225545
+      },
+      {
+        "year": "2026",
+        "startNav": 6.9335,
+        "endNav": 7.6126,
+        "returnPercent": 9.794476094324644
+      }
+    ]
+  },
+  {
+    "schemeName": "Shriram Nifty 1D Rate Liquid ETF - Growth",
+    "scheme": "Shriram Nifty 1D Rate Liquid ETF",
+    "type": "ETF",
+    "recordCount": 22,
+    "firstDate": "31-07-2024",
+    "lastDate": "30-04-2026",
+    "firstNav": 1004.9415,
+    "lastNav": 1102.2356,
+    "totalReturnPercent": 9.681568529113383,
+    "cagrPercent": 5.432911976624366,
+    "bestMonth": {
+      "date": "30-04-2026",
+      "nav": 1102.2356
+    },
+    "worstMonth": null,
+    "yearlyReturns": [
+      {
+        "year": "2024",
+        "startNav": 1004.9415,
+        "endNav": 1030.6025,
+        "returnPercent": 2.553481968850918
+      },
+      {
+        "year": "2025",
+        "startNav": 1035.9496,
+        "endNav": 1085.8964,
+        "returnPercent": 4.82135424348831
+      },
+      {
+        "year": "2026",
+        "startNav": 1090.2674,
+        "endNav": 1102.2356,
+        "returnPercent": 1.0977307034953099
+      }
+    ]
+  },
+  {
+    "schemeName": "Shriram Overnight Fund -  Direct Growth",
+    "scheme": "Shriram Overnight Fund",
+    "type": "Direct",
+    "recordCount": 43,
+    "firstDate": "30-09-2022",
+    "lastDate": "30-04-2026",
+    "firstNav": 10.0619,
+    "lastNav": 12.4892,
+    "totalReturnPercent": 24.1236744551228,
+    "cagrPercent": 6.220479566918735,
+    "bestMonth": {
+      "date": "30-04-2026",
+      "nav": 12.4892
+    },
+    "worstMonth": null,
+    "yearlyReturns": [
+      {
+        "year": "2022",
+        "startNav": 10.0619,
+        "endNav": 10.1608,
+        "returnPercent": 0.9829157514982303
+      },
+      {
+        "year": "2023",
+        "startNav": 10.2662,
+        "endNav": 10.8964,
+        "returnPercent": 6.138590715162381
+      },
+      {
+        "year": "2024",
+        "startNav": 10.9584,
+        "endNav": 11.62,
+        "returnPercent": 6.037377719375091
+      },
+      {
+        "year": "2025",
+        "startNav": 11.6822,
+        "endNav": 12.2829,
+        "returnPercent": 5.142010922600193
+      },
+      {
+        "year": "2026",
+        "startNav": 12.3367,
+        "endNav": 12.4892,
+        "returnPercent": 1.2361490512049402
+      }
+    ]
+  },
+  {
+    "schemeName": "Shriram Overnight Fund -  Regular Fortnightly IDCW",
+    "scheme": "Shriram Overnight Fund",
+    "type": "Regular",
+    "recordCount": 1,
+    "firstDate": "31-01-2023",
+    "lastDate": "31-01-2023",
+    "firstNav": 10.0017,
+    "lastNav": 10.0017,
+    "totalReturnPercent": 0,
+    "cagrPercent": null,
+    "bestMonth": null,
+    "worstMonth": null,
+    "yearlyReturns": [
+      {
+        "year": "2023",
+        "startNav": 10.0017,
+        "endNav": 10.0017,
+        "returnPercent": 0
+      }
+    ]
+  },
+  {
+    "schemeName": "Shriram Overnight Fund - Direct Daily IDCW",
+    "scheme": "Shriram Overnight Fund",
+    "type": "Direct",
+    "recordCount": 43,
+    "firstDate": "30-09-2022",
+    "lastDate": "30-04-2026",
+    "firstNav": 10,
+    "lastNav": 10.0001,
+    "totalReturnPercent": 0.0009999999999976694,
+    "cagrPercent": 0.00027924211294383383,
+    "bestMonth": {
+      "date": "30-11-2025",
+      "nav": 10.0001
+    },
+    "worstMonth": null,
+    "yearlyReturns": [
+      {
+        "year": "2022",
+        "startNav": 10,
+        "endNav": 10,
+        "returnPercent": 0
+      },
+      {
+        "year": "2023",
+        "startNav": 10,
+        "endNav": 10,
+        "returnPercent": 0
+      },
+      {
+        "year": "2024",
+        "startNav": 10,
+        "endNav": 10,
+        "returnPercent": 0
+      },
+      {
+        "year": "2025",
+        "startNav": 10,
+        "endNav": 10.0001,
+        "returnPercent": 0.0009999999999976694
+      },
+      {
+        "year": "2026",
+        "startNav": 10.0001,
+        "endNav": 10.0001,
+        "returnPercent": 0
+      }
+    ]
+  },
+  {
+    "schemeName": "Shriram Overnight Fund - Direct Monthly IDCW",
+    "scheme": "Shriram Overnight Fund",
+    "type": "Direct",
+    "recordCount": 31,
+    "firstDate": "31-10-2023",
+    "lastDate": "30-04-2026",
+    "firstNav": 10.0277,
+    "lastNav": 10.0203,
+    "totalReturnPercent": -0.073795586226141,
+    "cagrPercent": -0.029561186986482024,
+    "bestMonth": {
+      "date": "30-11-2023",
+      "nav": 10.0429
+    },
+    "worstMonth": {
+      "date": "28-02-2026",
+      "nav": 10.0163
+    },
+    "yearlyReturns": [
+      {
+        "year": "2023",
+        "startNav": 10.0277,
+        "endNav": 10.0296,
+        "returnPercent": 0.018947515382399763
+      },
+      {
+        "year": "2024",
+        "startNav": 10.0294,
+        "endNav": 10.0261,
+        "returnPercent": -0.03290326440266806
+      },
+      {
+        "year": "2025",
+        "startNav": 10.0277,
+        "endNav": 10.0231,
+        "returnPercent": -0.04587293197841916
+      },
+      {
+        "year": "2026",
+        "startNav": 10.021,
+        "endNav": 10.0203,
+        "returnPercent": -0.006985330805310297
+      }
+    ]
+  },
+  {
+    "schemeName": "Shriram Overnight Fund - Regular Daily IDCW",
+    "scheme": "Shriram Overnight Fund",
+    "type": "Regular",
+    "recordCount": 43,
+    "firstDate": "30-09-2022",
+    "lastDate": "30-04-2026",
+    "firstNav": 10,
+    "lastNav": 10.0001,
+    "totalReturnPercent": 0.0009999999999976694,
+    "cagrPercent": 0.00027924211294383383,
+    "bestMonth": {
+      "date": "31-12-2025",
+      "nav": 10.0001
+    },
+    "worstMonth": null,
+    "yearlyReturns": [
+      {
+        "year": "2022",
+        "startNav": 10,
+        "endNav": 10,
+        "returnPercent": 0
+      },
+      {
+        "year": "2023",
+        "startNav": 10,
+        "endNav": 10,
+        "returnPercent": 0
+      },
+      {
+        "year": "2024",
+        "startNav": 10,
+        "endNav": 10,
+        "returnPercent": 0
+      },
+      {
+        "year": "2025",
+        "startNav": 10,
+        "endNav": 10.0001,
+        "returnPercent": 0.0009999999999976694
+      },
+      {
+        "year": "2026",
+        "startNav": 10.0001,
+        "endNav": 10.0001,
+        "returnPercent": 0
+      }
+    ]
+  },
+  {
+    "schemeName": "Shriram Overnight Fund - Regular Growth",
+    "scheme": "Shriram Overnight Fund",
+    "type": "Regular",
+    "recordCount": 43,
+    "firstDate": "30-09-2022",
+    "lastDate": "30-04-2026",
+    "firstNav": 10.061,
+    "lastNav": 12.451,
+    "totalReturnPercent": 23.75509392704503,
+    "cagrPercent": 6.132306936274934,
+    "bestMonth": {
+      "date": "30-04-2026",
+      "nav": 12.451
+    },
+    "worstMonth": null,
+    "yearlyReturns": [
+      {
+        "year": "2022",
+        "startNav": 10.061,
+        "endNav": 10.1583,
+        "returnPercent": 0.9671006858165253
+      },
+      {
+        "year": "2023",
+        "startNav": 10.2619,
+        "endNav": 10.8811,
+        "returnPercent": 6.033970317387611
+      },
+      {
+        "year": "2024",
+        "startNav": 10.941,
+        "endNav": 11.5941,
+        "returnPercent": 5.969289827255264
+      },
+      {
+        "year": "2025",
+        "startNav": 11.6556,
+        "endNav": 12.2484,
+        "returnPercent": 5.0859672603727
+      },
+      {
+        "year": "2026",
+        "startNav": 12.3015,
+        "endNav": 12.451,
+        "returnPercent": 1.2152989472828495
+      }
+    ]
+  },
+  {
+    "schemeName": "Shriram Overnight Fund - Regular Monthly IDCW",
+    "scheme": "Shriram Overnight Fund",
+    "type": "Regular",
+    "recordCount": 43,
+    "firstDate": "30-09-2022",
+    "lastDate": "30-04-2026",
+    "firstNav": 10.061,
+    "lastNav": 10.0205,
+    "totalReturnPercent": -0.40254447868004933,
+    "cagrPercent": -0.11257122152529275,
+    "bestMonth": {
+      "date": "31-12-2023",
+      "nav": 10.029
+    },
+    "worstMonth": {
+      "date": "28-02-2026",
+      "nav": 10.0164
+    },
+    "yearlyReturns": [
+      {
+        "year": "2022",
+        "startNav": 10.061,
+        "endNav": 10.0235,
+        "returnPercent": -0.37272636914819246
+      },
+      {
+        "year": "2023",
+        "startNav": 10.0253,
+        "endNav": 10.029,
+        "returnPercent": 0.036906626235626454
+      },
+      {
+        "year": "2024",
+        "startNav": 10.0289,
+        "endNav": 10.0259,
+        "returnPercent": -0.02991354984096076
+      },
+      {
+        "year": "2025",
+        "startNav": 10.0274,
+        "endNav": 10.023,
+        "returnPercent": -0.043879769431761015
+      },
+      {
+        "year": "2026",
+        "startNav": 10.0212,
+        "endNav": 10.0205,
+        "returnPercent": -0.006985191394245648
+      }
+    ]
+  },
+  {
+    "schemeName": "Shriram Overnight Fund - Regular Weekly IDCW",
+    "scheme": "Shriram Overnight Fund",
+    "type": "Regular",
+    "recordCount": 20,
+    "firstDate": "30-09-2022",
+    "lastDate": "31-05-2024",
+    "firstNav": 10.0061,
+    "lastNav": 10.007,
+    "totalReturnPercent": 0.008994513346855207,
+    "cagrPercent": 0.005394395513391714,
+    "bestMonth": {
+      "date": "30-04-2023",
+      "nav": 10.0108
+    },
+    "worstMonth": {
+      "date": "31-10-2022",
+      "nav": 10
+    },
+    "yearlyReturns": [
+      {
+        "year": "2022",
+        "startNav": 10.0061,
+        "endNav": 10.0031,
+        "returnPercent": -0.02998171115619586
+      },
+      {
+        "year": "2023",
+        "startNav": 10.0017,
+        "endNav": 10.009,
+        "returnPercent": 0.07298759210934892
+      },
+      {
+        "year": "2024",
+        "startNav": 10.0036,
+        "endNav": 10.007,
+        "returnPercent": 0.03398776440480609
+      }
+    ]
+  },
+  {
+    "schemeName": "Shriram Unclaimed IDCW Liquid Fund",
+    "scheme": "Shriram Liquid Fund",
+    "type": "Liquid Fund",
+    "recordCount": 15,
+    "firstDate": "28-02-2025",
+    "lastDate": "30-04-2026",
+    "firstNav": 998.0769,
+    "lastNav": 1067.8723,
+    "totalReturnPercent": 6.99298821563749,
+    "cagrPercent": 5.966620388458432,
+    "bestMonth": {
+      "date": "30-04-2026",
+      "nav": 1067.8723
+    },
+    "worstMonth": null,
+    "yearlyReturns": [
+      {
+        "year": "2025",
+        "startNav": 998.0769,
+        "endNav": 1046.0145,
+        "returnPercent": 4.80299664284385
+      },
+      {
+        "year": "2026",
+        "startNav": 1050.5797,
+        "endNav": 1067.8723,
+        "returnPercent": 1.6460055338971422
+      }
+    ]
+  },
+  {
+    "schemeName": "Shriram Unclaimed IDCW Stable Scheme Liquid Fund",
+    "scheme": "Shriram Liquid Fund",
+    "type": "Liquid Fund",
+    "recordCount": 16,
+    "firstDate": "31-01-2025",
+    "lastDate": "30-04-2026",
+    "firstNav": 1000,
+    "lastNav": 1000,
+    "totalReturnPercent": 0,
+    "cagrPercent": 0,
+    "bestMonth": null,
+    "worstMonth": null,
+    "yearlyReturns": [
+      {
+        "year": "2025",
+        "startNav": 1000,
+        "endNav": 1000,
+        "returnPercent": 0
+      },
+      {
+        "year": "2026",
+        "startNav": 1000,
+        "endNav": 1000,
+        "returnPercent": 0
+      }
+    ]
+  },
+  {
+    "schemeName": "Shriram Unclaimed Redemption Liquid Fund",
+    "scheme": "Shriram Liquid Fund",
+    "type": "Liquid Fund",
+    "recordCount": 16,
+    "firstDate": "31-01-2025",
+    "lastDate": "30-04-2026",
+    "firstNav": 1002.1843,
+    "lastNav": 1080.744,
+    "totalReturnPercent": 7.838847605176006,
+    "cagrPercent": 6.259601900281564,
+    "bestMonth": {
+      "date": "30-04-2026",
+      "nav": 1080.744
+    },
+    "worstMonth": null,
+    "yearlyReturns": [
+      {
+        "year": "2025",
+        "startNav": 1002.1843,
+        "endNav": 1058.6876,
+        "returnPercent": 5.6380148840886815
+      },
+      {
+        "year": "2026",
+        "startNav": 1063.4032,
+        "endNav": 1080.744,
+        "returnPercent": 1.6306890932808877
+      }
+    ]
+  },
+  {
+    "schemeName": "Shriram Unclaimed Redemption Stable Scheme Liquid Fund",
+    "scheme": "Shriram Liquid Fund",
+    "type": "Liquid Fund",
+    "recordCount": 16,
+    "firstDate": "31-01-2025",
+    "lastDate": "30-04-2026",
+    "firstNav": 1000,
+    "lastNav": 1000,
+    "totalReturnPercent": 0,
+    "cagrPercent": 0,
+    "bestMonth": null,
+    "worstMonth": null,
+    "yearlyReturns": [
+      {
+        "year": "2025",
+        "startNav": 1000,
+        "endNav": 1000,
+        "returnPercent": 0
+      },
+      {
+        "year": "2026",
+        "startNav": 1000,
+        "endNav": 1000,
+        "returnPercent": 0
+      }
+    ]
+  }
+]

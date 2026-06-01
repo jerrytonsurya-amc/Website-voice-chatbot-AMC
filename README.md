@@ -1,20 +1,91 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Shriram AMC Voice Chatbot
 
-# Run and deploy your AI Studio app
+Voice assistant for Shriram AMC with multilingual support, page context awareness, and answers grounded in **Month_End_NAV.xlsx** (NAV + historical fund performance).
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/6fe93e58-306f-4ed1-b618-e9a92b12a657
+- Real-time voice via Gemini Live API
+- Answers NAV and **past fund performance** (returns, CAGR, year-wise growth) from month-end NAV data
+- Multilingual: replies in the language the user speaks
+- Context-aware when embedded on the Shriram website (parent page URL/title)
+- Deployable on **Vercel** (static app + serverless API routes)
 
-## Run Locally
+## Prerequisites
 
-**Prerequisites:**  Node.js
+- Node.js 18+
+- [Gemini API key](https://aistudio.google.com/apikey)
+- `Month_End_NAV.xlsx` in the project root
 
+## Setup
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+```bash
+npm install
+cp .env.example .env
+# Add GEMINI_API_KEY to .env
+npm run build:data
+```
+
+`build:data` reads `Month_End_NAV.xlsx` and generates:
+
+- `data/nav-records.json` — all NAV rows
+- `data/fund-performance-summary.json` — per-fund returns & CAGR
+- `data/fund-catalog.json` — fund name list
+
+## Run locally
+
+Uses [Vercel CLI](https://vercel.com/docs/cli) for API routes + frontend:
+
+```bash
+npm run dev
+```
+
+Open http://localhost:3000
+
+Legacy Express WebSocket server (optional):
+
+```bash
+npm run dev:server
+```
+
+## Deploy to Vercel
+
+1. Push this repo to GitHub.
+2. Import the project in [Vercel](https://vercel.com/new).
+3. **Environment variable:** `GEMINI_API_KEY` = your Gemini API key.
+4. Build command: `npm run build:web` (set automatically via `vercel.json`).
+5. Deploy.
+
+The voice bot uses:
+
+- `POST /api/live-token` — secure ephemeral token for Gemini Live
+- `POST /api/tools` — NAV & performance lookups from Excel-derived data
+- `POST /api/chat` — text chat (optional)
+
+### Embed on your website
+
+Add to your site:
+
+```html
+<script src="https://YOUR-VERCEL-URL/embed.js"></script>
+```
+
+## Ask the bot
+
+Examples users can say (in any language):
+
+- “What is the NAV of Shriram Flexi Cap Fund Regular Growth for December 2025?”
+- “How did Shriram ELSS Tax Saver Fund perform over the last 3 years?”
+- “Compare returns of aggressive hybrid regular growth”
+- “Which Shriram fund had the best performance?”
+
+Data is sourced only from `Month_End_NAV.xlsx` (via tools). The bot does not invent NAV or return figures.
+
+## Update NAV data
+
+Replace `Month_End_NAV.xlsx`, then:
+
+```bash
+npm run build:data
+```
+
+Redeploy to Vercel (or restart local dev).

@@ -1,8 +1,5 @@
-import { getNavCache } from "./navCache";
-import { matchNavRows, type NavRow } from "./navMatching";
-
-export type { NavRow } from "./navMatching";
-export { getNavCache } from "./navCache";
+import { getNavCache } from "./navDataLoader";
+import { rankNavRows } from "./navQueryUtils";
 
 export function getFundCatalog(): string {
   const cache = getNavCache();
@@ -27,7 +24,7 @@ export function searchNavData(query: string): string {
     return "No NAV data available in database.";
   }
 
-  const results = matchNavRows(query, 10);
+  const results = rankNavRows(cache, query, 2, 10);
 
   if (results.length === 0) {
     return "No matching funds or dates found in our records. Please verify the fund name or date and try again.";

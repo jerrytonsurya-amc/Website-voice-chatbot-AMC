@@ -1,8 +1,21 @@
 {
   "buildCommand": "npm run build:web",
   "outputDirectory": "dist",
-  "framework": "vite",
+  "framework": null,
+  "functions": {
+    "api/**/*.ts": {
+      "maxDuration": 60,
+      "includeFiles": "data/**"
+    }
+  },
   "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/$1" },
     { "source": "/((?!api/).*)", "destination": "/index.html" }
+  ],
+  "headers": [
+    {
+      "source": "/embed.js",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600" }]
+    }
   ]
 }

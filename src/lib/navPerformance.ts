@@ -1,198 +1,188 @@
-import {
-  formatNavDate,
-  fundVariantKey,
-  getFundHistory,
-  matchNavRows,
-  parseNavDate,
-  type NavRow,
-} from "./navMatching";
+import fs from "fs";
+import path from "path";
+import { getNavCache } from "./navDataLoader";
+import type { FundPerformanceSummary, NavRow } from "./navTypes";
+import { parseNavDate, parseQuery, scoreNavRow } from "./navQueryUtils";
 
-interface PeriodReturn {
-  label: string;
-  startDate: string;
-  endDate: string;
-  startNav: number;
-  endNav: number;
-  absoluteReturnPct: number;
+let summaryCache: FundPerformanceSummary[] | null = null;
+
+function yearsBetween(start: Date, end: Date): number {
+  return (end.getTime() - start.getTime()) / (365.25 * 24 * 60 * 60 * 1000);
 }
 
-function pctChange(from: number, to: number): number {
-  if (!from) return 0;
-  return ((to - from) / from) * 100;
-}
+function computeSummary(rows: NavRow[]): FundPerformanceSummary | null {
+  if (rows.length === 0) return null;
 
-function formatPct(value: number): string {
-  const sign = value >= 0 ? "+" : "";
-  return `${sign}${value.toFixed(2)}%`;
-}
+  const sorted = [...rows].sort(
+    (a, b) => parseNavDate(a.Date).getTime() - parseNavDate(b.Date).getTime()
+  );
 
-function subtractMonths(date: Date, months: number): Date {
-  const copy = new Date(date);
-  copy.setMonth(copy.getMonth() - months);
-  return copy;
-}
+  const first = sorted[0];
+  const last = sorted[sorted.length - 1];
+  const firstNav = first["Net Asset Value"];
+  const lastNav = last["Net Asset Value"];
+  const totalReturnPercent = firstNav > 0 ? ((lastNav - firstNav) / firstNav) * 100 : 0;
+  const spanYears = yearsBetween(parseNavDate(first.Date), parseNavDate(last.Date));
+  const cagrPercent =
+    spanYears > 0 && firstNav > 0
+      ? (Math.pow(lastNav / firstNav, 1 / spanYears) - 1) * 100
+      : null;
 
-function findClosestNavToTarget(
-  history: NavRow[],
-  target: Date,
-  latest: NavRow
-): NavRow | null {
-  const latestTime = parseNavDate(latest.Date).getTime();
-  let best: NavRow | null = null;
-  let bestDiff = Infinity;
+  const byYear = new Map<string, NavRow[]>();
+  for (const row of sorted) {
+    const year = row.Date.split("-")[2];
+    if (!byYear.has(year)) {
+      byYear.set(year, []);
+    }
+    byYear.get(year)!.push(row);
+  }
 
-  for (const row of history) {
-    const rowTime = parseNavDate(row.Date).getTime();
-    if (rowTime >= latestTime) continue;
+  const yearlyReturns = [...byYear.entries()]
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([year, yearRows]) => {
+      const yearSorted = [...yearRows].sort(
+        (a, b) => parseNavDate(a.Date).getTime() - parseNavDate(b.Date).getTime()
+      );
+      const startNav = yearSorted[0]["Net Asset Value"];
+      const endNav = yearSorted[yearSorted.length - 1]["Net Asset Value"];
+      return {
+        year,
+        startNav,
+        endNav,
+        returnPercent: startNav > 0 ? ((endNav - startNav) / startNav) * 100 : 0,
+      };
+    });
 
-    const diff = Math.abs(rowTime - target.getTime());
-    if (diff < bestDiff) {
-      bestDiff = diff;
-      best = row;
+  let bestMonth: FundPerformanceSummary["bestMonth"] = null;
+  let worstMonth: FundPerformanceSummary["worstMonth"] = null;
+
+  for (let i = 1; i < sorted.length; i++) {
+    const prev = sorted[i - 1]["Net Asset Value"];
+    const curr = sorted[i]["Net Asset Value"];
+    if (prev <= 0) continue;
+    const change = ((curr - prev) / prev) * 100;
+    const point = { date: sorted[i].Date, nav: curr };
+
+    if (!bestMonth || change > ((bestMonth.nav - prev) / prev) * 100) {
+      if (change > 0) bestMonth = point;
+    }
+    if (!worstMonth || change < ((worstMonth.nav - prev) / prev) * 100) {
+      if (change < 0) worstMonth = point;
     }
   }
 
-  return best;
-}
-
-function computePeriodReturn(
-  history: NavRow[],
-  latest: NavRow,
-  monthsBack: number,
-  label: string
-): PeriodReturn | null {
-  const targetDate = subtractMonths(parseNavDate(latest.Date), monthsBack);
-  const startRow = findClosestNavToTarget(history, targetDate, latest);
-
-  if (!startRow || startRow.Date === latest.Date) {
-    return null;
-  }
-
-  const startNav = Number(startRow["Net Asset Value"]);
-  const endNav = Number(latest["Net Asset Value"]);
-
   return {
-    label,
-    startDate: startRow.Date,
-    endDate: latest.Date,
-    startNav,
-    endNav,
-    absoluteReturnPct: pctChange(startNav, endNav),
+    schemeName: last["Scheme Name "].trim(),
+    scheme: last["Scheme "].trim(),
+    type: last["Type "].trim(),
+    recordCount: sorted.length,
+    firstDate: first.Date,
+    lastDate: last.Date,
+    firstNav,
+    lastNav,
+    totalReturnPercent,
+    cagrPercent,
+    bestMonth,
+    worstMonth,
+    yearlyReturns,
   };
 }
 
-function computeCagr(startNav: number, endNav: number, startDate: Date, endDate: Date): number {
-  const years =
-    (endDate.getTime() - startDate.getTime()) / (365.25 * 24 * 60 * 60 * 1000);
-  if (years <= 0 || startNav <= 0) return 0;
-  return (Math.pow(endNav / startNav, 1 / years) - 1) * 100;
+export function buildFundPerformanceSummaries(): FundPerformanceSummary[] {
+  const cache = getNavCache();
+  const groups = new Map<string, NavRow[]>();
+
+  for (const row of cache) {
+    const key = row["Scheme Name "].trim();
+    if (!groups.has(key)) {
+      groups.set(key, []);
+    }
+    groups.get(key)!.push(row);
+  }
+
+  return [...groups.values()]
+    .map((rows) => computeSummary(rows))
+    .filter((summary): summary is FundPerformanceSummary => summary !== null)
+    .sort((a, b) => a.schemeName.localeCompare(b.schemeName));
 }
 
-function buildFundPerformanceReport(row: NavRow): string {
-  const history = getFundHistory(row);
-  if (history.length < 2) {
-    return `Fund: ${row["Scheme Name "].trim()} (${row["Type "].trim()})\nInsufficient historical NAV data for performance calculation.\n`;
+export function getPerformanceSummaries(): FundPerformanceSummary[] {
+  if (summaryCache) {
+    return summaryCache;
   }
 
-  const latest = history[0];
-  const oldest = history[history.length - 1];
-  const latestNav = Number(latest["Net Asset Value"]);
-  const oldestNav = Number(oldest["Net Asset Value"]);
-  const latestDate = parseNavDate(latest.Date);
-  const oldestDate = parseNavDate(oldest.Date);
-
-  const periods = [
-    computePeriodReturn(history, latest, 1, "1 Month"),
-    computePeriodReturn(history, latest, 3, "3 Months"),
-    computePeriodReturn(history, latest, 6, "6 Months"),
-    computePeriodReturn(history, latest, 12, "1 Year"),
-    computePeriodReturn(history, latest, 36, "3 Years"),
-  ].filter((period): period is PeriodReturn => period !== null);
-
-  const sinceInceptionPct = pctChange(oldestNav, latestNav);
-  const cagr = computeCagr(oldestNav, latestNav, oldestDate, latestDate);
-
-  let report = `Fund: ${row["Scheme Name "].trim()} (${row["Type "].trim()})\n`;
-  report += `Historical data: ${oldest.Date} to ${latest.Date} (${history.length} month-end records)\n`;
-  report += `Latest NAV (${latest.Date}): ₹${latestNav}\n`;
-  report += `Returns based on month-end NAV movement (using available month-end records; past performance ≠ future results):\n`;
-
-  for (const period of periods) {
-    report += `- ${period.label} (${period.startDate} → ${period.endDate}): ${formatPct(period.absoluteReturnPct)} (₹${period.startNav} → ₹${period.endNav})\n`;
+  const jsonPath = path.join(process.cwd(), "data", "fund-performance-summary.json");
+  if (fs.existsSync(jsonPath)) {
+    summaryCache = JSON.parse(fs.readFileSync(jsonPath, "utf-8")) as FundPerformanceSummary[];
+    return summaryCache;
   }
 
-  report += `- Since ${oldest.Date} (available history): ${formatPct(sinceInceptionPct)} (₹${oldestNav} → ₹${latestNav}), CAGR ~${cagr.toFixed(2)}% p.a.\n`;
+  summaryCache = buildFundPerformanceSummaries();
+  return summaryCache;
+}
 
-  return report;
+function formatSummary(summary: FundPerformanceSummary, index: number): string {
+  const yearly = summary.yearlyReturns
+    .map((y) => `      ${y.year}: ${y.returnPercent.toFixed(2)}% (₹${y.startNav} → ₹${y.endNav})`)
+    .join("\n");
+
+  return `${index + 1}. ${summary.schemeName} (${summary.type.trim()})
+   - Data points: ${summary.recordCount} month-end NAVs (${summary.firstDate} to ${summary.lastDate})
+   - Starting NAV: ₹${summary.firstNav}
+   - Latest NAV: ₹${summary.lastNav}
+   - Total return over period: ${summary.totalReturnPercent.toFixed(2)}%
+   - CAGR (approx.): ${summary.cagrPercent !== null ? `${summary.cagrPercent.toFixed(2)}%` : "N/A"}
+   - Calendar year returns:
+${yearly}`;
 }
 
 export function searchFundPerformance(query: string): string {
-  const matches = matchNavRows(query, 8);
-
-  if (matches.length === 0) {
-    return "No matching funds found in the Shriram AMC NAV database. Please specify the fund name, plan type (Direct/Regular, Growth/IDCW), or time period.";
+  const summaries = getPerformanceSummaries();
+  if (summaries.length === 0) {
+    return "No fund performance data available.";
   }
 
-  const wantsRanking = /\b(best|top|worst|compare|comparison|rank|highest|lowest)\b/i.test(query);
-  const periodMatch = query.match(/\b(1|3|6|12|36)\s*(m|month|months|y|year|years)\b/i);
-  const rankingMonths =
-    periodMatch?.[1] === "1" && /y|year/i.test(periodMatch[0]) ? 12 :
-    periodMatch?.[1] === "3" && /y|year/i.test(periodMatch[0]) ? 36 :
-    periodMatch ? Number(periodMatch[1]) : 12;
+  const parsed = parseQuery(query);
+  const scored = summaries
+    .map((summary) => {
+      const fakeRow: NavRow = {
+        "Net Asset Value": summary.lastNav,
+        Date: summary.lastDate,
+        "Scheme ": summary.scheme,
+        "Scheme Name ": summary.schemeName,
+        "Type ": summary.type,
+      };
+      return { summary, score: scoreNavRow(fakeRow, parsed) };
+    })
+    .filter((item) => item.score > 0)
+    .sort((a, b) => b.score - a.score);
 
-  if (wantsRanking) {
-    const ranked = matches
-      .map((row) => {
-        const history = getFundHistory(row);
-        const latest = history[0];
-        const period = computePeriodReturn(
-          history,
-          latest,
-          rankingMonths,
-          `${rankingMonths >= 12 ? rankingMonths / 12 : rankingMonths} ${rankingMonths >= 12 ? "Year(s)" : "Month(s)"}`
-        );
-        return {
-          row,
-          period,
-          key: fundVariantKey(row),
-        };
-      })
-      .filter((item) => item.period !== null)
-      .sort((a, b) => b.period!.absoluteReturnPct - a.period!.absoluteReturnPct);
+  if (scored.length === 0) {
+    const topByReturn = [...summaries]
+      .sort((a, b) => b.totalReturnPercent - a.totalReturnPercent)
+      .slice(0, 5);
 
-    if (ranked.length === 0) {
-      return "Could not compute comparative performance for the requested funds.";
-    }
-
-    const isWorst = /\b(worst|lowest)\b/i.test(query);
-    const ordered = isWorst ? [...ranked].reverse() : ranked;
-    const periodLabel = ordered[0].period!.label;
-
-    let response = `Comparative fund performance ranking (${periodLabel}, month-end NAV basis):\n\n`;
-    ordered.slice(0, 8).forEach((item, index) => {
-      const fund = item.row;
-      response += `${index + 1}. ${fund["Scheme Name "].trim()} (${fund["Type "].trim()})\n`;
-      response += `   Return: ${formatPct(item.period!.absoluteReturnPct)} (${item.period!.startDate} → ${item.period!.endDate})\n`;
-      response += `   NAV: ₹${item.period!.startNav} → ₹${item.period!.endNav}\n\n`;
-    });
-
-    response += "Disclaimer: Returns are computed from month-end NAV data only. Past performance does not guarantee future results.\n";
-    return response;
+    return `No exact fund match for "${query}". Here are top historical performers in our database (Feb 2022 – Dec 2025):\n\n${topByReturn
+      .map((summary, index) => formatSummary(summary, index))
+      .join("\n\n")}`;
   }
 
-  let response = "Historical fund performance from Shriram AMC month-end NAV database:\n\n";
-  for (const row of matches.slice(0, 5)) {
-    response += buildFundPerformanceReport(row);
-    response += "\n";
+  const results = scored.slice(0, 5).map((item) => item.summary);
+  let response = "Shriram AMC historical fund performance (from Month_End_NAV.xlsx):\n\n";
+  response += results.map((summary, index) => formatSummary(summary, index)).join("\n\n");
+
+  if (/compare|best|top|rank|highest/i.test(query)) {
+    const leaders = [...summaries]
+      .sort((a, b) => b.totalReturnPercent - a.totalReturnPercent)
+      .slice(0, 3);
+    response += "\n\nTop total returns in database:\n";
+    response += leaders
+      .map(
+        (s, i) =>
+          `${i + 1}. ${s.schemeName}: ${s.totalReturnPercent.toFixed(2)}% (${s.firstDate} to ${s.lastDate})`
+      )
+      .join("\n");
   }
 
-  response += "Disclaimer: Returns are computed from month-end NAV data only. Past performance does not guarantee future results.\n";
   return response;
-}
-
-export function getNavDataSummary(): string {
-  const matches = matchNavRows("shriram", 37);
-  const schemes = [...new Set(matches.map((row) => row["Scheme "].trim()))];
-
-  return `Shriram AMC NAV database covers ${schemes.length} schemes with month-end NAV history (typically Jan 2022 to present). Performance can be calculated for 1M, 3M, 6M, 1Y, 3Y, and full available history using the getFundPerformance tool.`;
 }

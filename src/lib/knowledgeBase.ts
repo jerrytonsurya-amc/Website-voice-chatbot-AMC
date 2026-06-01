@@ -1,11 +1,4 @@
-import fs from "fs";
-import path from "path";
-
-const KNOWLEDGE_FILE = path.join(process.cwd(), "data/market-mantra-knowledge.txt");
-
-let cachedKnowledgeBase: string | null = null;
-
-const LEGACY_KNOWLEDGE_BASE = `Monthly Market Mantra – May 2026
+export const MARKET_KNOWLEDGE_BASE = `Monthly Market Mantra – May 2026
 ...
 Monthly Market Update – April 2026
 
@@ -220,27 +213,3 @@ Potential El Niño impact on monsoons and rural demand
 Disclaimer
 
 This report is based on publicly available information and internal analysis. Market conditions may change, and past performance does not guarantee future results. Investors should consult financial advisors before making investment decisions.`;
-
-export function loadMarketKnowledgeBase(): string {
-  if (cachedKnowledgeBase !== null) {
-    return cachedKnowledgeBase;
-  }
-
-  try {
-    if (fs.existsSync(KNOWLEDGE_FILE)) {
-      cachedKnowledgeBase = fs.readFileSync(KNOWLEDGE_FILE, "utf8").trim();
-      console.log(
-        `Market Mantra knowledge base loaded (${cachedKnowledgeBase.length} characters).`
-      );
-      return cachedKnowledgeBase;
-    }
-  } catch (error) {
-    console.error("Failed to load market mantra knowledge base:", error);
-  }
-
-  cachedKnowledgeBase = LEGACY_KNOWLEDGE_BASE;
-  console.warn("Using legacy inline market knowledge base fallback.");
-  return cachedKnowledgeBase;
-}
-
-export const MARKET_KNOWLEDGE_BASE = loadMarketKnowledgeBase();

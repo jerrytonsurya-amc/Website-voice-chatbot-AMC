@@ -1,9 +1,8 @@
 
 import { useEffect, useRef, useState, useCallback } from 'react';
-import type { LiveServerMessage, Session } from '@google/genai';
+import { GoogleGenAI, Modality, type LiveServerMessage } from '@google/genai';
 import { arrayBufferToBase64, base64ToFloat32Array, float32ToInt16, calculateRMS } from './audio';
 import { collectSessionContext, initParentContextListener } from './sessionContext';
-import { connectGeminiLive } from './geminiLiveSession';
 
 const WORKLET_CODE = `
 class PCMProcessor extends AudioWorkletProcessor {
@@ -19,13 +18,45 @@ class PCMProcessor extends AudioWorkletProcessor {
 registerProcessor('pcm-processor', PCMProcessor);
 `;
 
+const LIVE_MODEL = 'gemini-3.1-flash-live-preview';
+
+async function fetchLiveToken(context: ReturnType<typeof collectSessionContext>) {
+  const response = await fetch('/api/live-token', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ context }),
+  });
+
+  if (!response.ok) {
+    const body = await response.json().catch(() => ({}));
+    throw new Error(body.error || `Failed to start voice session (${response.status})`);
+  }
+
+  return response.json() as Promise<{ token: string; model: string }>;
+}
+
+async function runLiveTool(name: string, args: Record<string, unknown>) {
+  const response = await fetch('/api/tools', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ name, args }),
+  });
+
+  if (!response.ok) {
+    throw new Error(`Tool ${name} failed`);
+  }
+
+  const body = await response.json();
+  return body.result as string;
+}
+
 export function useLiveSession() {
   const [isActive, setIsActive] = useState(false);
   const [rms, setRms] = useState({ user: 0, model: 0 });
   const [connectionStatus, setConnectionStatus] = useState<'idle' | 'connecting' | 'connected' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
-  const sessionRef = useRef<Session | null>(null);
+  const sessionRef = useRef<Awaited<ReturnType<GoogleGenAI['live']['connect']>> | null>(null);
   const audioContextRef = useRef<AudioContext | null>(null);
   const streamRef = useRef<MediaStream | null>(null);
   const workletNodeRef = useRef<AudioWorkletNode | null>(null);
@@ -35,6 +66,8 @@ export function useLiveSession() {
   const stop = useCallback(() => {
     setIsActive(false);
     setConnectionStatus('idle');
+    setErrorMessage(null);
+
     sessionRef.current?.close();
     sessionRef.current = null;
 
@@ -44,7 +77,7 @@ export function useLiveSession() {
     }
 
     if (streamRef.current) {
-      streamRef.current.getTracks().forEach(track => track.stop());
+      streamRef.current.getTracks().forEach((track) => track.stop());
       streamRef.current = null;
     }
 
@@ -85,34 +118,23 @@ export function useLiveSession() {
     const dataArray = new Float32Array(analyser.frequencyBinCount);
     const updateModelRms = () => {
       if (!isPlayingRef.current) {
-        setRms(prev => ({ ...prev, model: 0 }));
+        setRms((prev) => ({ ...prev, model: 0 }));
         return;
       }
       analyser.getFloatTimeDomainData(dataArray);
-      setRms(prev => ({ ...prev, model: calculateRMS(dataArray) }));
+      setRms((prev) => ({ ...prev, model: calculateRMS(dataArray) }));
       requestAnimationFrame(updateModelRms);
     };
     updateModelRms();
   }, []);
 
-  const handleModelMessage = useCallback((message: LiveServerMessage) => {
-    const base64Audio = message.serverContent?.modelTurn?.parts?.[0]?.inlineData?.data;
-    if (base64Audio) {
-      const float32Data = base64ToFloat32Array(base64Audio);
-      audioQueueRef.current.push(float32Data);
-      playNextChunk();
-    }
-
-    if (message.serverContent?.interrupted) {
-      audioQueueRef.current = [];
-      isPlayingRef.current = false;
-    }
-  }, [playNextChunk]);
-
   const start = useCallback(async () => {
     try {
       setConnectionStatus('connecting');
       setErrorMessage(null);
+
+      const context = collectSessionContext();
+      const { token } = await fetchLiveToken(context);
 
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
       streamRef.current = stream;
@@ -121,56 +143,105 @@ export function useLiveSession() {
       audioContextRef.current = ctx;
 
       const blob = new Blob([WORKLET_CODE], { type: 'application/javascript' });
-      const workletUrl = URL.createObjectURL(blob);
-      await ctx.audioWorklet.addModule(workletUrl);
+      const url = URL.createObjectURL(blob);
+      await ctx.audioWorklet.addModule(url);
 
-      const sessionContext = collectSessionContext();
+      const ai = new GoogleGenAI({
+        apiKey: token,
+        httpOptions: { apiVersion: 'v1alpha' },
+      });
 
-      const session = await connectGeminiLive(sessionContext, {
-        onopen: () => {
-          setIsActive(true);
-          setConnectionStatus('connected');
-
-          const source = ctx.createMediaStreamSource(stream);
-          const workletNode = new AudioWorkletNode(ctx, 'pcm-processor');
-
-          workletNode.port.onmessage = (e) => {
-            const inputData = e.data as Float32Array;
-            setRms(prev => ({ ...prev, user: calculateRMS(inputData) }));
-
-            const pcmData = float32ToInt16(inputData);
-            const base64Data = arrayBufferToBase64(pcmData);
-
-            session.sendRealtimeInput({
-              audio: { data: base64Data, mimeType: 'audio/pcm;rate=16000' },
-            });
-          };
-
-          source.connect(workletNode);
-          workletNode.connect(ctx.destination);
-          workletNodeRef.current = workletNode;
+      const session = await ai.live.connect({
+        model: LIVE_MODEL,
+        config: {
+          responseModalities: [Modality.AUDIO],
         },
-        onmessage: handleModelMessage,
-        onerror: (err) => {
-          console.error('Gemini Live Error:', err);
-          setErrorMessage(err.message || 'Voice connection failed.');
-          setConnectionStatus('error');
-          stop();
-        },
-        onclose: () => {
-          setIsActive(false);
-          setConnectionStatus('idle');
+        callbacks: {
+          onopen: () => {
+            setIsActive(true);
+            setConnectionStatus('connected');
+
+            const source = ctx.createMediaStreamSource(stream);
+            const workletNode = new AudioWorkletNode(ctx, 'pcm-processor');
+
+            workletNode.port.onmessage = (event) => {
+              const inputData = event.data as Float32Array;
+              setRms((prev) => ({ ...prev, user: calculateRMS(inputData) }));
+
+              const pcmData = float32ToInt16(inputData);
+              const base64Data = arrayBufferToBase64(pcmData);
+
+              session.sendRealtimeInput({
+                audio: { data: base64Data, mimeType: 'audio/pcm;rate=16000' },
+              });
+            };
+
+            source.connect(workletNode);
+            workletNode.connect(ctx.destination);
+            workletNodeRef.current = workletNode;
+          },
+          onmessage: async (message: LiveServerMessage) => {
+            if (message.toolCall?.functionCalls) {
+              for (const call of message.toolCall.functionCalls) {
+                try {
+                  const result = await runLiveTool(
+                    call.name || '',
+                    (call.args || {}) as Record<string, unknown>
+                  );
+                  session.sendToolResponse({
+                    functionResponses: [{
+                      name: call.name,
+                      id: call.id,
+                      response: { result },
+                    }],
+                  });
+                } catch (toolError) {
+                  console.error('Tool error:', toolError);
+                  session.sendToolResponse({
+                    functionResponses: [{
+                      name: call.name,
+                      id: call.id,
+                      response: { result: 'Data lookup failed. Please try again.' },
+                    }],
+                  });
+                }
+              }
+              return;
+            }
+
+            const base64Audio = message.serverContent?.modelTurn?.parts?.[0]?.inlineData?.data;
+            if (base64Audio) {
+              const float32Data = base64ToFloat32Array(base64Audio);
+              audioQueueRef.current.push(float32Data);
+              playNextChunk();
+            }
+
+            if (message.serverContent?.interrupted) {
+              audioQueueRef.current = [];
+              isPlayingRef.current = false;
+            }
+          },
+          onerror: (err) => {
+            console.error('Gemini Live Error:', err);
+            setErrorMessage(err.message || 'Voice connection error');
+            setConnectionStatus('error');
+            stop();
+          },
+          onclose: () => {
+            setIsActive(false);
+            setConnectionStatus('idle');
+          },
         },
       });
 
       sessionRef.current = session;
     } catch (err) {
       console.error('Failed to start session:', err);
-      setErrorMessage(err instanceof Error ? err.message : 'Failed to start voice session.');
+      setErrorMessage(err instanceof Error ? err.message : 'Failed to start voice chat');
       setConnectionStatus('error');
       stop();
     }
-  }, [stop, handleModelMessage]);
+  }, [stop, playNextChunk]);
 
   useEffect(() => {
     initParentContextListener();

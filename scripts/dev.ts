@@ -1,33 +1,12 @@
-import { spawn } from "node:child_process";
-import path from "node:path";
-import { fileURLToPath } from "node:url";
+import { spawn } from "child_process";
 
-const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
+console.log("Starting Vercel dev (frontend + API routes)...");
+console.log("Ensure GEMINI_API_KEY is set in .env and run: npm run build:data first if NAV data changed.\n");
 
-function run(command: string, args: string[], name: string) {
-  const child = spawn(command, args, {
-    cwd: root,
-    stdio: "inherit",
-    shell: true,
-    env: process.env,
-  });
-  child.on("exit", (code) => {
-    if (code !== 0 && code !== null) {
-      console.error(`${name} exited with code ${code}`);
-      process.exit(code);
-    }
-  });
-  return child;
-}
+const child = spawn("npx", ["vercel", "dev", "--listen", "3000"], {
+  stdio: "inherit",
+  shell: true,
+  env: process.env,
+});
 
-const api = run("npx", ["tsx", "scripts/dev-api.ts"], "api");
-const vite = run("npx", ["vite"], "vite");
-
-function shutdown() {
-  api.kill("SIGTERM");
-  vite.kill("SIGTERM");
-  process.exit(0);
-}
-
-process.on("SIGINT", shutdown);
-process.on("SIGTERM", shutdown);
+child.on("exit", (code) => process.exit(code ?? 0));
