@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
 import { arrayBufferToBase64, base64ToFloat32Array, float32ToInt16, calculateRMS } from './audio';
 import { collectSessionContext, initParentContextListener } from './sessionContext';
-import { getLiveWebSocketUrl } from './liveApiUrl';
+import { resolveLiveWebSocketUrl } from './liveApiUrl';
 
 const WORKLET_CODE = `
 class PCMProcessor extends AudioWorkletProcessor {
@@ -23,6 +23,7 @@ export function useLiveSession() {
   const [isActive, setIsActive] = useState(false);
   const [rms, setRms] = useState({ user: 0, model: 0 });
   const [connectionStatus, setConnectionStatus] = useState<'idle' | 'connecting' | 'connected' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
   
   const wsRef = useRef<WebSocket | null>(null);
   const audioContextRef = useRef<AudioContext | null>(null);
@@ -97,6 +98,9 @@ export function useLiveSession() {
   const start = useCallback(async () => {
     try {
       setConnectionStatus('connecting');
+      setErrorMessage(null);
+
+      const wsUrl = await resolveLiveWebSocketUrl();
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
       streamRef.current = stream;
 
@@ -108,7 +112,7 @@ export function useLiveSession() {
       const url = URL.createObjectURL(blob);
       await ctx.audioWorklet.addModule(url);
       
-      const ws = new WebSocket(getLiveWebSocketUrl());
+      const ws = new WebSocket(wsUrl);
       wsRef.current = ws;
 
       ws.onopen = () => {
@@ -176,8 +180,11 @@ export function useLiveSession() {
         }
       };
 
-      ws.onerror = (err) => {
-        console.error("WebSocket Error:", err);
+      ws.onerror = () => {
+        console.error("WebSocket Error");
+        setErrorMessage(
+          "Could not connect to the voice server. Ensure WS_URL points to your Render backend (wss://.../api/live)."
+        );
         setConnectionStatus('error');
         stop();
       };
@@ -189,6 +196,7 @@ export function useLiveSession() {
 
     } catch (err) {
       console.error("Failed to start session:", err);
+      setErrorMessage(err instanceof Error ? err.message : "Failed to start voice session.");
       setConnectionStatus('error');
     }
   }, [stop, playNextChunk]);
@@ -198,5 +206,5 @@ export function useLiveSession() {
     return () => stop();
   }, [stop]);
 
-  return { start, stop, isActive, rms, connectionStatus };
+  return { start, stop, isActive, rms, connectionStatus, errorMessage };
 }

@@ -9,7 +9,7 @@ import { Mic, MicOff, BrainCircuit, Signal, Loader2, Sparkles, X } from 'lucide-
 import { useLiveSession } from './lib/useLiveSession';
 
 export default function App() {
-  const { start, stop, isActive, rms, connectionStatus } = useLiveSession();
+  const { start, stop, isActive, rms, connectionStatus, errorMessage } = useLiveSession();
   const [mounted, setMounted] = useState(false);
   const [isWidget, setIsWidget] = useState(false);
 
@@ -182,6 +182,11 @@ export default function App() {
               {!isWidget && <span className="w-1 h-1 rounded-full bg-white animate-ping" />}
               {isWidget ? 'Sync: Stable' : 'Real-time Neural Sync'}
             </span>
+            {connectionStatus === 'error' && errorMessage && (
+              <p className="text-[10px] text-red-400/90 text-center max-w-md leading-relaxed px-4">
+                {errorMessage}
+              </p>
+            )}
           </div>
         </div>
       </main>
