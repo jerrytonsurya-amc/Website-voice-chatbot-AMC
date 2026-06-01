@@ -1,6 +1,6 @@
 import "dotenv/config";
-import { searchNavData } from "./src/lib/navSearch";
-import { getNavCache } from "./src/lib/navDataLoader";
+import { searchNavData, getNavCache } from "./src/lib/navSearch";
+import { getFundPerformance } from "./src/lib/navPerformance";
 import { ai } from "./src/lib/geminiClient";
 import { buildVoiceBotSystemInstruction } from "./src/lib/voiceBotPrompt";
 import type { SessionContext } from "./src/lib/sessionContext";
@@ -25,22 +25,27 @@ async function startServer() {
   app.post("/api/chat", express.json(), async (req, res) => {
     const { message } = req.body;
     
-    if (message.toLowerCase().includes('nav')) {
-      console.log("NAV mentioned, processing file...");
-      const context = searchNavData(message);
-      
-      const prompt = `Based on the following data, answer the user query about NAV details. If the answer is not in the data, just answer normally based on your knowledge:
-      
-      Data:
-      ${context}
-      
-      Query: ${message}`;
-      
+    const lower = message.toLowerCase();
+    const isPerformanceQuery = /performance|return|growth|how did|historical|past|compare|1 year|3 year|6 month|cagr|since inception/i.test(lower);
+    const isNavQuery = lower.includes("nav") || lower.includes("net asset");
+
+    if (isPerformanceQuery || isNavQuery) {
+      const context = isPerformanceQuery
+        ? getFundPerformance(message)
+        : searchNavData(message);
+
+      const prompt = `Answer using ONLY the Shriram AMC database results below. Do not invent numbers. If data is missing, say so.
+
+Database results:
+${context}
+
+User question: ${message}`;
+
       const response = await ai.models.generateContent({
         model: "gemini-3.5-flash",
         contents: prompt,
       });
-      
+
       return res.json({ reply: response.text });
     }
     
@@ -78,15 +83,18 @@ async function startServer() {
             onmessage: async (message: LiveServerMessage) => {
               if (message.toolCall) {
                 for (const call of message.toolCall.functionCalls) {
-                  if (call.name === "getNavData") {
+                  if (call.name === "getNavData" || call.name === "getFundPerformance") {
                     const query = String((call.args as any)?.query || "");
-                    console.log(`Live API requested getNavData for: "${query}"`);
+                    console.log(`Live API requested ${call.name} for: "${query}"`);
 
-                    const context = searchNavData(query);
+                    const context =
+                      call.name === "getFundPerformance"
+                        ? getFundPerformance(query)
+                        : searchNavData(query);
 
                     session.sendToolResponse({
                       functionResponses: [{
-                        name: "getNavData",
+                        name: call.name,
                         id: call.id,
                         response: { result: context },
                       }],
@@ -112,17 +120,30 @@ async function startServer() {
               voiceConfig: { prebuiltVoiceConfig: { voiceName: "Aoede" } },
             },
             tools: [{
-              functionDeclarations: [{
-                name: "getNavData",
-                description: "Get NAV data for specific funds or dates by searching the database.",
-                parameters: {
-                  type: Type.OBJECT,
-                  properties: {
-                    query: { type: Type.STRING, description: "English search query for fund name, plan type, and/or date." },
+              functionDeclarations: [
+                {
+                  name: "getNavData",
+                  description: "Look up month-end NAV from Month_End_NAV.xlsx for a specific fund, plan (Regular/Direct, Growth/IDCW), and/or date.",
+                  parameters: {
+                    type: Type.OBJECT,
+                    properties: {
+                      query: { type: Type.STRING, description: "English search: fund name, plan type, month/year if needed." },
+                    },
+                    required: ["query"],
                   },
-                  required: ["query"],
                 },
-              }],
+                {
+                  name: "getFundPerformance",
+                  description: "Get historical performance and returns (1M, 3M, 6M, 1Y, 3Y, since inception) from Month_End_NAV.xlsx. Use for past performance, returns, growth, or fund comparison questions.",
+                  parameters: {
+                    type: Type.OBJECT,
+                    properties: {
+                      query: { type: Type.STRING, description: "English search: fund name and plan (e.g. Shriram ELSS Tax Saver Regular Growth)." },
+                    },
+                    required: ["query"],
+                  },
+                },
+              ],
             }],
             systemInstruction: buildVoiceBotSystemInstruction(sessionContext),
           },
