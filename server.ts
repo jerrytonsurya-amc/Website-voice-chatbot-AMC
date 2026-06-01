@@ -12,7 +12,7 @@ import { LiveServerMessage, Modality, Type } from "@google/genai";
 import { WebSocketServer } from "ws";
 import http from "http";
 
-const PORT = 3000;
+const PORT = Number(process.env.PORT) || 3000;
 
 async function startServer() {
   const app = express();

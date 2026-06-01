@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
 import { arrayBufferToBase64, base64ToFloat32Array, float32ToInt16, calculateRMS } from './audio';
 import { collectSessionContext, initParentContextListener } from './sessionContext';
+import { getLiveWebSocketUrl } from './liveApiUrl';
 
 const WORKLET_CODE = `
 class PCMProcessor extends AudioWorkletProcessor {
@@ -107,8 +108,7 @@ export function useLiveSession() {
       const url = URL.createObjectURL(blob);
       await ctx.audioWorklet.addModule(url);
       
-      const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
-      const ws = new WebSocket(`${protocol}//${window.location.host}/api/live`);
+      const ws = new WebSocket(getLiveWebSocketUrl());
       wsRef.current = ws;
 
       ws.onopen = () => {

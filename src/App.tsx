@@ -42,7 +42,7 @@ export default function App() {
           className="absolute -bottom-1/2 -right-1/2 w-full h-full bg-gradient-radial from-amber-600/10 via-transparent to-transparent blur-[120px]"
         />
         {/* Animated Particles/Dust */}
-        <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.03] mix-blend-overlay" />
+        <div className="absolute inset-0 opacity-[0.03] mix-blend-overlay bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.15)_1px,transparent_0)] bg-[length:4px_4px]" />
       </div>
 
       {/* Top HUD - Hidden or Minimal in Widget Mode */}
