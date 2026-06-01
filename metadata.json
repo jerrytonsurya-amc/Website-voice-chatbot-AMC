@@ -1,0 +1,6 @@
+{
+  "name": "Shriram AMC",
+  "description": "A real-time, multimodal voice chatbot powered by Gemini, featuring low-latency interaction and fluid visual feedback.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["Real-time Audio", "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
