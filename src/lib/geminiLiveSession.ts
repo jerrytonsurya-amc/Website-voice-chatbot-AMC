@@ -72,7 +72,8 @@ export async function connectGeminiLive(
     body: JSON.stringify({ context: sessionContext }),
   });
   if (!configRes.ok) {
-    throw new Error("Failed to load voice assistant configuration.");
+    const errBody = await configRes.json().catch(() => ({})) as { error?: string };
+    throw new Error(errBody.error || "Failed to load voice assistant configuration.");
   }
   const { systemInstruction } = (await configRes.json()) as { systemInstruction: string };
 

@@ -1,13 +1,14 @@
 import fs from "fs";
-import path from "path";
-
-const KNOWLEDGE_FILE = path.join(process.cwd(), "data/market-mantra-knowledge.txt");
+import { resolveProjectFile } from "./resolveProjectFile";
 
 let cachedKnowledge: string | null = null;
 
 function loadKnowledge(): string {
   if (cachedKnowledge === null) {
-    cachedKnowledge = fs.readFileSync(KNOWLEDGE_FILE, "utf8");
+    cachedKnowledge = fs.readFileSync(
+      resolveProjectFile("data", "market-mantra-knowledge.txt"),
+      "utf8"
+    );
   }
   return cachedKnowledge;
 }

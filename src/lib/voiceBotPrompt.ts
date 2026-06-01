@@ -1,9 +1,31 @@
+import fs from "fs";
 import { getFundCatalog } from "./navSearch";
-import { getNavDataSummary } from "./navPerformance";
 import { formatSessionContextBlock, type SessionContext } from "./sessionContext";
+import { resolveProjectFile } from "./resolveProjectFile";
+
+function loadFundCatalogText(): string {
+  try {
+    const filePath = resolveProjectFile("data", "fund-catalog.json");
+    const data = JSON.parse(fs.readFileSync(filePath, "utf8")) as {
+      text?: string;
+      names?: string[];
+    };
+    if (data.text) return data.text;
+    if (data.names?.length) {
+      return data.names.map((name, index) => `${index + 1}. ${name}`).join("\n");
+    }
+  } catch {
+    // Fall back to Excel at dev time
+  }
+  return getFundCatalog();
+}
+
+const NAV_DATA_SUMMARY =
+  "Shriram AMC NAV database covers multiple mutual fund schemes with month-end NAV history (typically Jan 2022 to present). " +
+  "Use getFundPerformance for returns and getNavData for specific NAV values.";
 
 export function buildVoiceBotSystemInstruction(context: SessionContext = {}): string {
-  const fundCatalog = getFundCatalog();
+  const fundCatalog = loadFundCatalogText();
   const contextBlock = formatSessionContextBlock(context);
 
   return `You are the expert voice assistant for Shriram AMC (Asset Management Company).
@@ -27,7 +49,7 @@ Context rules:
 SHRIRAM AMC FUND CATALOG (from Month_End_NAV.xlsx):
 ${fundCatalog}
 
-${getNavDataSummary()}
+${NAV_DATA_SUMMARY}
 
 TOOLS — ALWAYS use these for factual data (never guess):
 - getNavData: NAV values by fund/date

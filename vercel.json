@@ -4,7 +4,16 @@
   "framework": "vite",
   "functions": {
     "api/**/*.ts": {
-      "maxDuration": 60
+      "maxDuration": 60,
+      "includeFiles": "Month_End_NAV.xlsx"
+    },
+    "api/search-knowledge.ts": {
+      "maxDuration": 60,
+      "includeFiles": "data/market-mantra-knowledge.txt"
+    },
+    "api/live-config.ts": {
+      "maxDuration": 30,
+      "includeFiles": "data/fund-catalog.json"
     }
   },
   "rewrites": [
