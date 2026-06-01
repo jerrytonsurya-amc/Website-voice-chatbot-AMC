@@ -1,9 +1,9 @@
 {
-  "buildCommand": "npm run build:web && npm run build:api",
+  "buildCommand": "npm run build:web",
   "outputDirectory": "dist",
   "framework": null,
   "functions": {
-    "api/**/*.cjs": {
+    "api/**/*.ts": {
       "maxDuration": 60,
       "includeFiles": "data/nav-records.json,data/fund-performance-summary.json,data/fund-catalog.json"
     }

@@ -7,7 +7,7 @@
     "dev": "npm run build:data && tsx scripts/dev.ts",
     "dev:api": "tsx scripts/local-api.ts",
     "dev:vite": "vite --port 5173",
-    "dev:vercel": "npm run build:data && npm run build:api && vercel dev --listen 3000",
+    "dev:vercel": "npm run build:data && vercel dev --listen 3000",
     "dev:server": "tsx server.ts",
     "build": "npm run build:web",
     "build:data": "tsx scripts/build-data.ts",
