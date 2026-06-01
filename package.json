@@ -5,6 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "npm run build:data && tsx scripts/dev.ts",
+    "dev:api": "tsx scripts/local-api.ts",
+    "dev:vite": "vite --port 5173",
+    "dev:vercel": "vercel dev --listen 3000",
     "dev:server": "tsx server.ts",
     "build": "npm run build:web",
     "build:data": "tsx scripts/build-data.ts",

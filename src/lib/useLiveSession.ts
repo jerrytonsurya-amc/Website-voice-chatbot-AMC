@@ -21,11 +21,18 @@ registerProcessor('pcm-processor', PCMProcessor);
 const LIVE_MODEL = 'gemini-3.1-flash-live-preview';
 
 async function fetchLiveToken(context: ReturnType<typeof collectSessionContext>) {
-  const response = await fetch('/api/live-token', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ context }),
-  });
+  let response: Response;
+  try {
+    response = await fetch('/api/live-token', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ context }),
+    });
+  } catch {
+    throw new Error(
+      'Cannot reach the API server. Run npm run dev (API on port 3000 + Vite on 5173), not vite alone.'
+    );
+  }
 
   if (!response.ok) {
     const body = await response.json().catch(() => ({}));
@@ -63,10 +70,8 @@ export function useLiveSession() {
   const audioQueueRef = useRef<Float32Array[]>([]);
   const isPlayingRef = useRef(false);
 
-  const stop = useCallback(() => {
+  const cleanupMedia = useCallback(() => {
     setIsActive(false);
-    setConnectionStatus('idle');
-    setErrorMessage(null);
 
     sessionRef.current?.close();
     sessionRef.current = null;
@@ -90,6 +95,18 @@ export function useLiveSession() {
     isPlayingRef.current = false;
     setRms({ user: 0, model: 0 });
   }, []);
+
+  const stop = useCallback(() => {
+    setConnectionStatus('idle');
+    setErrorMessage(null);
+    cleanupMedia();
+  }, [cleanupMedia]);
+
+  const failSession = useCallback((message: string) => {
+    setErrorMessage(message);
+    setConnectionStatus('error');
+    cleanupMedia();
+  }, [cleanupMedia]);
 
   const playNextChunk = useCallback(() => {
     if (audioQueueRef.current.length === 0 || isPlayingRef.current) return;
@@ -223,9 +240,7 @@ export function useLiveSession() {
           },
           onerror: (err) => {
             console.error('Gemini Live Error:', err);
-            setErrorMessage(err.message || 'Voice connection error');
-            setConnectionStatus('error');
-            stop();
+            failSession(err.message || 'Voice connection error');
           },
           onclose: () => {
             setIsActive(false);
@@ -237,11 +252,15 @@ export function useLiveSession() {
       sessionRef.current = session;
     } catch (err) {
       console.error('Failed to start session:', err);
-      setErrorMessage(err instanceof Error ? err.message : 'Failed to start voice chat');
-      setConnectionStatus('error');
-      stop();
+      const message =
+        err instanceof Error
+          ? err.name === 'NotAllowedError'
+            ? 'Microphone access denied. Allow microphone permission in your browser.'
+            : err.message
+          : 'Failed to start voice chat';
+      failSession(message);
     }
-  }, [stop, playNextChunk]);
+  }, [failSession, playNextChunk]);
 
   useEffect(() => {
     initParentContextListener();

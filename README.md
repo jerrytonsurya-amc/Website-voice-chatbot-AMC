@@ -33,18 +33,23 @@ npm run build:data
 
 ## Run locally
 
-Uses [Vercel CLI](https://vercel.com/docs/cli) for API routes + frontend:
-
 ```bash
 npm run dev
 ```
 
-Open http://localhost:3000
+This starts:
 
-Legacy Express WebSocket server (optional):
+- **API** on http://localhost:3000 (`/api/live-token`, `/api/tools`, …)
+- **Vite** on http://localhost:5173 — **open this URL in the browser**
+
+Use **Initiate voice chat** on port **5173**. If you only run `vite`, the API will be missing and voice will not start.
+
+Optional:
 
 ```bash
-npm run dev:server
+npm run dev:api    # API only (port 3000)
+npm run dev:vite   # frontend only (port 5173) — needs dev:api in another terminal
+npm run dev:vercel # Vercel CLI instead of local API
 ```
 
 ## Deploy to Vercel

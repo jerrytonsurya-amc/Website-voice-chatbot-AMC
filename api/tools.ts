@@ -1,7 +1,5 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
-import { executeLiveTool } from "../src/lib/liveTools";
-import { getNavCache } from "../src/lib/navDataLoader";
-import { getPerformanceSummaries } from "../src/lib/navPerformance";
+import { runTool } from "../src/lib/apiServices";
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method !== "POST") {
@@ -9,15 +7,12 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   try {
-    getNavCache();
-    getPerformanceSummaries();
-
     const { name, args } = req.body || {};
     if (!name || typeof name !== "string") {
       return res.status(400).json({ error: "Missing tool name" });
     }
 
-    const result = executeLiveTool(name, (args || {}) as Record<string, unknown>);
+    const result = runTool(name, (args || {}) as Record<string, unknown>);
     return res.status(200).json({ result });
   } catch (error) {
     console.error("tools error:", error);
