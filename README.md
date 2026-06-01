@@ -52,11 +52,34 @@ npm run dev:vite   # frontend only (port 5173) — needs dev:api in another term
 npm run dev:vercel # Vercel CLI instead of local API
 ```
 
+## Firebase (voice chat timestamps)
+
+Each time a user starts voice chat, a document is added to Firestore collection **`voice_chat_sessions`** with `initiatedAt`, page context, and status (`initiated` / `connected` / `failed`).
+
+1. In [Firebase Console](https://console.firebase.google.com/), open project **amc-website-chatbot**.
+2. Enable **Firestore Database** (production or test mode).
+3. Add the `VITE_FIREBASE_*` variables from `.env.example` to `.env` (local) and **Vercel → Environment Variables** (production).
+4. Firestore rules (allow clients to create session logs only):
+
+```
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /voice_chat_sessions/{sessionId} {
+      allow create: if true;
+      allow read, update, delete: if false;
+    }
+  }
+}
+```
+
+View logs in Firebase Console → Firestore → `voice_chat_sessions`.
+
 ## Deploy to Vercel
 
 1. Push this repo to GitHub.
 2. Import the project in [Vercel](https://vercel.com/new).
-3. **Environment variable:** `GEMINI_API_KEY` = your Gemini API key.
+3. **Environment variables:** `GEMINI_API_KEY` and all `VITE_FIREBASE_*` keys from `.env.example`.
 4. Build command: `npm run build:web` (set automatically via `vercel.json`).
 5. Deploy.
 

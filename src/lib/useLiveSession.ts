@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
 import { GoogleGenAI, Modality, type LiveServerMessage } from '@google/genai';
 import { arrayBufferToBase64, base64ToFloat32Array, float32ToInt16, calculateRMS } from './audio';
+import { logVoiceChatSession } from './chatAnalytics';
 import { collectSessionContext, initParentContextListener } from './sessionContext';
 
 const WORKLET_CODE = `
@@ -151,6 +152,8 @@ export function useLiveSession() {
       setErrorMessage(null);
 
       const context = collectSessionContext();
+      void logVoiceChatSession({ context, status: 'initiated' });
+
       const { token } = await fetchLiveToken(context);
 
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
@@ -177,6 +180,7 @@ export function useLiveSession() {
           onopen: () => {
             setIsActive(true);
             setConnectionStatus('connected');
+            void logVoiceChatSession({ context, status: 'connected' });
 
             const source = ctx.createMediaStreamSource(stream);
             const workletNode = new AudioWorkletNode(ctx, 'pcm-processor');
@@ -240,7 +244,9 @@ export function useLiveSession() {
           },
           onerror: (err) => {
             console.error('Gemini Live Error:', err);
-            failSession(err.message || 'Voice connection error');
+            const msg = err.message || 'Voice connection error';
+            void logVoiceChatSession({ context, status: 'failed', errorMessage: msg });
+            failSession(msg);
           },
           onclose: () => {
             setIsActive(false);
@@ -258,6 +264,8 @@ export function useLiveSession() {
             ? 'Microphone access denied. Allow microphone permission in your browser.'
             : err.message
           : 'Failed to start voice chat';
+      const context = collectSessionContext();
+      void logVoiceChatSession({ context, status: 'failed', errorMessage: message });
       failSession(message);
     }
   }, [failSession, playNextChunk]);
