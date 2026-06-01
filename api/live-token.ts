@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
-import { createLiveToken } from "../src/lib/apiServices";
+import { createLiveToken } from "../src/lib/liveTokenService";
 import type { SessionContext } from "../src/lib/sessionContext";
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {

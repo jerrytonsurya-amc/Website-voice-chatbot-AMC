@@ -5,7 +5,7 @@
   "functions": {
     "api/**/*.ts": {
       "maxDuration": 60,
-      "includeFiles": "data/**"
+      "includeFiles": "data/nav-records.json,data/fund-performance-summary.json,data/fund-catalog.json"
     }
   },
   "rewrites": [

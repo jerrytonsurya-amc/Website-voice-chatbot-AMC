@@ -35,8 +35,18 @@ async function fetchLiveToken(context: ReturnType<typeof collectSessionContext>)
   }
 
   if (!response.ok) {
-    const body = await response.json().catch(() => ({}));
-    throw new Error(body.error || `Failed to start voice session (${response.status})`);
+    const text = await response.text();
+    let body: { error?: string } = {};
+    try {
+      body = JSON.parse(text);
+    } catch {
+      if (text.includes("FUNCTION_INVOCATION_FAILED")) {
+        throw new Error(
+          "Voice API crashed on the server. Redeploy after the latest fix, or check Vercel function logs."
+        );
+      }
+    }
+    throw new Error(body.error || text || `Failed to start voice session (${response.status})`);
   }
 
   return response.json() as Promise<{ token: string; model: string }>;
