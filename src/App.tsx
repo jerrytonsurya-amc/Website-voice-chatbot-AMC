@@ -57,7 +57,11 @@ export default function App() {
               <div className="flex items-center gap-2 mt-0.5">
                 <div className={`w-1.5 h-1.5 rounded-full ${isActive ? 'bg-emerald-400 shadow-[0_0_8px_#34d399]' : 'bg-white/20'}`} />
                 <span className="text-[10px] font-mono tracking-widest uppercase opacity-40">
-                  {connectionStatus === 'connected' ? 'Quantum Link Secure' : 'Curriculum V-A Loaded'}
+                  {connectionStatus === 'connected'
+                    ? 'Quantum Link Secure'
+                    : connectionStatus === 'connecting'
+                      ? 'Connecting…'
+                      : 'Ready'}
                 </span>
               </div>
             </div>
