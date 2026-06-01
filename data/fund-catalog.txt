@@ -1,0 +1,37 @@
+1. Shriram Aggressive Hybrid Fund- Direct Growth
+2. Shriram Aggressive Hybrid Fund- Direct- IDCW
+3. Shriram Aggressive Hybrid Fund- Regular Growth
+4. Shriram Aggressive Hybrid Fund- Regular-IDCW
+5. Shriram Balanced Advantage Fund - Direct Growth
+6. Shriram Balanced Advantage Fund - Direct- IDCW
+7. Shriram Balanced Advantage Fund - Regular Growth
+8. Shriram Balanced Advantage Fund - Regular-IDCW
+9. Shriram ELSS Tax Saver Fund - Direct Growth
+10. Shriram ELSS Tax Saver Fund - Direct- IDCW
+11. Shriram ELSS Tax Saver Fund - Regular Growth
+12. Shriram ELSS Tax Saver Fund - Regular-IDCW
+13. Shriram Flexi Cap Fund - Direct Growth
+14. Shriram Flexi Cap Fund - Direct-IDCW
+15. Shriram Flexi Cap Fund - Regular Growth
+16. Shriram Flexi Cap Fund - Regular-IDCW
+17. Shriram Liquid Fund - Direct Plan Growth Option
+18. Shriram Liquid Fund - Regular Plan Growth Option
+19. Shriram Money Market Fund - Direct Plan Growth Option
+20. Shriram Money Market Fund - Regular Plan Growth Option
+21. Shriram Multi Asset Allocation Fund - Direct Growth
+22. Shriram Multi Asset Allocation Fund - Regular Growth
+23. Shriram Multi Sector Rotation Fund - Direct Plan Growth Option
+24. Shriram Multi Sector Rotation Fund - Regular Plan Growth Option
+25. Shriram Nifty 1D Rate Liquid ETF - Growth
+26. Shriram Overnight Fund -  Direct Growth
+27. Shriram Overnight Fund -  Regular Fortnightly IDCW
+28. Shriram Overnight Fund - Direct Daily IDCW
+29. Shriram Overnight Fund - Direct Monthly IDCW
+30. Shriram Overnight Fund - Regular Daily IDCW
+31. Shriram Overnight Fund - Regular Growth
+32. Shriram Overnight Fund - Regular Monthly IDCW
+33. Shriram Overnight Fund - Regular Weekly IDCW
+34. Shriram Unclaimed IDCW Liquid Fund
+35. Shriram Unclaimed IDCW Stable Scheme Liquid Fund
+36. Shriram Unclaimed Redemption Liquid Fund
+37. Shriram Unclaimed Redemption Stable Scheme Liquid Fund

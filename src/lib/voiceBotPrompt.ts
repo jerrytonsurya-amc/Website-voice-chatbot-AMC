@@ -1,28 +1,19 @@
 import fs from "fs";
-import { getFundCatalog } from "./navSearch";
 import { formatSessionContextBlock, type SessionContext } from "./sessionContext";
 import { resolveProjectFile } from "./resolveProjectFile";
 
+function loadTextFile(...segments: string[]): string {
+  return fs.readFileSync(resolveProjectFile(...segments), "utf8").trim();
+}
+
 function loadFundCatalogText(): string {
-  try {
-    const filePath = resolveProjectFile("data", "fund-catalog.json");
-    const data = JSON.parse(fs.readFileSync(filePath, "utf8")) as {
-      text?: string;
-      names?: string[];
-    };
-    if (data.text) return data.text;
-    if (data.names?.length) {
-      return data.names.map((name, index) => `${index + 1}. ${name}`).join("\n");
-    }
-  } catch {
-    // Fall back to Excel at dev time
-  }
-  return getFundCatalog();
+  return loadTextFile("data", "fund-catalog.txt");
 }
 
 const NAV_DATA_SUMMARY =
-  "Shriram AMC NAV database covers multiple mutual fund schemes with month-end NAV history (typically Jan 2022 to present). " +
-  "Use getFundPerformance for returns and getNavData for specific NAV values.";
+  "Shriram AMC NAV database (Month_End_NAV.xlsx, exported to text/JSON) covers month-end NAV from ~Jan 2022 to present. " +
+  "Use getNavData for NAV values and getFundPerformance for returns. " +
+  "Use searchMarketKnowledge for Monthly Market Mantra PDF/PPT research reports.";
 
 export function buildVoiceBotSystemInstruction(context: SessionContext = {}): string {
   const fundCatalog = loadFundCatalogText();
@@ -46,15 +37,19 @@ ${contextBlock}
 Context rules:
 - If the page title or URL mentions a specific fund or product, assume questions like "this scheme", "this fund", or "its NAV" refer to that page unless the user names something else.
 
-SHRIRAM AMC FUND CATALOG (from Month_End_NAV.xlsx):
+SHRIRAM AMC FUND CATALOG:
 ${fundCatalog}
 
 ${NAV_DATA_SUMMARY}
 
+KNOWLEDGE BASE (how you get facts):
+- Monthly Market Mantra PDF/PPT content → searchMarketKnowledge tool (file: data/market-mantra-knowledge.txt)
+- NAV & performance numbers → getNavData / getFundPerformance tools (file: data/nav-records.json)
+
 TOOLS — ALWAYS use these for factual data (never guess):
 - getNavData: NAV values by fund/date
 - getFundPerformance: historical returns, CAGR, comparisons
-- searchMarketKnowledge: market outlook, sectors, macro, index performance, FII/DII, inflation from Monthly Market Mantra PDF/PPT reports
+- searchMarketKnowledge: market outlook, sectors, macro, index performance, FII/DII, inflation
 
 CRITICAL DIRECTIVE ON NAV:
 For NAV questions, call getNavData immediately. Tell the user to wait briefly IN THEIR LANGUAGE. Pass an English query. Use only tool results.

@@ -1,0 +1,1056 @@
+SHRIRAM AMC MONTH-END NAV DATABASE
+Source: Month_End_NAV.xlsx
+Format: Fund | Plan Type | Date | NAV (₹)
+
+Shriram Aggressive Hybrid Fund- Direct Growth | Direct | 31-12-2025 | ₹37.497
+Shriram Aggressive Hybrid Fund- Direct- IDCW | Direct | 31-12-2025 | ₹29.578
+Shriram Aggressive Hybrid Fund- Regular Growth | Regular | 31-12-2025 | ₹32.521
+Shriram Aggressive Hybrid Fund- Regular-IDCW | Regular | 31-12-2025 | ₹26.0027
+Shriram Balanced Advantage Fund - Direct Growth | Direct | 31-12-2025 | ₹19.4878
+Shriram Balanced Advantage Fund - Direct- IDCW | Direct | 31-12-2025 | ₹19.3356
+Shriram Balanced Advantage Fund - Regular Growth | Regular | 31-12-2025 | ₹17.271
+Shriram Balanced Advantage Fund - Regular-IDCW | Regular | 31-12-2025 | ₹17.2936
+Shriram ELSS Tax Saver Fund - Direct Growth | Direct | 31-12-2025 | ₹24.3609
+Shriram ELSS Tax Saver Fund - Direct- IDCW | Direct | 31-12-2025 | ₹24.1744
+Shriram ELSS Tax Saver Fund - Regular Growth | Regular | 31-12-2025 | ₹21.5372
+Shriram ELSS Tax Saver Fund - Regular-IDCW | Regular | 31-12-2025 | ₹21.54
+Shriram Flexi Cap Fund - Direct Growth | Direct | 31-12-2025 | ₹23.4123
+Shriram Flexi Cap Fund - Direct-IDCW | Direct | 31-12-2025 | ₹23.1812
+Shriram Flexi Cap Fund - Regular Growth | Regular | 31-12-2025 | ₹20.5953
+Shriram Flexi Cap Fund - Regular-IDCW | Regular | 31-12-2025 | ₹20.5909
+Shriram Liquid Fund - Direct Plan Growth Option | Direct | 31-12-2025 | ₹1072.9896
+Shriram Liquid Fund - Regular Plan Growth Option | Regular | 31-12-2025 | ₹1071.2425
+Shriram Unclaimed IDCW Liquid Fund | Liquid Fund | 31-12-2025 | ₹1046.0145
+Shriram Unclaimed IDCW Stable Scheme Liquid Fund | Liquid Fund | 31-12-2025 | ₹1000
+Shriram Unclaimed Redemption Liquid Fund | Liquid Fund | 31-12-2025 | ₹1058.6876
+Shriram Unclaimed Redemption Stable Scheme Liquid Fund | Liquid Fund | 31-12-2025 | ₹1000
+Shriram Multi Asset Allocation Fund - Direct Growth | Direct | 31-12-2025 | ₹13.8254
+Shriram Multi Asset Allocation Fund - Regular Growth | Regular | 31-12-2025 | ₹13.2454
+Shriram Multi Sector Rotation Fund - Direct Plan Growth Option | Direct | 31-12-2025 | ₹8.2539
+Shriram Multi Sector Rotation Fund - Regular Plan Growth Option | Regular | 31-12-2025 | ₹8.1045
+Shriram Nifty 1D Rate Liquid ETF - Growth | ETF | 31-12-2025 | ₹1085.8964
+Shriram Overnight Fund -  Direct Growth | Direct | 31-12-2025 | ₹12.2829
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 31-12-2025 | ₹10.0001
+Shriram Overnight Fund - Direct Monthly IDCW | Direct | 31-12-2025 | ₹10.0231
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 31-12-2025 | ₹10.0001
+Shriram Overnight Fund - Regular Growth | Regular | 31-12-2025 | ₹12.2484
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 31-12-2025 | ₹10.023
+Shriram Aggressive Hybrid Fund- Direct Growth | Direct | 31-12-2024 | ₹36.0466
+Shriram Aggressive Hybrid Fund- Direct- IDCW | Direct | 31-12-2024 | ₹28.4824
+Shriram Aggressive Hybrid Fund- Regular Growth | Regular | 31-12-2024 | ₹31.7939
+Shriram Aggressive Hybrid Fund- Regular-IDCW | Regular | 31-12-2024 | ₹25.4207
+Shriram Balanced Advantage Fund - Direct Growth | Direct | 31-12-2024 | ₹19.2512
+Shriram Balanced Advantage Fund - Direct- IDCW | Direct | 31-12-2024 | ₹19.136
+Shriram Balanced Advantage Fund - Regular Growth | Regular | 31-12-2024 | ₹17.3627
+Shriram Balanced Advantage Fund - Regular-IDCW | Regular | 31-12-2024 | ₹17.3852
+Shriram ELSS Tax Saver Fund - Direct Growth | Direct | 31-12-2024 | ₹25.4244
+Shriram ELSS Tax Saver Fund - Direct- IDCW | Direct | 31-12-2024 | ₹25.2515
+Shriram ELSS Tax Saver Fund - Regular Growth | Regular | 31-12-2024 | ₹22.839
+Shriram ELSS Tax Saver Fund - Regular-IDCW | Regular | 31-12-2024 | ₹22.8466
+Shriram Flexi Cap Fund - Direct Growth | Direct | 31-12-2024 | ₹24.6575
+Shriram Flexi Cap Fund - Direct-IDCW | Direct | 31-12-2024 | ₹24.4336
+Shriram Flexi Cap Fund - Regular Growth | Regular | 31-12-2024 | ₹22.0438
+Shriram Flexi Cap Fund - Regular-IDCW | Regular | 31-12-2024 | ₹22.039
+Shriram Liquid Fund - Direct Plan Growth Option | Direct | 31-12-2024 | ₹1009.8105
+Shriram Liquid Fund - Regular Plan Growth Option | Regular | 31-12-2024 | ₹1009.624
+Shriram Multi Asset Allocation Fund - Direct Growth | Direct | 31-12-2024 | ₹12.5546
+Shriram Multi Asset Allocation Fund - Regular Growth | Regular | 31-12-2024 | ₹12.2437
+Shriram Multi Sector Rotation Fund - Direct Plan Growth Option | Direct | 31-12-2024 | ₹10.0649
+Shriram Multi Sector Rotation Fund - Regular Plan Growth Option | Regular | 31-12-2024 | ₹10.0554
+Shriram Nifty 1D Rate Liquid ETF - Growth | ETF | 31-12-2024 | ₹1030.6025
+Shriram Overnight Fund -  Direct Growth | Direct | 31-12-2024 | ₹11.62
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 31-12-2024 | ₹10
+Shriram Overnight Fund - Direct Monthly IDCW | Direct | 31-12-2024 | ₹10.0261
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 31-12-2024 | ₹10
+Shriram Overnight Fund - Regular Growth | Regular | 31-12-2024 | ₹11.5941
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 31-12-2024 | ₹10.0259
+Shriram Overnight Fund -  Direct Growth | Direct | 31-12-2023 | ₹10.8964
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 31-12-2023 | ₹10
+Shriram Overnight Fund - Direct Monthly IDCW | Direct | 31-12-2023 | ₹10.0296
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 31-12-2023 | ₹10
+Shriram Overnight Fund - Regular Growth | Regular | 31-12-2023 | ₹10.8811
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 31-12-2023 | ₹10.029
+Shriram Overnight Fund - Regular Weekly IDCW | Regular | 31-12-2023 | ₹10.009
+Shriram Aggressive Hybrid Fund- Direct Growth | Direct | 31-10-2025 | ₹36.9846
+Shriram Aggressive Hybrid Fund- Direct- IDCW | Direct | 31-10-2025 | ₹29.1814
+Shriram Aggressive Hybrid Fund- Regular Growth | Regular | 31-10-2025 | ₹32.1681
+Shriram Aggressive Hybrid Fund- Regular-IDCW | Regular | 31-10-2025 | ₹25.7205
+Shriram Balanced Advantage Fund - Direct Growth | Direct | 31-10-2025 | ₹19.2181
+Shriram Balanced Advantage Fund - Direct- IDCW | Direct | 31-10-2025 | ₹19.075
+Shriram Balanced Advantage Fund - Regular Growth | Regular | 31-10-2025 | ₹17.0787
+Shriram Balanced Advantage Fund - Regular-IDCW | Regular | 31-10-2025 | ₹17.1011
+Shriram ELSS Tax Saver Fund - Direct Growth | Direct | 31-10-2025 | ₹24.1732
+Shriram ELSS Tax Saver Fund - Direct- IDCW | Direct | 31-10-2025 | ₹23.9912
+Shriram ELSS Tax Saver Fund - Regular Growth | Regular | 31-10-2025 | ₹21.4289
+Shriram ELSS Tax Saver Fund - Regular-IDCW | Regular | 31-10-2025 | ₹21.4316
+Shriram Flexi Cap Fund - Direct Growth | Direct | 31-10-2025 | ₹23.2377
+Shriram Flexi Cap Fund - Direct-IDCW | Direct | 31-10-2025 | ₹23.0099
+Shriram Flexi Cap Fund - Regular Growth | Regular | 31-10-2025 | ₹20.4961
+Shriram Flexi Cap Fund - Regular-IDCW | Regular | 31-10-2025 | ₹20.4917
+Shriram Liquid Fund - Direct Plan Growth Option | Direct | 31-10-2025 | ₹1062.7474
+Shriram Liquid Fund - Regular Plan Growth Option | Regular | 31-10-2025 | ₹1061.2577
+Shriram Unclaimed IDCW Liquid Fund | Liquid Fund | 31-10-2025 | ₹1036.9367
+Shriram Unclaimed IDCW Stable Scheme Liquid Fund | Liquid Fund | 31-10-2025 | ₹1000
+Shriram Unclaimed Redemption Liquid Fund | Liquid Fund | 31-10-2025 | ₹1048.6052
+Shriram Unclaimed Redemption Stable Scheme Liquid Fund | Liquid Fund | 31-10-2025 | ₹1000
+Shriram Multi Asset Allocation Fund - Direct Growth | Direct | 31-10-2025 | ₹13.2516
+Shriram Multi Asset Allocation Fund - Regular Growth | Regular | 31-10-2025 | ₹12.7318
+Shriram Multi Sector Rotation Fund - Direct Plan Growth Option | Direct | 31-10-2025 | ₹8.105
+Shriram Multi Sector Rotation Fund - Regular Plan Growth Option | Regular | 31-10-2025 | ₹7.9798
+Shriram Nifty 1D Rate Liquid ETF - Growth | ETF | 31-10-2025 | ₹1077.2407
+Shriram Overnight Fund -  Direct Growth | Direct | 31-10-2025 | ₹12.1762
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 31-10-2025 | ₹10
+Shriram Overnight Fund - Direct Monthly IDCW | Direct | 31-10-2025 | ₹10.0235
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 31-10-2025 | ₹10
+Shriram Overnight Fund - Regular Growth | Regular | 31-10-2025 | ₹12.143
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 31-10-2025 | ₹10.0235
+Shriram Aggressive Hybrid Fund- Direct Growth | Direct | 31-10-2024 | ₹35.5986
+Shriram Aggressive Hybrid Fund- Direct- IDCW | Direct | 31-10-2024 | ₹28.1367
+Shriram Aggressive Hybrid Fund- Regular Growth | Regular | 31-10-2024 | ₹31.4895
+Shriram Aggressive Hybrid Fund- Regular-IDCW | Regular | 31-10-2024 | ₹25.1777
+Shriram Balanced Advantage Fund - Direct Growth | Direct | 31-10-2024 | ₹18.7533
+Shriram Balanced Advantage Fund - Direct- IDCW | Direct | 31-10-2024 | ₹18.6437
+Shriram Balanced Advantage Fund - Regular Growth | Regular | 31-10-2024 | ₹16.9653
+Shriram Balanced Advantage Fund - Regular-IDCW | Regular | 31-10-2024 | ₹16.9875
+Shriram ELSS Tax Saver Fund - Direct Growth | Direct | 31-10-2024 | ₹24.9949
+Shriram ELSS Tax Saver Fund - Direct- IDCW | Direct | 31-10-2024 | ₹24.8289
+Shriram ELSS Tax Saver Fund - Regular Growth | Regular | 31-10-2024 | ₹22.5168
+Shriram ELSS Tax Saver Fund - Regular-IDCW | Regular | 31-10-2024 | ₹22.5243
+Shriram Flexi Cap Fund - Direct Growth | Direct | 31-10-2024 | ₹24.1718
+Shriram Flexi Cap Fund - Direct-IDCW | Direct | 31-10-2024 | ₹23.9552
+Shriram Flexi Cap Fund - Regular Growth | Regular | 31-10-2024 | ₹21.6699
+Shriram Flexi Cap Fund - Regular-IDCW | Regular | 31-10-2024 | ₹21.6649
+Shriram Multi Asset Allocation Fund - Direct Growth | Direct | 31-10-2024 | ₹12.4895
+Shriram Multi Asset Allocation Fund - Regular Growth | Regular | 31-10-2024 | ₹12.2193
+Shriram Nifty 1D Rate Liquid ETF - Growth | ETF | 31-10-2024 | ₹1020.1917
+Shriram Overnight Fund -  Direct Growth | Direct | 31-10-2024 | ₹11.4985
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 31-10-2024 | ₹10
+Shriram Overnight Fund - Direct Monthly IDCW | Direct | 31-10-2024 | ₹10.0277
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 31-10-2024 | ₹10
+Shriram Overnight Fund - Regular Growth | Regular | 31-10-2024 | ₹11.4738
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 31-10-2024 | ₹10.0275
+Shriram Aggressive Hybrid Fund- Direct Growth | Direct | 31-10-2023 | ₹27.9032
+Shriram Aggressive Hybrid Fund- Direct- IDCW | Direct | 31-10-2023 | ₹22.0957
+Shriram Aggressive Hybrid Fund- Regular Growth | Regular | 31-10-2023 | ₹25.0796
+Shriram Aggressive Hybrid Fund- Regular-IDCW | Regular | 31-10-2023 | ₹20.0486
+Shriram Balanced Advantage Fund - Direct Growth | Direct | 31-10-2023 | ₹15.3696
+Shriram Balanced Advantage Fund - Direct- IDCW | Direct | 31-10-2023 | ₹15.3009
+Shriram Balanced Advantage Fund - Regular Growth | Regular | 31-10-2023 | ₹14.1601
+Shriram Balanced Advantage Fund - Regular-IDCW | Regular | 31-10-2023 | ₹14.1614
+Shriram ELSS Tax Saver Fund - Direct Growth | Direct | 31-10-2023 | ₹18.3679
+Shriram ELSS Tax Saver Fund - Direct- IDCW | Direct | 31-10-2023 | ₹18.2711
+Shriram ELSS Tax Saver Fund - Regular Growth | Regular | 31-10-2023 | ₹16.8181
+Shriram ELSS Tax Saver Fund - Regular-IDCW | Regular | 31-10-2023 | ₹16.8083
+Shriram Flexi Cap Fund - Direct Growth | Direct | 31-10-2023 | ₹17.7178
+Shriram Flexi Cap Fund - Direct-IDCW | Direct | 31-10-2023 | ₹17.5951
+Shriram Flexi Cap Fund - Regular Growth | Regular | 31-10-2023 | ₹16.158
+Shriram Flexi Cap Fund - Regular-IDCW | Regular | 31-10-2023 | ₹16.1505
+Shriram Multi Asset Allocation Fund - Direct Growth | Direct | 31-10-2023 | ₹9.9622
+Shriram Multi Asset Allocation Fund - Regular Growth | Regular | 31-10-2023 | ₹9.9331
+Shriram Overnight Fund -  Direct Growth | Direct | 31-10-2023 | ₹10.7748
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 31-10-2023 | ₹10
+Shriram Overnight Fund - Direct Monthly IDCW | Direct | 31-10-2023 | ₹10.0277
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 31-10-2023 | ₹10
+Shriram Overnight Fund - Regular Growth | Regular | 31-10-2023 | ₹10.7623
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 31-10-2023 | ₹10.0271
+Shriram Overnight Fund - Regular Weekly IDCW | Regular | 31-10-2023 | ₹10.0018
+Shriram Aggressive Hybrid Fund- Direct Growth | Direct | 31-10-2022 | ₹25.7346
+Shriram Aggressive Hybrid Fund- Direct- IDCW | Direct | 31-10-2022 | ₹20.4055
+Shriram Aggressive Hybrid Fund- Regular Growth | Regular | 31-10-2022 | ₹23.5017
+Shriram Aggressive Hybrid Fund- Regular-IDCW | Regular | 31-10-2022 | ₹18.7872
+Shriram Balanced Advantage Fund - Direct Growth | Direct | 31-10-2022 | ₹14.353
+Shriram Balanced Advantage Fund - Direct- IDCW | Direct | 31-10-2022 | ₹14.3054
+Shriram Balanced Advantage Fund - Regular Growth | Regular | 31-10-2022 | ₹13.467
+Shriram Balanced Advantage Fund - Regular-IDCW | Regular | 31-10-2022 | ₹13.4679
+Shriram ELSS Tax Saver Fund - Direct Growth | Direct | 31-10-2022 | ₹17.0821
+Shriram ELSS Tax Saver Fund - Direct- IDCW | Direct | 31-10-2022 | ₹17.0132
+Shriram ELSS Tax Saver Fund - Regular Growth | Regular | 31-10-2022 | ₹15.9165
+Shriram ELSS Tax Saver Fund - Regular-IDCW | Regular | 31-10-2022 | ₹15.907
+Shriram Flexi Cap Fund - Direct Growth | Direct | 31-10-2022 | ₹16.3554
+Shriram Flexi Cap Fund - Direct-IDCW | Direct | 31-10-2022 | ₹16.2689
+Shriram Flexi Cap Fund - Regular Growth | Regular | 31-10-2022 | ₹15.1828
+Shriram Flexi Cap Fund - Regular-IDCW | Regular | 31-10-2022 | ₹15.1782
+Shriram Overnight Fund -  Direct Growth | Direct | 31-10-2022 | ₹10.1128
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 31-10-2022 | ₹10
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 31-10-2022 | ₹10
+Shriram Overnight Fund - Regular Growth | Regular | 31-10-2022 | ₹10.111
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 31-10-2022 | ₹10.0228
+Shriram Overnight Fund - Regular Weekly IDCW | Regular | 31-10-2022 | ₹10
+Shriram Liquid Fund - Direct Plan Growth Option | Direct | 31-08-2025 | ₹1052.9519
+Shriram Liquid Fund - Regular Plan Growth Option | Regular | 31-08-2025 | ₹1051.7379
+Shriram Unclaimed IDCW Liquid Fund | Liquid Fund | 31-08-2025 | ₹1028.1771
+Shriram Unclaimed IDCW Stable Scheme Liquid Fund | Liquid Fund | 31-08-2025 | ₹1000
+Shriram Unclaimed Redemption Liquid Fund | Liquid Fund | 31-08-2025 | ₹1038.9537
+Shriram Unclaimed Redemption Stable Scheme Liquid Fund | Liquid Fund | 31-08-2025 | ₹1000
+Shriram Nifty 1D Rate Liquid ETF - Growth | ETF | 31-08-2025 | ₹1068.3824
+Shriram Overnight Fund -  Direct Growth | Direct | 31-08-2025 | ₹12.0682
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 31-08-2025 | ₹10
+Shriram Overnight Fund - Direct Monthly IDCW | Direct | 31-08-2025 | ₹10.019
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 31-08-2025 | ₹10
+Shriram Overnight Fund - Regular Growth | Regular | 31-08-2025 | ₹12.0365
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 31-08-2025 | ₹10.019
+Shriram Nifty 1D Rate Liquid ETF - Growth | ETF | 31-08-2024 | ₹1010.0901
+Shriram Overnight Fund -  Direct Growth | Direct | 31-08-2024 | ₹11.3782
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 31-08-2024 | ₹10
+Shriram Overnight Fund - Direct Monthly IDCW | Direct | 31-08-2024 | ₹10.026
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 31-08-2024 | ₹10
+Shriram Overnight Fund - Regular Growth | Regular | 31-08-2024 | ₹11.3548
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 31-08-2024 | ₹10.0257
+Shriram Aggressive Hybrid Fund- Direct Growth | Direct | 31-08-2023 | ₹27.5524
+Shriram Aggressive Hybrid Fund- Direct- IDCW | Direct | 31-08-2023 | ₹21.826
+Shriram Aggressive Hybrid Fund- Regular Growth | Regular | 31-08-2023 | ₹24.8336
+Shriram Aggressive Hybrid Fund- Regular-IDCW | Regular | 31-08-2023 | ₹19.852
+Shriram Balanced Advantage Fund - Direct Growth | Direct | 31-08-2023 | ₹15.2031
+Shriram Balanced Advantage Fund - Direct- IDCW | Direct | 31-08-2023 | ₹15.1379
+Shriram Balanced Advantage Fund - Regular Growth | Regular | 31-08-2023 | ₹14.0491
+Shriram Balanced Advantage Fund - Regular-IDCW | Regular | 31-08-2023 | ₹14.0503
+Shriram ELSS Tax Saver Fund - Direct Growth | Direct | 31-08-2023 | ₹18.4237
+Shriram ELSS Tax Saver Fund - Direct- IDCW | Direct | 31-08-2023 | ₹18.3316
+Shriram ELSS Tax Saver Fund - Regular Growth | Regular | 31-08-2023 | ₹16.9148
+Shriram ELSS Tax Saver Fund - Regular-IDCW | Regular | 31-08-2023 | ₹16.9047
+Shriram Flexi Cap Fund - Direct Growth | Direct | 31-08-2023 | ₹17.5478
+Shriram Flexi Cap Fund - Direct-IDCW | Direct | 31-08-2023 | ₹17.4322
+Shriram Flexi Cap Fund - Regular Growth | Regular | 31-08-2023 | ₹16.0472
+Shriram Flexi Cap Fund - Regular-IDCW | Regular | 31-08-2023 | ₹16.0397
+Shriram Overnight Fund -  Direct Growth | Direct | 31-08-2023 | ₹10.6559
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 31-08-2023 | ₹10
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 31-08-2023 | ₹10
+Shriram Overnight Fund - Regular Growth | Regular | 31-08-2023 | ₹10.6453
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 31-08-2023 | ₹10.0275
+Shriram Overnight Fund - Regular Weekly IDCW | Regular | 31-08-2023 | ₹10.0058
+Shriram Aggressive Hybrid Fund- Direct Growth | Direct | 31-07-2025 | ₹35.8323
+Shriram Aggressive Hybrid Fund- Direct- IDCW | Direct | 31-07-2025 | ₹28.2837
+Shriram Aggressive Hybrid Fund- Regular Growth | Regular | 31-07-2025 | ₹31.2992
+Shriram Aggressive Hybrid Fund- Regular-IDCW | Regular | 31-07-2025 | ₹25.0252
+Shriram Balanced Advantage Fund - Direct Growth | Direct | 31-07-2025 | ₹18.7083
+Shriram Balanced Advantage Fund - Direct- IDCW | Direct | 31-07-2025 | ₹18.5781
+Shriram Balanced Advantage Fund - Regular Growth | Regular | 31-07-2025 | ₹16.6964
+Shriram Balanced Advantage Fund - Regular-IDCW | Regular | 31-07-2025 | ₹16.7182
+Shriram ELSS Tax Saver Fund - Direct Growth | Direct | 31-07-2025 | ₹23.5836
+Shriram ELSS Tax Saver Fund - Direct- IDCW | Direct | 31-07-2025 | ₹23.411
+Shriram ELSS Tax Saver Fund - Regular Growth | Regular | 31-07-2025 | ₹20.991
+Shriram ELSS Tax Saver Fund - Regular-IDCW | Regular | 31-07-2025 | ₹20.9937
+Shriram Flexi Cap Fund - Direct Growth | Direct | 31-07-2025 | ₹22.6775
+Shriram Flexi Cap Fund - Direct-IDCW | Direct | 31-07-2025 | ₹22.4641
+Shriram Flexi Cap Fund - Regular Growth | Regular | 31-07-2025 | ₹20.0826
+Shriram Flexi Cap Fund - Regular-IDCW | Regular | 31-07-2025 | ₹20.0783
+Shriram Liquid Fund - Direct Plan Growth Option | Direct | 31-07-2025 | ₹1048.0168
+Shriram Liquid Fund - Regular Plan Growth Option | Regular | 31-07-2025 | ₹1046.9415
+Shriram Unclaimed IDCW Liquid Fund | Liquid Fund | 31-07-2025 | ₹1022.8125
+Shriram Unclaimed IDCW Stable Scheme Liquid Fund | Liquid Fund | 31-07-2025 | ₹1000
+Shriram Unclaimed Redemption Liquid Fund | Liquid Fund | 31-07-2025 | ₹1034.0915
+Shriram Unclaimed Redemption Stable Scheme Liquid Fund | Liquid Fund | 31-07-2025 | ₹1000
+Shriram Multi Asset Allocation Fund - Direct Growth | Direct | 31-07-2025 | ₹12.4278
+Shriram Multi Asset Allocation Fund - Regular Growth | Regular | 31-07-2025 | ₹11.9927
+Shriram Multi Sector Rotation Fund - Direct Plan Growth Option | Direct | 31-07-2025 | ₹7.8057
+Shriram Multi Sector Rotation Fund - Regular Plan Growth Option | Regular | 31-07-2025 | ₹7.7176
+Shriram Nifty 1D Rate Liquid ETF - Growth | ETF | 31-07-2025 | ₹1063.8828
+Shriram Overnight Fund -  Direct Growth | Direct | 31-07-2025 | ₹12.014
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 31-07-2025 | ₹10
+Shriram Overnight Fund - Direct Monthly IDCW | Direct | 31-07-2025 | ₹10.023
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 31-07-2025 | ₹10
+Shriram Overnight Fund - Regular Growth | Regular | 31-07-2025 | ₹11.983
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 31-07-2025 | ₹10.023
+Shriram Aggressive Hybrid Fund- Direct Growth | Direct | 31-07-2024 | ₹37.375
+Shriram Aggressive Hybrid Fund- Direct- IDCW | Direct | 31-07-2024 | ₹29.5551
+Shriram Aggressive Hybrid Fund- Regular Growth | Regular | 31-07-2024 | ₹33.203
+Shriram Aggressive Hybrid Fund- Regular-IDCW | Regular | 31-07-2024 | ₹26.5477
+Shriram Balanced Advantage Fund - Direct Growth | Direct | 31-07-2024 | ₹19.7464
+Shriram Balanced Advantage Fund - Direct- IDCW | Direct | 31-07-2024 | ₹19.6362
+Shriram Balanced Advantage Fund - Regular Growth | Regular | 31-07-2024 | ₹17.9479
+Shriram Balanced Advantage Fund - Regular-IDCW | Regular | 31-07-2024 | ₹17.9723
+Shriram ELSS Tax Saver Fund - Direct Growth | Direct | 31-07-2024 | ₹26.6781
+Shriram ELSS Tax Saver Fund - Direct- IDCW | Direct | 31-07-2024 | ₹26.5087
+Shriram ELSS Tax Saver Fund - Regular Growth | Regular | 31-07-2024 | ₹24.1359
+Shriram ELSS Tax Saver Fund - Regular-IDCW | Regular | 31-07-2024 | ₹24.1437
+Shriram Flexi Cap Fund - Direct Growth | Direct | 31-07-2024 | ₹25.8198
+Shriram Flexi Cap Fund - Direct-IDCW | Direct | 31-07-2024 | ₹25.5937
+Shriram Flexi Cap Fund - Regular Growth | Regular | 31-07-2024 | ₹23.2441
+Shriram Flexi Cap Fund - Regular-IDCW | Regular | 31-07-2024 | ₹23.2387
+Shriram Multi Asset Allocation Fund - Direct Growth | Direct | 31-07-2024 | ₹13.0777
+Shriram Multi Asset Allocation Fund - Regular Growth | Regular | 31-07-2024 | ₹12.8569
+Shriram Nifty 1D Rate Liquid ETF - Growth | ETF | 31-07-2024 | ₹1004.9415
+Shriram Overnight Fund -  Direct Growth | Direct | 31-07-2024 | ₹11.3177
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 31-07-2024 | ₹10
+Shriram Overnight Fund - Direct Monthly IDCW | Direct | 31-07-2024 | ₹10.0281
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 31-07-2024 | ₹10
+Shriram Overnight Fund - Regular Growth | Regular | 31-07-2024 | ₹11.2953
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 31-07-2024 | ₹10.0276
+Shriram Aggressive Hybrid Fund- Direct Growth | Direct | 31-07-2023 | ₹27.7461
+Shriram Aggressive Hybrid Fund- Direct- IDCW | Direct | 31-07-2023 | ₹21.9819
+Shriram Aggressive Hybrid Fund- Regular Growth | Regular | 31-07-2023 | ₹25.0424
+Shriram Aggressive Hybrid Fund- Regular-IDCW | Regular | 31-07-2023 | ₹20.0189
+Shriram Balanced Advantage Fund - Direct Growth | Direct | 31-07-2023 | ₹15.3693
+Shriram Balanced Advantage Fund - Direct- IDCW | Direct | 31-07-2023 | ₹15.3048
+Shriram Balanced Advantage Fund - Regular Growth | Regular | 31-07-2023 | ₹14.2245
+Shriram Balanced Advantage Fund - Regular-IDCW | Regular | 31-07-2023 | ₹14.2257
+Shriram ELSS Tax Saver Fund - Direct Growth | Direct | 31-07-2023 | ₹18.4558
+Shriram ELSS Tax Saver Fund - Direct- IDCW | Direct | 31-07-2023 | ₹18.366
+Shriram ELSS Tax Saver Fund - Regular Growth | Regular | 31-07-2023 | ₹16.9674
+Shriram ELSS Tax Saver Fund - Regular-IDCW | Regular | 31-07-2023 | ₹16.9573
+Shriram Flexi Cap Fund - Direct Growth | Direct | 31-07-2023 | ₹17.7114
+Shriram Flexi Cap Fund - Direct-IDCW | Direct | 31-07-2023 | ₹17.5982
+Shriram Flexi Cap Fund - Regular Growth | Regular | 31-07-2023 | ₹16.2197
+Shriram Flexi Cap Fund - Regular-IDCW | Regular | 31-07-2023 | ₹16.2122
+Shriram Overnight Fund -  Direct Growth | Direct | 31-07-2023 | ₹10.5971
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 31-07-2023 | ₹10
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 31-07-2023 | ₹10
+Shriram Overnight Fund - Regular Growth | Regular | 31-07-2023 | ₹10.5874
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 31-07-2023 | ₹10.0238
+Shriram Overnight Fund - Regular Weekly IDCW | Regular | 31-07-2023 | ₹10
+Shriram Liquid Fund - Direct Plan Growth Option | Direct | 31-05-2025 | ₹1038.0199
+Shriram Liquid Fund - Regular Plan Growth Option | Regular | 31-05-2025 | ₹1037.2151
+Shriram Unclaimed IDCW Liquid Fund | Liquid Fund | 31-05-2025 | ₹1012.9688
+Shriram Unclaimed IDCW Stable Scheme Liquid Fund | Liquid Fund | 31-05-2025 | ₹1000
+Shriram Unclaimed Redemption Liquid Fund | Liquid Fund | 31-05-2025 | ₹1024.2444
+Shriram Unclaimed Redemption Stable Scheme Liquid Fund | Liquid Fund | 31-05-2025 | ₹1000
+Shriram Nifty 1D Rate Liquid ETF - Growth | ETF | 31-05-2025 | ₹1055.1973
+Shriram Overnight Fund -  Direct Growth | Direct | 31-05-2025 | ₹11.9094
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 31-05-2025 | ₹10
+Shriram Overnight Fund - Direct Monthly IDCW | Direct | 31-05-2025 | ₹10.0245
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 31-05-2025 | ₹10
+Shriram Overnight Fund - Regular Growth | Regular | 31-05-2025 | ₹11.8799
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 31-05-2025 | ₹10.0244
+Shriram Aggressive Hybrid Fund- Direct Growth | Direct | 31-05-2024 | ₹34.9967
+Shriram Aggressive Hybrid Fund- Direct- IDCW | Direct | 31-05-2024 | ₹27.6842
+Shriram Aggressive Hybrid Fund- Regular Growth | Regular | 31-05-2024 | ₹31.1692
+Shriram Aggressive Hybrid Fund- Regular-IDCW | Regular | 31-05-2024 | ₹24.9166
+Shriram Balanced Advantage Fund - Direct Growth | Direct | 31-05-2024 | ₹18.869
+Shriram Balanced Advantage Fund - Direct- IDCW | Direct | 31-05-2024 | ₹18.767
+Shriram Balanced Advantage Fund - Regular Growth | Regular | 31-05-2024 | ₹17.202
+Shriram Balanced Advantage Fund - Regular-IDCW | Regular | 31-05-2024 | ₹17.2256
+Shriram ELSS Tax Saver Fund - Direct Growth | Direct | 31-05-2024 | ₹24.252
+Shriram ELSS Tax Saver Fund - Direct- IDCW | Direct | 31-05-2024 | ₹24.1026
+Shriram ELSS Tax Saver Fund - Regular Growth | Regular | 31-05-2024 | ₹21.9989
+Shriram ELSS Tax Saver Fund - Regular-IDCW | Regular | 31-05-2024 | ₹22.0056
+Shriram Flexi Cap Fund - Direct Growth | Direct | 31-05-2024 | ₹23.6847
+Shriram Flexi Cap Fund - Direct-IDCW | Direct | 31-05-2024 | ₹23.5033
+Shriram Flexi Cap Fund - Regular Growth | Regular | 31-05-2024 | ₹21.3999
+Shriram Flexi Cap Fund - Regular-IDCW | Regular | 31-05-2024 | ₹21.3924
+Shriram Multi Asset Allocation Fund - Direct Growth | Direct | 31-05-2024 | ₹12.5173
+Shriram Multi Asset Allocation Fund - Regular Growth | Regular | 31-05-2024 | ₹12.3433
+Shriram Overnight Fund -  Direct Growth | Direct | 31-05-2024 | ₹11.1968
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 31-05-2024 | ₹10
+Shriram Overnight Fund - Direct Monthly IDCW | Direct | 31-05-2024 | ₹10.0271
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 31-05-2024 | ₹10
+Shriram Overnight Fund - Regular Growth | Regular | 31-05-2024 | ₹11.1762
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 31-05-2024 | ₹10.0283
+Shriram Overnight Fund - Regular Weekly IDCW | Regular | 31-05-2024 | ₹10.007
+Shriram Aggressive Hybrid Fund- Direct Growth | Direct | 31-05-2023 | ₹26.001
+Shriram Aggressive Hybrid Fund- Direct- IDCW | Direct | 31-05-2023 | ₹20.6051
+Shriram Aggressive Hybrid Fund- Regular Growth | Regular | 31-05-2023 | ₹23.5307
+Shriram Aggressive Hybrid Fund- Regular-IDCW | Regular | 31-05-2023 | ₹18.8105
+Shriram Balanced Advantage Fund - Direct Growth | Direct | 31-05-2023 | ₹14.5853
+Shriram Balanced Advantage Fund - Direct- IDCW | Direct | 31-05-2023 | ₹14.5268
+Shriram Balanced Advantage Fund - Regular Growth | Regular | 31-05-2023 | ₹13.5399
+Shriram Balanced Advantage Fund - Regular-IDCW | Regular | 31-05-2023 | ₹13.541
+Shriram ELSS Tax Saver Fund - Direct Growth | Direct | 31-05-2023 | ₹17.2508
+Shriram ELSS Tax Saver Fund - Direct- IDCW | Direct | 31-05-2023 | ₹17.1703
+Shriram ELSS Tax Saver Fund - Regular Growth | Regular | 31-05-2023 | ₹15.9061
+Shriram ELSS Tax Saver Fund - Regular-IDCW | Regular | 31-05-2023 | ₹15.8967
+Shriram Flexi Cap Fund - Direct Growth | Direct | 31-05-2023 | ₹16.386
+Shriram Flexi Cap Fund - Direct-IDCW | Direct | 31-05-2023 | ₹16.2851
+Shriram Flexi Cap Fund - Regular Growth | Regular | 31-05-2023 | ₹15.0506
+Shriram Flexi Cap Fund - Regular-IDCW | Regular | 31-05-2023 | ₹15.0436
+Shriram Overnight Fund -  Direct Growth | Direct | 31-05-2023 | ₹10.4852
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 31-05-2023 | ₹10
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 31-05-2023 | ₹10
+Shriram Overnight Fund - Regular Growth | Regular | 31-05-2023 | ₹10.4773
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 31-05-2023 | ₹10.0269
+Shriram Overnight Fund - Regular Weekly IDCW | Regular | 31-05-2023 | ₹10.0033
+Shriram Aggressive Hybrid Fund- Direct Growth | Direct | 31-05-2022 | ₹23.9353
+Shriram Aggressive Hybrid Fund- Direct- IDCW | Direct | 31-05-2022 | ₹18.9821
+Shriram Aggressive Hybrid Fund- Regular Growth | Regular | 31-05-2022 | ₹21.9977
+Shriram Aggressive Hybrid Fund- Regular-IDCW | Regular | 31-05-2022 | ₹17.5849
+Shriram Balanced Advantage Fund - Direct Growth | Direct | 31-05-2022 | ₹13.532
+Shriram Balanced Advantage Fund - Direct- IDCW | Direct | 31-05-2022 | ₹13.4917
+Shriram Balanced Advantage Fund - Regular Growth | Regular | 31-05-2022 | ₹12.7943
+Shriram Balanced Advantage Fund - Regular-IDCW | Regular | 31-05-2022 | ₹12.795
+Shriram ELSS Tax Saver Fund - Direct Growth | Direct | 31-05-2022 | ₹15.4702
+Shriram ELSS Tax Saver Fund - Direct- IDCW | Direct | 31-05-2022 | ₹15.4134
+Shriram ELSS Tax Saver Fund - Regular Growth | Regular | 31-05-2022 | ₹14.5227
+Shriram ELSS Tax Saver Fund - Regular-IDCW | Regular | 31-05-2022 | ₹14.5141
+Shriram Flexi Cap Fund - Direct Growth | Direct | 31-05-2022 | ₹14.6569
+Shriram Flexi Cap Fund - Direct-IDCW | Direct | 31-05-2022 | ₹14.5866
+Shriram Flexi Cap Fund - Regular Growth | Regular | 31-05-2022 | ₹13.7114
+Shriram Flexi Cap Fund - Regular-IDCW | Regular | 31-05-2022 | ₹13.7071
+Shriram Aggressive Hybrid Fund- Direct Growth | Direct | 31-03-2026 | ₹33.8761
+Shriram Aggressive Hybrid Fund- Direct- IDCW | Direct | 31-03-2026 | ₹26.6982
+Shriram Aggressive Hybrid Fund- Regular Growth | Regular | 31-03-2026 | ₹29.2568
+Shriram Aggressive Hybrid Fund- Regular-IDCW | Regular | 31-03-2026 | ₹23.3928
+Shriram Balanced Advantage Fund - Direct Growth | Direct | 31-03-2026 | ₹17.6437
+Shriram Balanced Advantage Fund - Direct- IDCW | Direct | 31-03-2026 | ₹17.4988
+Shriram Balanced Advantage Fund - Regular Growth | Regular | 31-03-2026 | ₹15.5658
+Shriram Balanced Advantage Fund - Regular-IDCW | Regular | 31-03-2026 | ₹15.5872
+Shriram ELSS Tax Saver Fund - Direct Growth | Direct | 31-03-2026 | ₹21.0566
+Shriram ELSS Tax Saver Fund - Direct- IDCW | Direct | 31-03-2026 | ₹20.8915
+Shriram ELSS Tax Saver Fund - Regular Growth | Regular | 31-03-2026 | ₹18.5412
+Shriram ELSS Tax Saver Fund - Regular-IDCW | Regular | 31-03-2026 | ₹18.5438
+Shriram Flexi Cap Fund - Direct Growth | Direct | 31-03-2026 | ₹20.2247
+Shriram Flexi Cap Fund - Direct-IDCW | Direct | 31-03-2026 | ₹20.0236
+Shriram Flexi Cap Fund - Regular Growth | Regular | 31-03-2026 | ₹17.716
+Shriram Flexi Cap Fund - Regular-IDCW | Regular | 31-03-2026 | ₹17.7097
+Shriram Liquid Fund - Direct Plan Growth Option | Direct | 31-03-2026 | ₹1088.1667
+Shriram Liquid Fund - Regular Plan Growth Option | Regular | 31-03-2026 | ₹1086.0852
+Shriram Unclaimed IDCW Liquid Fund | Liquid Fund | 31-03-2026 | ₹1060.9739
+Shriram Unclaimed IDCW Stable Scheme Liquid Fund | Liquid Fund | 31-03-2026 | ₹1000
+Shriram Unclaimed Redemption Liquid Fund | Liquid Fund | 31-03-2026 | ₹1073.6433
+Shriram Unclaimed Redemption Stable Scheme Liquid Fund | Liquid Fund | 31-03-2026 | ₹1000
+Shriram Money Market Fund - Direct Plan Growth Option | Direct | 31-03-2026 | ₹1010.4385
+Shriram Money Market Fund - Regular Plan Growth Option | Regular | 31-03-2026 | ₹1010.0321
+Shriram Multi Asset Allocation Fund - Direct Growth | Direct | 31-03-2026 | ₹12.8477
+Shriram Multi Asset Allocation Fund - Regular Growth | Regular | 31-03-2026 | ₹12.2603
+Shriram Multi Sector Rotation Fund - Direct Plan Growth Option | Direct | 31-03-2026 | ₹7.0891
+Shriram Multi Sector Rotation Fund - Regular Plan Growth Option | Regular | 31-03-2026 | ₹6.9335
+Shriram Nifty 1D Rate Liquid ETF - Growth | ETF | 31-03-2026 | ₹1098.178
+Shriram Overnight Fund -  Direct Growth | Direct | 31-03-2026 | ₹12.4379
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 31-03-2026 | ₹10.0001
+Shriram Overnight Fund - Direct Monthly IDCW | Direct | 31-03-2026 | ₹10.0234
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 31-03-2026 | ₹10.0001
+Shriram Overnight Fund - Regular Growth | Regular | 31-03-2026 | ₹12.4007
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 31-03-2026 | ₹10.0233
+Shriram Aggressive Hybrid Fund- Direct Growth | Direct | 31-03-2025 | ₹33.8383
+Shriram Aggressive Hybrid Fund- Direct- IDCW | Direct | 31-03-2025 | ₹26.7262
+Shriram Aggressive Hybrid Fund- Regular Growth | Regular | 31-03-2025 | ₹29.7197
+Shriram Aggressive Hybrid Fund- Regular-IDCW | Regular | 31-03-2025 | ₹23.7624
+Shriram Balanced Advantage Fund - Direct Growth | Direct | 31-03-2025 | ₹18.0629
+Shriram Balanced Advantage Fund - Direct- IDCW | Direct | 31-03-2025 | ₹17.9488
+Shriram Balanced Advantage Fund - Regular Growth | Regular | 31-03-2025 | ₹16.2182
+Shriram Balanced Advantage Fund - Regular-IDCW | Regular | 31-03-2025 | ₹16.2393
+Shriram ELSS Tax Saver Fund - Direct Growth | Direct | 31-03-2025 | ₹22.2556
+Shriram ELSS Tax Saver Fund - Direct- IDCW | Direct | 31-03-2025 | ₹22.0999
+Shriram ELSS Tax Saver Fund - Regular Growth | Regular | 31-03-2025 | ₹19.9147
+Shriram ELSS Tax Saver Fund - Regular-IDCW | Regular | 31-03-2025 | ₹19.9213
+Shriram Flexi Cap Fund - Direct Growth | Direct | 31-03-2025 | ₹21.5317
+Shriram Flexi Cap Fund - Direct-IDCW | Direct | 31-03-2025 | ₹21.3335
+Shriram Flexi Cap Fund - Regular Growth | Regular | 31-03-2025 | ₹19.1712
+Shriram Flexi Cap Fund - Regular-IDCW | Regular | 31-03-2025 | ₹19.167
+Shriram Liquid Fund - Direct Plan Growth Option | Direct | 31-03-2025 | ₹1027.1559
+Shriram Liquid Fund - Regular Plan Growth Option | Regular | 31-03-2025 | ₹1026.6093
+Shriram Unclaimed IDCW Liquid Fund | Liquid Fund | 31-03-2025 | ₹1002.2135
+Shriram Unclaimed IDCW Stable Scheme Liquid Fund | Liquid Fund | 31-03-2025 | ₹1000
+Shriram Unclaimed Redemption Liquid Fund | Liquid Fund | 31-03-2025 | ₹1013.5341
+Shriram Unclaimed Redemption Stable Scheme Liquid Fund | Liquid Fund | 31-03-2025 | ₹1000
+Shriram Multi Asset Allocation Fund - Direct Growth | Direct | 31-03-2025 | ₹11.8648
+Shriram Multi Asset Allocation Fund - Regular Growth | Regular | 31-03-2025 | ₹11.5192
+Shriram Multi Sector Rotation Fund - Direct Plan Growth Option | Direct | 31-03-2025 | ₹7.9313
+Shriram Multi Sector Rotation Fund - Regular Plan Growth Option | Regular | 31-03-2025 | ₹7.8889
+Shriram Nifty 1D Rate Liquid ETF - Growth | ETF | 31-03-2025 | ₹1045.799
+Shriram Overnight Fund -  Direct Growth | Direct | 31-03-2025 | ₹11.7974
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 31-03-2025 | ₹10
+Shriram Overnight Fund - Direct Monthly IDCW | Direct | 31-03-2025 | ₹10.0237
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 31-03-2025 | ₹10
+Shriram Overnight Fund - Regular Growth | Regular | 31-03-2025 | ₹11.7695
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 31-03-2025 | ₹10.0236
+Shriram Aggressive Hybrid Fund- Direct Growth | Direct | 31-03-2024 | ₹33.2679
+Shriram Aggressive Hybrid Fund- Direct- IDCW | Direct | 31-03-2024 | ₹26.3252
+Shriram Aggressive Hybrid Fund- Regular Growth | Regular | 31-03-2024 | ₹29.7037
+Shriram Aggressive Hybrid Fund- Regular-IDCW | Regular | 31-03-2024 | ₹23.7451
+Shriram Balanced Advantage Fund - Direct Growth | Direct | 31-03-2024 | ₹18.472
+Shriram Balanced Advantage Fund - Direct- IDCW | Direct | 31-03-2024 | ₹18.3753
+Shriram Balanced Advantage Fund - Regular Growth | Regular | 31-03-2024 | ₹16.8909
+Shriram Balanced Advantage Fund - Regular-IDCW | Regular | 31-03-2024 | ₹16.914
+Shriram ELSS Tax Saver Fund - Direct Growth | Direct | 31-03-2024 | ₹22.6247
+Shriram ELSS Tax Saver Fund - Direct- IDCW | Direct | 31-03-2024 | ₹22.4902
+Shriram ELSS Tax Saver Fund - Regular Growth | Regular | 31-03-2024 | ₹20.5771
+Shriram ELSS Tax Saver Fund - Regular-IDCW | Regular | 31-03-2024 | ₹20.5692
+Shriram Flexi Cap Fund - Direct Growth | Direct | 31-03-2024 | ₹22.2568
+Shriram Flexi Cap Fund - Direct-IDCW | Direct | 31-03-2024 | ₹22.0909
+Shriram Flexi Cap Fund - Regular Growth | Regular | 31-03-2024 | ₹20.1646
+Shriram Flexi Cap Fund - Regular-IDCW | Regular | 31-03-2024 | ₹20.1557
+Shriram Multi Asset Allocation Fund - Direct Growth | Direct | 31-03-2024 | ₹12.0067
+Shriram Multi Asset Allocation Fund - Regular Growth | Regular | 31-03-2024 | ₹11.8758
+Shriram Overnight Fund -  Direct Growth | Direct | 31-03-2024 | ₹11.0763
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 31-03-2024 | ₹10
+Shriram Overnight Fund - Direct Monthly IDCW | Direct | 31-03-2024 | ₹10.029
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 31-03-2024 | ₹10
+Shriram Overnight Fund - Regular Growth | Regular | 31-03-2024 | ₹11.0573
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 31-03-2024 | ₹10.0287
+Shriram Overnight Fund - Regular Weekly IDCW | Regular | 31-03-2024 | ₹10.0092
+Shriram Aggressive Hybrid Fund- Direct Growth | Direct | 31-03-2023 | ₹24.8293
+Shriram Aggressive Hybrid Fund- Direct- IDCW | Direct | 31-03-2023 | ₹19.6825
+Shriram Aggressive Hybrid Fund- Regular Growth | Regular | 31-03-2023 | ₹22.5317
+Shriram Aggressive Hybrid Fund- Regular-IDCW | Regular | 31-03-2023 | ₹18.0118
+Shriram Balanced Advantage Fund - Direct Growth | Direct | 31-03-2023 | ₹14.0817
+Shriram Balanced Advantage Fund - Direct- IDCW | Direct | 31-03-2023 | ₹14.0284
+Shriram Balanced Advantage Fund - Regular Growth | Regular | 31-03-2023 | ₹13.1128
+Shriram Balanced Advantage Fund - Regular-IDCW | Regular | 31-03-2023 | ₹13.1137
+Shriram ELSS Tax Saver Fund - Direct Growth | Direct | 31-03-2023 | ₹16.1239
+Shriram ELSS Tax Saver Fund - Direct- IDCW | Direct | 31-03-2023 | ₹16.0517
+Shriram ELSS Tax Saver Fund - Regular Growth | Regular | 31-03-2023 | ₹14.9115
+Shriram ELSS Tax Saver Fund - Regular-IDCW | Regular | 31-03-2023 | ₹14.9027
+Shriram Flexi Cap Fund - Direct Growth | Direct | 31-03-2023 | ₹15.5058
+Shriram Flexi Cap Fund - Direct-IDCW | Direct | 31-03-2023 | ₹15.4146
+Shriram Flexi Cap Fund - Regular Growth | Regular | 31-03-2023 | ₹14.2851
+Shriram Flexi Cap Fund - Regular-IDCW | Regular | 31-03-2023 | ₹14.2808
+Shriram Overnight Fund -  Direct Growth | Direct | 31-03-2023 | ₹10.3723
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 31-03-2023 | ₹10
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 31-03-2023 | ₹10
+Shriram Overnight Fund - Regular Growth | Regular | 31-03-2023 | ₹10.3662
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 31-03-2023 | ₹10.0287
+Shriram Overnight Fund - Regular Weekly IDCW | Regular | 31-03-2023 | ₹10.0075
+Shriram Aggressive Hybrid Fund- Direct Growth | Direct | 31-03-2022 | ₹24.6766
+Shriram Aggressive Hybrid Fund- Direct- IDCW | Direct | 31-03-2022 | ₹19.5712
+Shriram Aggressive Hybrid Fund- Regular Growth | Regular | 31-03-2022 | ₹22.7361
+Shriram Aggressive Hybrid Fund- Regular-IDCW | Regular | 31-03-2022 | ₹18.1752
+Shriram Balanced Advantage Fund - Direct Growth | Direct | 31-03-2022 | ₹13.5933
+Shriram Balanced Advantage Fund - Direct- IDCW | Direct | 31-03-2022 | ₹13.5545
+Shriram Balanced Advantage Fund - Regular Growth | Regular | 31-03-2022 | ₹12.8913
+Shriram Balanced Advantage Fund - Regular-IDCW | Regular | 31-03-2022 | ₹12.892
+Shriram ELSS Tax Saver Fund - Direct Growth | Direct | 31-03-2022 | ₹16.0379
+Shriram ELSS Tax Saver Fund - Direct- IDCW | Direct | 31-03-2022 | ₹15.9812
+Shriram ELSS Tax Saver Fund - Regular Growth | Regular | 31-03-2022 | ₹15.1012
+Shriram ELSS Tax Saver Fund - Regular-IDCW | Regular | 31-03-2022 | ₹15.0922
+Shriram Flexi Cap Fund - Direct Growth | Direct | 31-03-2022 | ₹15.3175
+Shriram Flexi Cap Fund - Direct-IDCW | Direct | 31-03-2022 | ₹15.2468
+Shriram Flexi Cap Fund - Regular Growth | Regular | 31-03-2022 | ₹14.3728
+Shriram Flexi Cap Fund - Regular-IDCW | Regular | 31-03-2022 | ₹14.3684
+Shriram Liquid Fund - Direct Plan Growth Option | Direct | 31-01-2026 | ₹1077.7816
+Shriram Liquid Fund - Regular Plan Growth Option | Regular | 31-01-2026 | ₹1075.9151
+Shriram Unclaimed IDCW Liquid Fund | Liquid Fund | 31-01-2026 | ₹1050.5797
+Shriram Unclaimed IDCW Stable Scheme Liquid Fund | Liquid Fund | 31-01-2026 | ₹1000
+Shriram Unclaimed Redemption Liquid Fund | Liquid Fund | 31-01-2026 | ₹1063.4032
+Shriram Unclaimed Redemption Stable Scheme Liquid Fund | Liquid Fund | 31-01-2026 | ₹1000
+Shriram Nifty 1D Rate Liquid ETF - Growth | ETF | 31-01-2026 | ₹1090.2674
+Shriram Overnight Fund -  Direct Growth | Direct | 31-01-2026 | ₹12.3367
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 31-01-2026 | ₹10.0001
+Shriram Overnight Fund - Direct Monthly IDCW | Direct | 31-01-2026 | ₹10.021
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 31-01-2026 | ₹10.0001
+Shriram Overnight Fund - Regular Growth | Regular | 31-01-2026 | ₹12.3015
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 31-01-2026 | ₹10.0212
+Shriram Aggressive Hybrid Fund- Direct Growth | Direct | 31-01-2025 | ₹33.7685
+Shriram Aggressive Hybrid Fund- Direct- IDCW | Direct | 31-01-2025 | ₹26.6783
+Shriram Aggressive Hybrid Fund- Regular Growth | Regular | 31-01-2025 | ₹29.7409
+Shriram Aggressive Hybrid Fund- Regular-IDCW | Regular | 31-01-2025 | ₹23.7793
+Shriram Balanced Advantage Fund - Direct Growth | Direct | 31-01-2025 | ₹17.9339
+Shriram Balanced Advantage Fund - Direct- IDCW | Direct | 31-01-2025 | ₹17.8244
+Shriram Balanced Advantage Fund - Regular Growth | Regular | 31-01-2025 | ₹16.1496
+Shriram Balanced Advantage Fund - Regular-IDCW | Regular | 31-01-2025 | ₹16.1705
+Shriram ELSS Tax Saver Fund - Direct Growth | Direct | 31-01-2025 | ₹22.3018
+Shriram ELSS Tax Saver Fund - Direct- IDCW | Direct | 31-01-2025 | ₹22.1479
+Shriram ELSS Tax Saver Fund - Regular Growth | Regular | 31-01-2025 | ₹20.0063
+Shriram ELSS Tax Saver Fund - Regular-IDCW | Regular | 31-01-2025 | ₹20.013
+Shriram Flexi Cap Fund - Direct Growth | Direct | 31-01-2025 | ₹21.5441
+Shriram Flexi Cap Fund - Direct-IDCW | Direct | 31-01-2025 | ₹21.3474
+Shriram Flexi Cap Fund - Regular Growth | Regular | 31-01-2025 | ₹19.2333
+Shriram Flexi Cap Fund - Regular-IDCW | Regular | 31-01-2025 | ₹19.2291
+Shriram Liquid Fund - Direct Plan Growth Option | Direct | 31-01-2025 | ₹1015.6749
+Shriram Liquid Fund - Regular Plan Growth Option | Regular | 31-01-2025 | ₹1015.3661
+Shriram Unclaimed IDCW Stable Scheme Liquid Fund | Liquid Fund | 31-01-2025 | ₹1000
+Shriram Unclaimed Redemption Liquid Fund | Liquid Fund | 31-01-2025 | ₹1002.1843
+Shriram Unclaimed Redemption Stable Scheme Liquid Fund | Liquid Fund | 31-01-2025 | ₹1000
+Shriram Multi Asset Allocation Fund - Direct Growth | Direct | 31-01-2025 | ₹11.8393
+Shriram Multi Asset Allocation Fund - Regular Growth | Regular | 31-01-2025 | ₹11.5282
+Shriram Multi Sector Rotation Fund - Direct Plan Growth Option | Direct | 31-01-2025 | ₹8.3994
+Shriram Multi Sector Rotation Fund - Regular Plan Growth Option | Regular | 31-01-2025 | ₹8.3797
+Shriram Nifty 1D Rate Liquid ETF - Growth | ETF | 31-01-2025 | ₹1035.9496
+Shriram Overnight Fund -  Direct Growth | Direct | 31-01-2025 | ₹11.6822
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 31-01-2025 | ₹10
+Shriram Overnight Fund - Direct Monthly IDCW | Direct | 31-01-2025 | ₹10.0277
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 31-01-2025 | ₹10
+Shriram Overnight Fund - Regular Growth | Regular | 31-01-2025 | ₹11.6556
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 31-01-2025 | ₹10.0274
+Shriram Aggressive Hybrid Fund- Direct Growth | Direct | 31-01-2024 | ₹32.1869
+Shriram Aggressive Hybrid Fund- Direct- IDCW | Direct | 31-01-2024 | ₹25.4772
+Shriram Aggressive Hybrid Fund- Regular Growth | Regular | 31-01-2024 | ₹28.8129
+Shriram Aggressive Hybrid Fund- Regular-IDCW | Regular | 31-01-2024 | ₹23.033
+Shriram Balanced Advantage Fund - Direct Growth | Direct | 31-01-2024 | ₹17.8432
+Shriram Balanced Advantage Fund - Direct- IDCW | Direct | 31-01-2024 | ₹17.7541
+Shriram Balanced Advantage Fund - Regular Growth | Regular | 31-01-2024 | ₹16.3643
+Shriram Balanced Advantage Fund - Regular-IDCW | Regular | 31-01-2024 | ₹16.3868
+Shriram ELSS Tax Saver Fund - Direct Growth | Direct | 31-01-2024 | ₹22.6398
+Shriram ELSS Tax Saver Fund - Direct- IDCW | Direct | 31-01-2024 | ₹22.5112
+Shriram ELSS Tax Saver Fund - Regular Growth | Regular | 31-01-2024 | ₹20.6456
+Shriram ELSS Tax Saver Fund - Regular-IDCW | Regular | 31-01-2024 | ₹20.6321
+Shriram Flexi Cap Fund - Direct Growth | Direct | 31-01-2024 | ₹22.0972
+Shriram Flexi Cap Fund - Direct-IDCW | Direct | 31-01-2024 | ₹21.9364
+Shriram Flexi Cap Fund - Regular Growth | Regular | 31-01-2024 | ₹20.0716
+Shriram Flexi Cap Fund - Regular-IDCW | Regular | 31-01-2024 | ₹20.0625
+Shriram Multi Asset Allocation Fund - Direct Growth | Direct | 31-01-2024 | ₹11.6183
+Shriram Multi Asset Allocation Fund - Regular Growth | Regular | 31-01-2024 | ₹11.5277
+Shriram Overnight Fund -  Direct Growth | Direct | 31-01-2024 | ₹10.9584
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 31-01-2024 | ₹10
+Shriram Overnight Fund - Direct Monthly IDCW | Direct | 31-01-2024 | ₹10.0294
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 31-01-2024 | ₹10
+Shriram Overnight Fund - Regular Growth | Regular | 31-01-2024 | ₹10.941
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 31-01-2024 | ₹10.0289
+Shriram Overnight Fund - Regular Weekly IDCW | Regular | 31-01-2024 | ₹10.0036
+Shriram Aggressive Hybrid Fund- Direct Growth | Direct | 31-01-2023 | ₹25.1479
+Shriram Aggressive Hybrid Fund- Direct- IDCW | Direct | 31-01-2023 | ₹19.9376
+Shriram Aggressive Hybrid Fund- Regular Growth | Regular | 31-01-2023 | ₹22.8775
+Shriram Aggressive Hybrid Fund- Regular-IDCW | Regular | 31-01-2023 | ₹18.2882
+Shriram Balanced Advantage Fund - Direct Growth | Direct | 31-01-2023 | ₹14.1043
+Shriram Balanced Advantage Fund - Direct- IDCW | Direct | 31-01-2023 | ₹14.0535
+Shriram Balanced Advantage Fund - Regular Growth | Regular | 31-01-2023 | ₹13.1727
+Shriram Balanced Advantage Fund - Regular-IDCW | Regular | 31-01-2023 | ₹13.1736
+Shriram ELSS Tax Saver Fund - Direct Growth | Direct | 31-01-2023 | ₹16.2957
+Shriram ELSS Tax Saver Fund - Direct- IDCW | Direct | 31-01-2023 | ₹16.2255
+Shriram ELSS Tax Saver Fund - Regular Growth | Regular | 31-01-2023 | ₹15.1147
+Shriram ELSS Tax Saver Fund - Regular-IDCW | Regular | 31-01-2023 | ₹15.1058
+Shriram Flexi Cap Fund - Direct Growth | Direct | 31-01-2023 | ₹15.7827
+Shriram Flexi Cap Fund - Direct-IDCW | Direct | 31-01-2023 | ₹15.6936
+Shriram Flexi Cap Fund - Regular Growth | Regular | 31-01-2023 | ₹14.5832
+Shriram Flexi Cap Fund - Regular-IDCW | Regular | 31-01-2023 | ₹14.5788
+Shriram Overnight Fund -  Direct Growth | Direct | 31-01-2023 | ₹10.2662
+Shriram Overnight Fund -  Regular Fortnightly IDCW | Regular | 31-01-2023 | ₹10.0017
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 31-01-2023 | ₹10
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 31-01-2023 | ₹10
+Shriram Overnight Fund - Regular Growth | Regular | 31-01-2023 | ₹10.2619
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 31-01-2023 | ₹10.0253
+Shriram Overnight Fund - Regular Weekly IDCW | Regular | 31-01-2023 | ₹10.0017
+Shriram Aggressive Hybrid Fund- Direct Growth | Direct | 31-01-2022 | ₹24.5461
+Shriram Aggressive Hybrid Fund- Direct- IDCW | Direct | 31-01-2022 | ₹19.4688
+Shriram Aggressive Hybrid Fund- Regular Growth | Regular | 31-01-2022 | ₹22.6709
+Shriram Aggressive Hybrid Fund- Regular-IDCW | Regular | 31-01-2022 | ₹18.1231
+Shriram Balanced Advantage Fund - Direct Growth | Direct | 31-01-2022 | ₹13.6685
+Shriram Balanced Advantage Fund - Direct- IDCW | Direct | 31-01-2022 | ₹13.6314
+Shriram Balanced Advantage Fund - Regular Growth | Regular | 31-01-2022 | ₹13.0006
+Shriram Balanced Advantage Fund - Regular-IDCW | Regular | 31-01-2022 | ₹13.0013
+Shriram ELSS Tax Saver Fund - Direct Growth | Direct | 31-01-2022 | ₹16.374
+Shriram ELSS Tax Saver Fund - Direct- IDCW | Direct | 31-01-2022 | ₹16.3181
+Shriram ELSS Tax Saver Fund - Regular Growth | Regular | 31-01-2022 | ₹15.4627
+Shriram ELSS Tax Saver Fund - Regular-IDCW | Regular | 31-01-2022 | ₹15.4536
+Shriram Flexi Cap Fund - Direct Growth | Direct | 31-01-2022 | ₹15.654
+Shriram Flexi Cap Fund - Direct-IDCW | Direct | 31-01-2022 | ₹15.5846
+Shriram Flexi Cap Fund - Regular Growth | Regular | 31-01-2022 | ₹14.7318
+Shriram Flexi Cap Fund - Regular-IDCW | Regular | 31-01-2022 | ₹14.7274
+Shriram Liquid Fund - Direct Plan Growth Option | Direct | 30-11-2025 | ₹1067.7381
+Shriram Liquid Fund - Regular Plan Growth Option | Regular | 30-11-2025 | ₹1066.1136
+Shriram Unclaimed IDCW Liquid Fund | Liquid Fund | 30-11-2025 | ₹1041.5696
+Shriram Unclaimed IDCW Stable Scheme Liquid Fund | Liquid Fund | 30-11-2025 | ₹1000
+Shriram Unclaimed Redemption Liquid Fund | Liquid Fund | 30-11-2025 | ₹1053.521
+Shriram Unclaimed Redemption Stable Scheme Liquid Fund | Liquid Fund | 30-11-2025 | ₹1000
+Shriram Nifty 1D Rate Liquid ETF - Growth | ETF | 30-11-2025 | ₹1081.5243
+Shriram Overnight Fund -  Direct Growth | Direct | 30-11-2025 | ₹12.2288
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 30-11-2025 | ₹10.0001
+Shriram Overnight Fund - Direct Monthly IDCW | Direct | 30-11-2025 | ₹10.0187
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 30-11-2025 | ₹10
+Shriram Overnight Fund - Regular Growth | Regular | 30-11-2025 | ₹12.1949
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 30-11-2025 | ₹10.0187
+Shriram Liquid Fund - Direct Plan Growth Option | Direct | 30-11-2024 | ₹1003.9455
+Shriram Liquid Fund - Regular Plan Growth Option | Regular | 30-11-2024 | ₹1003.8799
+Shriram Nifty 1D Rate Liquid ETF - Growth | ETF | 30-11-2024 | ₹1025.2479
+Shriram Overnight Fund -  Direct Growth | Direct | 30-11-2024 | ₹11.5576
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 30-11-2024 | ₹10
+Shriram Overnight Fund - Direct Monthly IDCW | Direct | 30-11-2024 | ₹10.0215
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 30-11-2024 | ₹10
+Shriram Overnight Fund - Regular Growth | Regular | 30-11-2024 | ₹11.5323
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 30-11-2024 | ₹10.0213
+Shriram Aggressive Hybrid Fund- Direct Growth | Direct | 30-11-2023 | ₹29.5113
+Shriram Aggressive Hybrid Fund- Direct- IDCW | Direct | 30-11-2023 | ₹23.3659
+Shriram Aggressive Hybrid Fund- Regular Growth | Regular | 30-11-2023 | ₹26.4899
+Shriram Aggressive Hybrid Fund- Regular-IDCW | Regular | 30-11-2023 | ₹21.1759
+Shriram Balanced Advantage Fund - Direct Growth | Direct | 30-11-2023 | ₹16.1749
+Shriram Balanced Advantage Fund - Direct- IDCW | Direct | 30-11-2023 | ₹16.1012
+Shriram Balanced Advantage Fund - Regular Growth | Regular | 30-11-2023 | ₹14.8799
+Shriram Balanced Advantage Fund - Regular-IDCW | Regular | 30-11-2023 | ₹14.8813
+Shriram ELSS Tax Saver Fund - Direct Growth | Direct | 30-11-2023 | ₹20.0948
+Shriram ELSS Tax Saver Fund - Direct- IDCW | Direct | 30-11-2023 | ₹19.9859
+Shriram ELSS Tax Saver Fund - Regular Growth | Regular | 30-11-2023 | ₹18.3751
+Shriram ELSS Tax Saver Fund - Regular-IDCW | Regular | 30-11-2023 | ₹18.3643
+Shriram Flexi Cap Fund - Direct Growth | Direct | 30-11-2023 | ₹19.3657
+Shriram Flexi Cap Fund - Direct-IDCW | Direct | 30-11-2023 | ₹19.2285
+Shriram Flexi Cap Fund - Regular Growth | Regular | 30-11-2023 | ₹17.6372
+Shriram Flexi Cap Fund - Regular-IDCW | Regular | 30-11-2023 | ₹17.6291
+Shriram Multi Asset Allocation Fund - Direct Growth | Direct | 30-11-2023 | ₹10.6145
+Shriram Multi Asset Allocation Fund - Regular Growth | Regular | 30-11-2023 | ₹10.5669
+Shriram Overnight Fund -  Direct Growth | Direct | 30-11-2023 | ₹10.8345
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 30-11-2023 | ₹10
+Shriram Overnight Fund - Direct Monthly IDCW | Direct | 30-11-2023 | ₹10.0429
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 30-11-2023 | ₹10
+Shriram Overnight Fund - Regular Growth | Regular | 30-11-2023 | ₹10.8202
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 30-11-2023 | ₹10.0273
+Shriram Overnight Fund - Regular Weekly IDCW | Regular | 30-11-2023 | ₹10.0036
+Shriram Aggressive Hybrid Fund- Direct Growth | Direct | 30-11-2022 | ₹26.2011
+Shriram Aggressive Hybrid Fund- Direct- IDCW | Direct | 30-11-2022 | ₹20.7744
+Shriram Aggressive Hybrid Fund- Regular Growth | Regular | 30-11-2022 | ₹23.8973
+Shriram Aggressive Hybrid Fund- Regular-IDCW | Regular | 30-11-2022 | ₹19.1035
+Shriram Balanced Advantage Fund - Direct Growth | Direct | 30-11-2022 | ₹14.6317
+Shriram Balanced Advantage Fund - Direct- IDCW | Direct | 30-11-2022 | ₹14.5818
+Shriram Balanced Advantage Fund - Regular Growth | Regular | 30-11-2022 | ₹13.7078
+Shriram Balanced Advantage Fund - Regular-IDCW | Regular | 30-11-2022 | ₹13.7088
+Shriram ELSS Tax Saver Fund - Direct Growth | Direct | 30-11-2022 | ₹17.4518
+Shriram ELSS Tax Saver Fund - Direct- IDCW | Direct | 30-11-2022 | ₹17.3799
+Shriram ELSS Tax Saver Fund - Regular Growth | Regular | 30-11-2022 | ₹16.237
+Shriram ELSS Tax Saver Fund - Regular-IDCW | Regular | 30-11-2022 | ₹16.2274
+Shriram Flexi Cap Fund - Direct Growth | Direct | 30-11-2022 | ₹16.7225
+Shriram Flexi Cap Fund - Direct-IDCW | Direct | 30-11-2022 | ₹16.6322
+Shriram Flexi Cap Fund - Regular Growth | Regular | 30-11-2022 | ₹15.5003
+Shriram Flexi Cap Fund - Regular-IDCW | Regular | 30-11-2022 | ₹15.4955
+Shriram Overnight Fund -  Direct Growth | Direct | 30-11-2022 | ₹10.1608
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 30-11-2022 | ₹10
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 30-11-2022 | ₹10
+Shriram Overnight Fund - Regular Growth | Regular | 30-11-2022 | ₹10.1583
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 30-11-2022 | ₹10.0235
+Shriram Overnight Fund - Regular Weekly IDCW | Regular | 30-11-2022 | ₹10.0031
+Shriram Aggressive Hybrid Fund- Direct Growth | Direct | 30-09-2025 | ₹35.7437
+Shriram Aggressive Hybrid Fund- Direct- IDCW | Direct | 30-09-2025 | ₹28.2061
+Shriram Aggressive Hybrid Fund- Regular Growth | Regular | 30-09-2025 | ₹31.1339
+Shriram Aggressive Hybrid Fund- Regular-IDCW | Regular | 30-09-2025 | ₹24.8936
+Shriram Balanced Advantage Fund - Direct Growth | Direct | 30-09-2025 | ₹18.6335
+Shriram Balanced Advantage Fund - Direct- IDCW | Direct | 30-09-2025 | ₹18.4981
+Shriram Balanced Advantage Fund - Regular Growth | Regular | 30-09-2025 | ₹16.5822
+Shriram Balanced Advantage Fund - Regular-IDCW | Regular | 30-09-2025 | ₹16.604
+Shriram ELSS Tax Saver Fund - Direct Growth | Direct | 30-09-2025 | ₹23.1564
+Shriram ELSS Tax Saver Fund - Direct- IDCW | Direct | 30-09-2025 | ₹22.9836
+Shriram ELSS Tax Saver Fund - Regular Growth | Regular | 30-09-2025 | ₹20.5556
+Shriram ELSS Tax Saver Fund - Regular-IDCW | Regular | 30-09-2025 | ₹20.5582
+Shriram Flexi Cap Fund - Direct Growth | Direct | 30-09-2025 | ₹22.2632
+Shriram Flexi Cap Fund - Direct-IDCW | Direct | 30-09-2025 | ₹22.0522
+Shriram Flexi Cap Fund - Regular Growth | Regular | 30-09-2025 | ₹19.6632
+Shriram Flexi Cap Fund - Regular-IDCW | Regular | 30-09-2025 | ₹19.659
+Shriram Liquid Fund - Direct Plan Growth Option | Direct | 30-09-2025 | ₹1057.7974
+Shriram Liquid Fund - Regular Plan Growth Option | Regular | 30-09-2025 | ₹1056.4488
+Shriram Unclaimed IDCW Liquid Fund | Liquid Fund | 30-09-2025 | ₹1031.9747
+Shriram Unclaimed IDCW Stable Scheme Liquid Fund | Liquid Fund | 30-09-2025 | ₹1000
+Shriram Unclaimed Redemption Liquid Fund | Liquid Fund | 30-09-2025 | ₹1043.7284
+Shriram Unclaimed Redemption Stable Scheme Liquid Fund | Liquid Fund | 30-09-2025 | ₹1000
+Shriram Multi Asset Allocation Fund - Direct Growth | Direct | 30-09-2025 | ₹12.7449
+Shriram Multi Asset Allocation Fund - Regular Growth | Regular | 30-09-2025 | ₹12.2626
+Shriram Multi Sector Rotation Fund - Direct Plan Growth Option | Direct | 30-09-2025 | ₹7.7516
+Shriram Multi Sector Rotation Fund - Regular Plan Growth Option | Regular | 30-09-2025 | ₹7.6424
+Shriram Nifty 1D Rate Liquid ETF - Growth | ETF | 30-09-2025 | ₹1072.7327
+Shriram Overnight Fund -  Direct Growth | Direct | 30-09-2025 | ₹12.1212
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 30-09-2025 | ₹10
+Shriram Overnight Fund - Direct Monthly IDCW | Direct | 30-09-2025 | ₹10.0222
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 30-09-2025 | ₹10
+Shriram Overnight Fund - Regular Growth | Regular | 30-09-2025 | ₹12.0888
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 30-09-2025 | ₹10.0222
+Shriram Aggressive Hybrid Fund- Direct Growth | Direct | 30-09-2024 | ₹37.891
+Shriram Aggressive Hybrid Fund- Direct- IDCW | Direct | 30-09-2024 | ₹29.9533
+Shriram Aggressive Hybrid Fund- Regular Growth | Regular | 30-09-2024 | ₹33.5667
+Shriram Aggressive Hybrid Fund- Regular-IDCW | Regular | 30-09-2024 | ₹26.8385
+Shriram Balanced Advantage Fund - Direct Growth | Direct | 30-09-2024 | ₹19.9742
+Shriram Balanced Advantage Fund - Direct- IDCW | Direct | 30-09-2024 | ₹19.8592
+Shriram Balanced Advantage Fund - Regular Growth | Regular | 30-09-2024 | ₹18.0986
+Shriram Balanced Advantage Fund - Regular-IDCW | Regular | 30-09-2024 | ₹18.1232
+Shriram ELSS Tax Saver Fund - Direct Growth | Direct | 30-09-2024 | ₹26.7315
+Shriram ELSS Tax Saver Fund - Direct- IDCW | Direct | 30-09-2024 | ₹26.5565
+Shriram ELSS Tax Saver Fund - Regular Growth | Regular | 30-09-2024 | ₹24.1164
+Shriram ELSS Tax Saver Fund - Regular-IDCW | Regular | 30-09-2024 | ₹24.1243
+Shriram Flexi Cap Fund - Direct Growth | Direct | 30-09-2024 | ₹25.7365
+Shriram Flexi Cap Fund - Direct-IDCW | Direct | 30-09-2024 | ₹25.5075
+Shriram Flexi Cap Fund - Regular Growth | Regular | 30-09-2024 | ₹23.1055
+Shriram Flexi Cap Fund - Regular-IDCW | Regular | 30-09-2024 | ₹23.1002
+Shriram Multi Asset Allocation Fund - Direct Growth | Direct | 30-09-2024 | ₹13.0239
+Shriram Multi Asset Allocation Fund - Regular Growth | Regular | 30-09-2024 | ₹12.7633
+Shriram Nifty 1D Rate Liquid ETF - Growth | ETF | 30-09-2024 | ₹1015.1248
+Shriram Overnight Fund -  Direct Growth | Direct | 30-09-2024 | ₹11.4376
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 30-09-2024 | ₹10
+Shriram Overnight Fund - Direct Monthly IDCW | Direct | 30-09-2024 | ₹10.0231
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 30-09-2024 | ₹10
+Shriram Overnight Fund - Regular Growth | Regular | 30-09-2024 | ₹11.4137
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 30-09-2024 | ₹10.0228
+Shriram Overnight Fund -  Direct Growth | Direct | 30-09-2023 | ₹10.7138
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 30-09-2023 | ₹10
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 30-09-2023 | ₹10
+Shriram Overnight Fund - Regular Growth | Regular | 30-09-2023 | ₹10.7022
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 30-09-2023 | ₹10.0269
+Shriram Overnight Fund - Regular Weekly IDCW | Regular | 30-09-2023 | ₹10.009
+Shriram Aggressive Hybrid Fund- Direct Growth | Direct | 30-09-2022 | ₹24.7514
+Shriram Aggressive Hybrid Fund- Direct- IDCW | Direct | 30-09-2022 | ₹19.6267
+Shriram Aggressive Hybrid Fund- Regular Growth | Regular | 30-09-2022 | ₹22.6328
+Shriram Aggressive Hybrid Fund- Regular-IDCW | Regular | 30-09-2022 | ₹18.0927
+Shriram Balanced Advantage Fund - Direct Growth | Direct | 30-09-2022 | ₹13.8095
+Shriram Balanced Advantage Fund - Direct- IDCW | Direct | 30-09-2022 | ₹13.7651
+Shriram Balanced Advantage Fund - Regular Growth | Regular | 30-09-2022 | ₹12.9779
+Shriram Balanced Advantage Fund - Regular-IDCW | Regular | 30-09-2022 | ₹12.9787
+Shriram ELSS Tax Saver Fund - Direct Growth | Direct | 30-09-2022 | ₹16.4087
+Shriram ELSS Tax Saver Fund - Direct- IDCW | Direct | 30-09-2022 | ₹16.3441
+Shriram ELSS Tax Saver Fund - Regular Growth | Regular | 30-09-2022 | ₹15.3123
+Shriram ELSS Tax Saver Fund - Regular-IDCW | Regular | 30-09-2022 | ₹15.3033
+Shriram Flexi Cap Fund - Direct Growth | Direct | 30-09-2022 | ₹15.7099
+Shriram Flexi Cap Fund - Direct-IDCW | Direct | 30-09-2022 | ₹15.6287
+Shriram Flexi Cap Fund - Regular Growth | Regular | 30-09-2022 | ₹14.6066
+Shriram Flexi Cap Fund - Regular-IDCW | Regular | 30-09-2022 | ₹14.6021
+Shriram Overnight Fund -  Direct Growth | Direct | 30-09-2022 | ₹10.0619
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 30-09-2022 | ₹10
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 30-09-2022 | ₹10
+Shriram Overnight Fund - Regular Growth | Regular | 30-09-2022 | ₹10.061
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 30-09-2022 | ₹10.061
+Shriram Overnight Fund - Regular Weekly IDCW | Regular | 30-09-2022 | ₹10.0061
+Shriram Aggressive Hybrid Fund- Direct Growth | Direct | 30-06-2025 | ₹36.4873
+Shriram Aggressive Hybrid Fund- Direct- IDCW | Direct | 30-06-2025 | ₹28.8051
+Shriram Aggressive Hybrid Fund- Regular Growth | Regular | 30-06-2025 | ₹31.9155
+Shriram Aggressive Hybrid Fund- Regular-IDCW | Regular | 30-06-2025 | ₹25.518
+Shriram Balanced Advantage Fund - Direct Growth | Direct | 30-06-2025 | ₹19.1412
+Shriram Balanced Advantage Fund - Direct- IDCW | Direct | 30-06-2025 | ₹19.0104
+Shriram Balanced Advantage Fund - Regular Growth | Regular | 30-06-2025 | ₹17.1083
+Shriram Balanced Advantage Fund - Regular-IDCW | Regular | 30-06-2025 | ₹17.1306
+Shriram ELSS Tax Saver Fund - Direct Growth | Direct | 30-06-2025 | ₹24.1788
+Shriram ELSS Tax Saver Fund - Direct- IDCW | Direct | 30-06-2025 | ₹24.0038
+Shriram ELSS Tax Saver Fund - Regular Growth | Regular | 30-06-2025 | ₹21.5499
+Shriram ELSS Tax Saver Fund - Regular-IDCW | Regular | 30-06-2025 | ₹21.5528
+Shriram Flexi Cap Fund - Direct Growth | Direct | 30-06-2025 | ₹23.253
+Shriram Flexi Cap Fund - Direct-IDCW | Direct | 30-06-2025 | ₹23.036
+Shriram Flexi Cap Fund - Regular Growth | Regular | 30-06-2025 | ₹20.6211
+Shriram Flexi Cap Fund - Regular-IDCW | Regular | 30-06-2025 | ₹20.6165
+Shriram Liquid Fund - Direct Plan Growth Option | Direct | 30-06-2025 | ₹1043.0655
+Shriram Liquid Fund - Regular Plan Growth Option | Regular | 30-06-2025 | ₹1042.1285
+Shriram Unclaimed IDCW Liquid Fund | Liquid Fund | 30-06-2025 | ₹1017.8906
+Shriram Unclaimed IDCW Stable Scheme Liquid Fund | Liquid Fund | 30-06-2025 | ₹1000
+Shriram Unclaimed Redemption Liquid Fund | Liquid Fund | 30-06-2025 | ₹1029.2147
+Shriram Unclaimed Redemption Stable Scheme Liquid Fund | Liquid Fund | 30-06-2025 | ₹1000
+Shriram Multi Asset Allocation Fund - Direct Growth | Direct | 30-06-2025 | ₹12.729
+Shriram Multi Asset Allocation Fund - Regular Growth | Regular | 30-06-2025 | ₹12.3024
+Shriram Multi Sector Rotation Fund - Direct Plan Growth Option | Direct | 30-06-2025 | ₹8.2497
+Shriram Multi Sector Rotation Fund - Regular Plan Growth Option | Regular | 30-06-2025 | ₹8.1689
+Shriram Nifty 1D Rate Liquid ETF - Growth | ETF | 30-06-2025 | ₹1059.4653
+Shriram Overnight Fund -  Direct Growth | Direct | 30-06-2025 | ₹11.9608
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 30-06-2025 | ₹10
+Shriram Overnight Fund - Direct Monthly IDCW | Direct | 30-06-2025 | ₹10.0199
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 30-06-2025 | ₹10
+Shriram Overnight Fund - Regular Growth | Regular | 30-06-2025 | ₹11.9307
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 30-06-2025 | ₹10.0198
+Shriram Overnight Fund -  Direct Growth | Direct | 30-06-2024 | ₹11.2567
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 30-06-2024 | ₹10
+Shriram Overnight Fund - Direct Monthly IDCW | Direct | 30-06-2024 | ₹10.0215
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 30-06-2024 | ₹10
+Shriram Overnight Fund - Regular Growth | Regular | 30-06-2024 | ₹11.2352
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 30-06-2024 | ₹10.0213
+Shriram Aggressive Hybrid Fund- Direct Growth | Direct | 30-06-2023 | ₹26.8408
+Shriram Aggressive Hybrid Fund- Direct- IDCW | Direct | 30-06-2023 | ₹21.2677
+Shriram Aggressive Hybrid Fund- Regular Growth | Regular | 30-06-2023 | ₹24.2586
+Shriram Aggressive Hybrid Fund- Regular-IDCW | Regular | 30-06-2023 | ₹19.3923
+Shriram Balanced Advantage Fund - Direct Growth | Direct | 30-06-2023 | ₹15.025
+Shriram Balanced Advantage Fund - Direct- IDCW | Direct | 30-06-2023 | ₹14.9634
+Shriram Balanced Advantage Fund - Regular Growth | Regular | 30-06-2023 | ₹13.9274
+Shriram Balanced Advantage Fund - Regular-IDCW | Regular | 30-06-2023 | ₹13.9285
+Shriram ELSS Tax Saver Fund - Direct Growth | Direct | 30-06-2023 | ₹17.8716
+Shriram ELSS Tax Saver Fund - Direct- IDCW | Direct | 30-06-2023 | ₹17.7866
+Shriram ELSS Tax Saver Fund - Regular Growth | Regular | 30-06-2023 | ₹16.4548
+Shriram ELSS Tax Saver Fund - Regular-IDCW | Regular | 30-06-2023 | ₹16.445
+Shriram Flexi Cap Fund - Direct Growth | Direct | 30-06-2023 | ₹16.9838
+Shriram Flexi Cap Fund - Direct-IDCW | Direct | 30-06-2023 | ₹16.8773
+Shriram Flexi Cap Fund - Regular Growth | Regular | 30-06-2023 | ₹15.5768
+Shriram Flexi Cap Fund - Regular-IDCW | Regular | 30-06-2023 | ₹15.5695
+Shriram Overnight Fund -  Direct Growth | Direct | 30-06-2023 | ₹10.5406
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 30-06-2023 | ₹10
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 30-06-2023 | ₹10
+Shriram Overnight Fund - Regular Growth | Regular | 30-06-2023 | ₹10.5318
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 30-06-2023 | ₹10.0264
+Shriram Overnight Fund - Regular Weekly IDCW | Regular | 30-06-2023 | ₹10.0072
+Shriram Aggressive Hybrid Fund- Direct Growth | Direct | 30-06-2022 | ₹23.1823
+Shriram Aggressive Hybrid Fund- Direct- IDCW | Direct | 30-06-2022 | ₹18.3843
+Shriram Aggressive Hybrid Fund- Regular Growth | Regular | 30-06-2022 | ₹21.2793
+Shriram Aggressive Hybrid Fund- Regular-IDCW | Regular | 30-06-2022 | ₹17.0106
+Shriram Balanced Advantage Fund - Direct Growth | Direct | 30-06-2022 | ₹13.2644
+Shriram Balanced Advantage Fund - Direct- IDCW | Direct | 30-06-2022 | ₹13.224
+Shriram Balanced Advantage Fund - Regular Growth | Regular | 30-06-2022 | ₹12.5225
+Shriram Balanced Advantage Fund - Regular-IDCW | Regular | 30-06-2022 | ₹12.5232
+Shriram ELSS Tax Saver Fund - Direct Growth | Direct | 30-06-2022 | ₹14.8314
+Shriram ELSS Tax Saver Fund - Direct- IDCW | Direct | 30-06-2022 | ₹14.776
+Shriram ELSS Tax Saver Fund - Regular Growth | Regular | 30-06-2022 | ₹13.9022
+Shriram ELSS Tax Saver Fund - Regular-IDCW | Regular | 30-06-2022 | ₹13.894
+Shriram Flexi Cap Fund - Direct Growth | Direct | 30-06-2022 | ₹14.0357
+Shriram Flexi Cap Fund - Direct-IDCW | Direct | 30-06-2022 | ₹13.9671
+Shriram Flexi Cap Fund - Regular Growth | Regular | 30-06-2022 | ₹13.1107
+Shriram Flexi Cap Fund - Regular-IDCW | Regular | 30-06-2022 | ₹13.1066
+Shriram Aggressive Hybrid Fund- Direct Growth | Direct | 30-04-2026 | ₹36.226
+Shriram Aggressive Hybrid Fund- Direct- IDCW | Direct | 30-04-2026 | ₹28.5465
+Shriram Aggressive Hybrid Fund- Regular Growth | Regular | 30-04-2026 | ₹31.2414
+Shriram Aggressive Hybrid Fund- Regular-IDCW | Regular | 30-04-2026 | ₹24.9797
+Shriram Balanced Advantage Fund - Direct Growth | Direct | 30-04-2026 | ₹18.6465
+Shriram Balanced Advantage Fund - Direct- IDCW | Direct | 30-04-2026 | ₹18.4914
+Shriram Balanced Advantage Fund - Regular Growth | Regular | 30-04-2026 | ₹16.4245
+Shriram Balanced Advantage Fund - Regular-IDCW | Regular | 30-04-2026 | ₹16.4471
+Shriram ELSS Tax Saver Fund - Direct Growth | Direct | 30-04-2026 | ₹22.8646
+Shriram ELSS Tax Saver Fund - Direct- IDCW | Direct | 30-04-2026 | ₹22.6839
+Shriram ELSS Tax Saver Fund - Regular Growth | Regular | 30-04-2026 | ₹20.1053
+Shriram ELSS Tax Saver Fund - Regular-IDCW | Regular | 30-04-2026 | ₹20.1082
+Shriram Flexi Cap Fund - Direct Growth | Direct | 30-04-2026 | ₹21.9246
+Shriram Flexi Cap Fund - Direct-IDCW | Direct | 30-04-2026 | ₹21.7061
+Shriram Flexi Cap Fund - Regular Growth | Regular | 30-04-2026 | ₹19.1784
+Shriram Flexi Cap Fund - Regular-IDCW | Regular | 30-04-2026 | ₹19.1716
+Shriram Liquid Fund - Direct Plan Growth Option | Direct | 30-04-2026 | ₹1095.3679
+Shriram Liquid Fund - Regular Plan Growth Option | Regular | 30-04-2026 | ₹1093.1538
+Shriram Unclaimed IDCW Liquid Fund | Liquid Fund | 30-04-2026 | ₹1067.8723
+Shriram Unclaimed IDCW Stable Scheme Liquid Fund | Liquid Fund | 30-04-2026 | ₹1000
+Shriram Unclaimed Redemption Liquid Fund | Liquid Fund | 30-04-2026 | ₹1080.744
+Shriram Unclaimed Redemption Stable Scheme Liquid Fund | Liquid Fund | 30-04-2026 | ₹1000
+Shriram Money Market Fund - Direct Plan Growth Option | Direct | 30-04-2026 | ₹1016.6463
+Shriram Money Market Fund - Regular Plan Growth Option | Regular | 30-04-2026 | ₹1016.0721
+Shriram Multi Asset Allocation Fund - Direct Growth | Direct | 30-04-2026 | ₹13.6272
+Shriram Multi Asset Allocation Fund - Regular Growth | Regular | 30-04-2026 | ₹12.9886
+Shriram Multi Sector Rotation Fund - Direct Plan Growth Option | Direct | 30-04-2026 | ₹7.7947
+Shriram Multi Sector Rotation Fund - Regular Plan Growth Option | Regular | 30-04-2026 | ₹7.6126
+Shriram Nifty 1D Rate Liquid ETF - Growth | ETF | 30-04-2026 | ₹1102.2356
+Shriram Overnight Fund -  Direct Growth | Direct | 30-04-2026 | ₹12.4892
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 30-04-2026 | ₹10.0001
+Shriram Overnight Fund - Direct Monthly IDCW | Direct | 30-04-2026 | ₹10.0203
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 30-04-2026 | ₹10.0001
+Shriram Overnight Fund - Regular Growth | Regular | 30-04-2026 | ₹12.451
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 30-04-2026 | ₹10.0205
+Shriram Aggressive Hybrid Fund- Direct Growth | Direct | 30-04-2025 | ₹34.6628
+Shriram Aggressive Hybrid Fund- Direct- IDCW | Direct | 30-04-2025 | ₹27.3732
+Shriram Aggressive Hybrid Fund- Regular Growth | Regular | 30-04-2025 | ₹30.4025
+Shriram Aggressive Hybrid Fund- Regular-IDCW | Regular | 30-04-2025 | ₹24.3083
+Shriram Balanced Advantage Fund - Direct Growth | Direct | 30-04-2025 | ₹18.4643
+Shriram Balanced Advantage Fund - Direct- IDCW | Direct | 30-04-2025 | ₹18.3454
+Shriram Balanced Advantage Fund - Regular Growth | Regular | 30-04-2025 | ₹16.5545
+Shriram Balanced Advantage Fund - Regular-IDCW | Regular | 30-04-2025 | ₹16.5759
+Shriram ELSS Tax Saver Fund - Direct Growth | Direct | 30-04-2025 | ₹22.5418
+Shriram ELSS Tax Saver Fund - Direct- IDCW | Direct | 30-04-2025 | ₹22.3822
+Shriram ELSS Tax Saver Fund - Regular Growth | Regular | 30-04-2025 | ₹20.1444
+Shriram ELSS Tax Saver Fund - Regular-IDCW | Regular | 30-04-2025 | ₹20.1509
+Shriram Flexi Cap Fund - Direct Growth | Direct | 30-04-2025 | ₹21.8165
+Shriram Flexi Cap Fund - Direct-IDCW | Direct | 30-04-2025 | ₹21.6148
+Shriram Flexi Cap Fund - Regular Growth | Regular | 30-04-2025 | ₹19.3991
+Shriram Flexi Cap Fund - Regular-IDCW | Regular | 30-04-2025 | ₹19.3949
+Shriram Liquid Fund - Direct Plan Growth Option | Direct | 30-04-2025 | ₹1032.4847
+Shriram Liquid Fund - Regular Plan Growth Option | Regular | 30-04-2025 | ₹1031.8148
+Shriram Unclaimed IDCW Liquid Fund | Liquid Fund | 30-04-2025 | ₹1007.7865
+Shriram Unclaimed IDCW Stable Scheme Liquid Fund | Liquid Fund | 30-04-2025 | ₹1000
+Shriram Unclaimed Redemption Liquid Fund | Liquid Fund | 30-04-2025 | ₹1018.7905
+Shriram Unclaimed Redemption Stable Scheme Liquid Fund | Liquid Fund | 30-04-2025 | ₹1000
+Shriram Multi Asset Allocation Fund - Direct Growth | Direct | 30-04-2025 | ₹12.1463
+Shriram Multi Asset Allocation Fund - Regular Growth | Regular | 30-04-2025 | ₹11.7749
+Shriram Multi Sector Rotation Fund - Direct Plan Growth Option | Direct | 30-04-2025 | ₹7.9162
+Shriram Multi Sector Rotation Fund - Regular Plan Growth Option | Regular | 30-04-2025 | ₹7.8622
+Shriram Nifty 1D Rate Liquid ETF - Growth | ETF | 30-04-2025 | ₹1050.4399
+Shriram Overnight Fund -  Direct Growth | Direct | 30-04-2025 | ₹11.8527
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 30-04-2025 | ₹10
+Shriram Overnight Fund - Direct Monthly IDCW | Direct | 30-04-2025 | ₹10.023
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 30-04-2025 | ₹10
+Shriram Overnight Fund - Regular Growth | Regular | 30-04-2025 | ₹11.824
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 30-04-2025 | ₹10.0229
+Shriram Aggressive Hybrid Fund- Direct Growth | Direct | 30-04-2024 | ₹34.3483
+Shriram Aggressive Hybrid Fund- Direct- IDCW | Direct | 30-04-2024 | ₹27.176
+Shriram Aggressive Hybrid Fund- Regular Growth | Regular | 30-04-2024 | ₹30.631
+Shriram Aggressive Hybrid Fund- Regular-IDCW | Regular | 30-04-2024 | ₹24.4863
+Shriram Balanced Advantage Fund - Direct Growth | Direct | 30-04-2024 | ₹18.826
+Shriram Balanced Advantage Fund - Direct- IDCW | Direct | 30-04-2024 | ₹18.7259
+Shriram Balanced Advantage Fund - Regular Growth | Regular | 30-04-2024 | ₹17.1891
+Shriram Balanced Advantage Fund - Regular-IDCW | Regular | 30-04-2024 | ₹17.2127
+Shriram ELSS Tax Saver Fund - Direct Growth | Direct | 30-04-2024 | ₹23.6157
+Shriram ELSS Tax Saver Fund - Direct- IDCW | Direct | 30-04-2024 | ₹23.4729
+Shriram ELSS Tax Saver Fund - Regular Growth | Regular | 30-04-2024 | ₹21.4507
+Shriram ELSS Tax Saver Fund - Regular-IDCW | Regular | 30-04-2024 | ₹21.4425
+Shriram Flexi Cap Fund - Direct Growth | Direct | 30-04-2024 | ₹23.2453
+Shriram Flexi Cap Fund - Direct-IDCW | Direct | 30-04-2024 | ₹23.0686
+Shriram Flexi Cap Fund - Regular Growth | Regular | 30-04-2024 | ₹21.032
+Shriram Flexi Cap Fund - Regular-IDCW | Regular | 30-04-2024 | ₹21.0227
+Shriram Multi Asset Allocation Fund - Direct Growth | Direct | 30-04-2024 | ₹12.4265
+Shriram Multi Asset Allocation Fund - Regular Growth | Regular | 30-04-2024 | ₹12.2727
+Shriram Overnight Fund -  Direct Growth | Direct | 30-04-2024 | ₹11.1353
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 30-04-2024 | ₹10
+Shriram Overnight Fund - Direct Monthly IDCW | Direct | 30-04-2024 | ₹10.0267
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 30-04-2024 | ₹10
+Shriram Overnight Fund - Regular Growth | Regular | 30-04-2024 | ₹11.1155
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 30-04-2024 | ₹10.0265
+Shriram Overnight Fund - Regular Weekly IDCW | Regular | 30-04-2024 | ₹10.0018
+Shriram Overnight Fund -  Direct Growth | Direct | 30-04-2023 | ₹10.428
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 30-04-2023 | ₹10
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 30-04-2023 | ₹10
+Shriram Overnight Fund - Regular Growth | Regular | 30-04-2023 | ₹10.421
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 30-04-2023 | ₹10.0232
+Shriram Overnight Fund - Regular Weekly IDCW | Regular | 30-04-2023 | ₹10.0108
+Shriram Aggressive Hybrid Fund- Direct Growth | Direct | 29-02-2024 | ₹32.8356
+Shriram Aggressive Hybrid Fund- Direct- IDCW | Direct | 29-02-2024 | ₹25.9871
+Shriram Aggressive Hybrid Fund- Regular Growth | Regular | 29-02-2024 | ₹29.3558
+Shriram Aggressive Hybrid Fund- Regular-IDCW | Regular | 29-02-2024 | ₹23.467
+Shriram Balanced Advantage Fund - Direct Growth | Direct | 29-02-2024 | ₹18.2489
+Shriram Balanced Advantage Fund - Direct- IDCW | Direct | 29-02-2024 | ₹18.1562
+Shriram Balanced Advantage Fund - Regular Growth | Regular | 29-02-2024 | ₹16.7124
+Shriram Balanced Advantage Fund - Regular-IDCW | Regular | 29-02-2024 | ₹16.7354
+Shriram ELSS Tax Saver Fund - Direct Growth | Direct | 29-02-2024 | ₹22.8083
+Shriram ELSS Tax Saver Fund - Direct- IDCW | Direct | 29-02-2024 | ₹22.6759
+Shriram ELSS Tax Saver Fund - Regular Growth | Regular | 29-02-2024 | ₹20.7728
+Shriram ELSS Tax Saver Fund - Regular-IDCW | Regular | 29-02-2024 | ₹20.7592
+Shriram Flexi Cap Fund - Direct Growth | Direct | 29-02-2024 | ₹22.3551
+Shriram Flexi Cap Fund - Direct-IDCW | Direct | 29-02-2024 | ₹22.1903
+Shriram Flexi Cap Fund - Regular Growth | Regular | 29-02-2024 | ₹20.2806
+Shriram Flexi Cap Fund - Regular-IDCW | Regular | 29-02-2024 | ₹20.2714
+Shriram Multi Asset Allocation Fund - Direct Growth | Direct | 29-02-2024 | ₹11.8084
+Shriram Multi Asset Allocation Fund - Regular Growth | Regular | 29-02-2024 | ₹11.6982
+Shriram Overnight Fund -  Direct Growth | Direct | 29-02-2024 | ₹11.0152
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 29-02-2024 | ₹10
+Shriram Overnight Fund - Direct Monthly IDCW | Direct | 29-02-2024 | ₹10.0248
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 29-02-2024 | ₹10
+Shriram Overnight Fund - Regular Growth | Regular | 29-02-2024 | ₹10.997
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 29-02-2024 | ₹10.0246
+Shriram Overnight Fund - Regular Weekly IDCW | Regular | 29-02-2024 | ₹10.0053
+Shriram Liquid Fund - Direct Plan Growth Option | Direct | 28-02-2026 | ₹1082.791
+Shriram Liquid Fund - Regular Plan Growth Option | Regular | 28-02-2026 | ₹1080.8232
+Shriram Unclaimed IDCW Liquid Fund | Liquid Fund | 28-02-2026 | ₹1055.5314
+Shriram Unclaimed IDCW Stable Scheme Liquid Fund | Liquid Fund | 28-02-2026 | ₹1000
+Shriram Unclaimed Redemption Liquid Fund | Liquid Fund | 28-02-2026 | ₹1068.3431
+Shriram Unclaimed Redemption Stable Scheme Liquid Fund | Liquid Fund | 28-02-2026 | ₹1000
+Shriram Nifty 1D Rate Liquid ETF - Growth | ETF | 28-02-2026 | ₹1093.8526
+Shriram Overnight Fund -  Direct Growth | Direct | 28-02-2026 | ₹12.3819
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 28-02-2026 | ₹10.0001
+Shriram Overnight Fund - Direct Monthly IDCW | Direct | 28-02-2026 | ₹10.0163
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 28-02-2026 | ₹10.0001
+Shriram Overnight Fund - Regular Growth | Regular | 28-02-2026 | ₹12.346
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 28-02-2026 | ₹10.0164
+Shriram Aggressive Hybrid Fund- Direct Growth | Direct | 28-02-2025 | ₹32.0756
+Shriram Aggressive Hybrid Fund- Direct- IDCW | Direct | 28-02-2025 | ₹25.3376
+Shriram Aggressive Hybrid Fund- Regular Growth | Regular | 28-02-2025 | ₹28.2127
+Shriram Aggressive Hybrid Fund- Regular-IDCW | Regular | 28-02-2025 | ₹22.5575
+Shriram Balanced Advantage Fund - Direct Growth | Direct | 28-02-2025 | ₹17.4112
+Shriram Balanced Advantage Fund - Direct- IDCW | Direct | 28-02-2025 | ₹17.3033
+Shriram Balanced Advantage Fund - Regular Growth | Regular | 28-02-2025 | ₹15.6573
+Shriram Balanced Advantage Fund - Regular-IDCW | Regular | 28-02-2025 | ₹15.6776
+Shriram ELSS Tax Saver Fund - Direct Growth | Direct | 28-02-2025 | ₹20.6814
+Shriram ELSS Tax Saver Fund - Direct- IDCW | Direct | 28-02-2025 | ₹20.5382
+Shriram ELSS Tax Saver Fund - Regular Growth | Regular | 28-02-2025 | ₹18.531
+Shriram ELSS Tax Saver Fund - Regular-IDCW | Regular | 28-02-2025 | ₹18.5371
+Shriram Flexi Cap Fund - Direct Growth | Direct | 28-02-2025 | ₹19.9654
+Shriram Flexi Cap Fund - Direct-IDCW | Direct | 28-02-2025 | ₹19.7825
+Shriram Flexi Cap Fund - Regular Growth | Regular | 28-02-2025 | ₹17.8015
+Shriram Flexi Cap Fund - Regular-IDCW | Regular | 28-02-2025 | ₹17.7976
+Shriram Liquid Fund - Direct Plan Growth Option | Direct | 28-02-2025 | ₹1021.0732
+Shriram Liquid Fund - Regular Plan Growth Option | Regular | 28-02-2025 | ₹1020.6516
+Shriram Unclaimed IDCW Liquid Fund | Liquid Fund | 28-02-2025 | ₹998.0769
+Shriram Unclaimed IDCW Stable Scheme Liquid Fund | Liquid Fund | 28-02-2025 | ₹1000
+Shriram Unclaimed Redemption Liquid Fund | Liquid Fund | 28-02-2025 | ₹1007.5326
+Shriram Unclaimed Redemption Stable Scheme Liquid Fund | Liquid Fund | 28-02-2025 | ₹1000
+Shriram Multi Asset Allocation Fund - Direct Growth | Direct | 28-02-2025 | ₹11.3048
+Shriram Multi Asset Allocation Fund - Regular Growth | Regular | 28-02-2025 | ₹10.9924
+Shriram Multi Sector Rotation Fund - Direct Plan Growth Option | Direct | 28-02-2025 | ₹7.5042
+Shriram Multi Sector Rotation Fund - Regular Plan Growth Option | Regular | 28-02-2025 | ₹7.4764
+Shriram Nifty 1D Rate Liquid ETF - Growth | ETF | 28-02-2025 | ₹1040.6227
+Shriram Overnight Fund -  Direct Growth | Direct | 28-02-2025 | ₹11.7369
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 28-02-2025 | ₹10
+Shriram Overnight Fund - Direct Monthly IDCW | Direct | 28-02-2025 | ₹10.0182
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 28-02-2025 | ₹10
+Shriram Overnight Fund - Regular Growth | Regular | 28-02-2025 | ₹11.7096
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 28-02-2025 | ₹10.0181
+Shriram Aggressive Hybrid Fund- Direct Growth | Direct | 28-02-2023 | ₹24.8715
+Shriram Aggressive Hybrid Fund- Direct- IDCW | Direct | 28-02-2023 | ₹19.7176
+Shriram Aggressive Hybrid Fund- Regular Growth | Regular | 28-02-2023 | ₹22.5998
+Shriram Aggressive Hybrid Fund- Regular-IDCW | Regular | 28-02-2023 | ₹18.0662
+Shriram Balanced Advantage Fund - Direct Growth | Direct | 28-02-2023 | ₹14.0955
+Shriram Balanced Advantage Fund - Direct- IDCW | Direct | 28-02-2023 | ₹14.0435
+Shriram Balanced Advantage Fund - Regular Growth | Regular | 28-02-2023 | ₹13.146
+Shriram Balanced Advantage Fund - Regular-IDCW | Regular | 28-02-2023 | ₹13.147
+Shriram ELSS Tax Saver Fund - Direct Growth | Direct | 28-02-2023 | ₹16.1725
+Shriram ELSS Tax Saver Fund - Direct- IDCW | Direct | 28-02-2023 | ₹16.1015
+Shriram ELSS Tax Saver Fund - Regular Growth | Regular | 28-02-2023 | ₹14.9792
+Shriram ELSS Tax Saver Fund - Regular-IDCW | Regular | 28-02-2023 | ₹14.9703
+Shriram Flexi Cap Fund - Direct Growth | Direct | 28-02-2023 | ₹15.5974
+Shriram Flexi Cap Fund - Direct-IDCW | Direct | 28-02-2023 | ₹15.5075
+Shriram Flexi Cap Fund - Regular Growth | Regular | 28-02-2023 | ₹14.3917
+Shriram Flexi Cap Fund - Regular-IDCW | Regular | 28-02-2023 | ₹14.3873
+Shriram Overnight Fund -  Direct Growth | Direct | 28-02-2023 | ₹10.3159
+Shriram Overnight Fund - Direct Daily IDCW | Direct | 28-02-2023 | ₹10
+Shriram Overnight Fund - Regular Daily IDCW | Regular | 28-02-2023 | ₹10
+Shriram Overnight Fund - Regular Growth | Regular | 28-02-2023 | ₹10.3108
+Shriram Overnight Fund - Regular Monthly IDCW | Regular | 28-02-2023 | ₹10.0225
+Shriram Overnight Fund - Regular Weekly IDCW | Regular | 28-02-2023 | ₹10.0018
+Shriram Aggressive Hybrid Fund- Direct Growth | Direct | 28-02-2022 | ₹23.8641
+Shriram Aggressive Hybrid Fund- Direct- IDCW | Direct | 28-02-2022 | ₹18.9274
+Shriram Aggressive Hybrid Fund- Regular Growth | Regular | 28-02-2022 | ₹22.0156
+Shriram Aggressive Hybrid Fund- Regular-IDCW | Regular | 28-02-2022 | ₹17.5992
+Shriram Balanced Advantage Fund - Direct Growth | Direct | 28-02-2022 | ₹13.4995
+Shriram Balanced Advantage Fund - Direct- IDCW | Direct | 28-02-2022 | ₹13.4619
+Shriram Balanced Advantage Fund - Regular Growth | Regular | 28-02-2022 | ₹12.822
+Shriram Balanced Advantage Fund - Regular-IDCW | Regular | 28-02-2022 | ₹12.8227
+Shriram ELSS Tax Saver Fund - Direct Growth | Direct | 28-02-2022 | ₹15.4824
+Shriram ELSS Tax Saver Fund - Direct- IDCW | Direct | 28-02-2022 | ₹15.4288
+Shriram ELSS Tax Saver Fund - Regular Growth | Regular | 28-02-2022 | ₹14.6004
+Shriram ELSS Tax Saver Fund - Regular-IDCW | Regular | 28-02-2022 | ₹14.5918
+Shriram Flexi Cap Fund - Direct Growth | Direct | 28-02-2022 | ₹14.9684
+Shriram Flexi Cap Fund - Direct-IDCW | Direct | 28-02-2022 | ₹14.9007
+Shriram Flexi Cap Fund - Regular Growth | Regular | 28-02-2022 | ₹14.0667
+Shriram Flexi Cap Fund - Regular-IDCW | Regular | 28-02-2022 | ₹14.0625
