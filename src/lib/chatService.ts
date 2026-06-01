@@ -1,6 +1,6 @@
 import { ai } from "./geminiClient";
 import { searchNavData } from "./navSearch";
-import { getFundPerformance } from "./navPerformance";
+import { searchFundPerformance } from "./navPerformance";
 import { buildTextBotSystemInstruction } from "./textBotPrompt";
 import type { SessionContext } from "./sessionContext";
 
@@ -20,7 +20,7 @@ export async function handleChatMessage(
   context: SessionContext = {}
 ): Promise<string> {
   if (isPerformanceQuery(message)) {
-    const data = getFundPerformance(message);
+    const data = searchFundPerformance(message);
     const response = await ai.models.generateContent({
       model: MODEL,
       contents: `You are Shriram AMC assistant. Answer using ONLY this data. Reply in the user's language.

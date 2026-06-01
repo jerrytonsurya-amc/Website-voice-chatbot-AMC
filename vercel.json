@@ -1,0 +1,21 @@
+{
+  "buildCommand": "npm run build:web && npm run build:api",
+  "outputDirectory": "dist",
+  "framework": null,
+  "functions": {
+    "api/**/*.cjs": {
+      "maxDuration": 60,
+      "includeFiles": "data/nav-records.json,data/fund-performance-summary.json,data/fund-catalog.json"
+    }
+  },
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/((?!api/).*)", "destination": "/index.html" }
+  ],
+  "headers": [
+    {
+      "source": "/embed.js",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600" }]
+    }
+  ]
+}

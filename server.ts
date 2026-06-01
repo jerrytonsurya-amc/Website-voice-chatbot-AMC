@@ -1,6 +1,7 @@
 import "dotenv/config";
-import { searchNavData, getNavCache } from "./src/lib/navSearch";
-import { getFundPerformance } from "./src/lib/navPerformance";
+import { searchNavData } from "./src/lib/navSearch";
+import { getNavCache } from "./src/lib/navDataLoader";
+import { searchFundPerformance } from "./src/lib/navPerformance";
 import { ai } from "./src/lib/geminiClient";
 import { buildVoiceBotSystemInstruction } from "./src/lib/voiceBotPrompt";
 import type { SessionContext } from "./src/lib/sessionContext";
@@ -31,7 +32,7 @@ async function startServer() {
 
     if (isPerformanceQuery || isNavQuery) {
       const context = isPerformanceQuery
-        ? getFundPerformance(message)
+        ? searchFundPerformance(message)
         : searchNavData(message);
 
       const prompt = `Answer using ONLY the Shriram AMC database results below. Do not invent numbers. If data is missing, say so.
@@ -89,7 +90,7 @@ User question: ${message}`;
 
                     const context =
                       call.name === "getFundPerformance"
-                        ? getFundPerformance(query)
+                        ? searchFundPerformance(query)
                         : searchNavData(query);
 
                     session.sendToolResponse({
